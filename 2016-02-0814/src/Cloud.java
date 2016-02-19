@@ -3,4 +3,8 @@
  * 11-402
  */
 public interface Cloud {
+    void expand(int radius);
+    void collapse(int radius);
+    Planet makePlanet();
+    Star makeStar();
 }
