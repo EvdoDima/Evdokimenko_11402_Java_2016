@@ -1,3 +1,5 @@
+package task2016_02_0814;
+
 import java.util.ArrayList;
 
 /**
@@ -50,7 +52,12 @@ public class Quasar implements Galaxy,Cloud {
 
     @Override
     public Galaxy merge(Galaxy toMerge) {
-        return new SpiralGalaxy();
+        return new SpiralGalaxy(mass+toMerge.getMass(),size/mass,size+toMerge.getMass()/mass,systems);
+    }
+
+    @Override
+    public ArrayList<System> dispart() {
+        return systems;
     }
 
     @Override

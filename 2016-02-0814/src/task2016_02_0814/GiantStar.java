@@ -1,33 +1,32 @@
+package task2016_02_0814;
+
 import java.util.ArrayList;
 
 /**
  * Created by evdodima on 11/02/16.
  * 11-402
  */
-public class NeutronStar implements Star{
+public class GiantStar implements Star {
     int mass;
     int temperature;
     int age;
     int period;
 
-
-    public NeutronStar(int age, int mass, int period, int temperature) {
+    public GiantStar(int age, int mass, int temperature,int period) {
         this.age = age;
         this.mass = mass;
-        this.period = period;
         this.temperature = temperature;
+        this.period = period;
     }
-
 
     @Override
     public void shine() {
-        int pow = age*mass+temperature*100;
-
+        int pow = age*temperature;
     }
 
     @Override
     public Cloud explode() {
-        return new GasCloud("H",mass,mass*temperature);
+        return new DustCloud(age*10,mass,"He,H,C");
     }
 
     @Override
@@ -43,6 +42,7 @@ public class NeutronStar implements Star{
 
     @Override
     public System makeSystem(ArrayList parts) {
-        return new SolarSystem();
+
+        return new SolarSystem(parts,parts.size()*23,this);
     }
 }
