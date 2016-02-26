@@ -17,8 +17,20 @@ public class EarthTypePlanet implements Planet {
         this.temperature = temperature;
     }
 
+    public int getMass() {
+        return mass;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public int getTemperature() {
+        return temperature;
+    }
+
     @Override
-    public System rotateAround(Star star) {
+    public SolarSystem rotateAround(Star star) {
         ArrayList<Planet> planets = new ArrayList<Planet>();
         planets.add(this);
 
@@ -39,6 +51,6 @@ public class EarthTypePlanet implements Planet {
 
     @Override
     public PlanetCluster makeCluster(ArrayList<Planet> planets) {
-        return new PlanetCluster();
+        return new PlanetCluster(planets);
     }
 }

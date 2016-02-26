@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * 11-402
  */
 public interface Star {
-    void shine();
+    int shine();
     Cloud explode();
     void rotate(int period);
     Star changeType(Star newType);

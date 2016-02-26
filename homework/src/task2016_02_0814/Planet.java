@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * 11-402
  */
 public interface Planet {
-    System rotateAround(Star star);
+    SolarSystem rotateAround(Star star);
     void heat(int temperature);
     void cool(int temperature);
     PlanetCluster makeCluster(ArrayList<Planet> planets);

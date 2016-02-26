@@ -19,6 +19,18 @@ public class SpiralGalaxy implements Galaxy {
         this.systems = systems;
     }
 
+    public int getPeriod() {
+        return period;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public ArrayList<System> getSystems() {
+        return systems;
+    }
+
     @Override
     public void rotate(int period) {
         this.period=period;

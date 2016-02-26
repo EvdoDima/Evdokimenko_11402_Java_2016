@@ -11,6 +11,13 @@ public class SolarSystem implements System {
     ArrayList<Planet> planets;
     int size;
 
+    public ArrayList<Planet> getPlanets() {
+        return planets;
+    }
+
+    public Star getStar() {
+        return star;
+    }
 
     public SolarSystem(ArrayList<Planet> planets, int size, Star star) {
         this.planets = planets;
@@ -25,7 +32,7 @@ public class SolarSystem implements System {
 
     @Override
     public Cluster makeCluster(ArrayList<System> systems) {
-        return new PlanetCluster();
+        return new PlanetCluster(planets);
     }
 
 

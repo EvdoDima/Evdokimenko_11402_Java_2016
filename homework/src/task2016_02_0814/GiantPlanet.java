@@ -12,6 +12,18 @@ public class GiantPlanet implements Planet {
     int mass;
     int temperature;
 
+    public int getMass() {
+        return mass;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public int getTemperature() {
+        return temperature;
+    }
+
     public GiantPlanet(int mass, int radius, int temperature) {
         this.mass = mass;
         this.radius = radius;
@@ -19,7 +31,7 @@ public class GiantPlanet implements Planet {
     }
 
     @Override
-    public System rotateAround(Star star) {
+    public SolarSystem rotateAround(Star star) {
 
         ArrayList<Planet> planets = new ArrayList<Planet>();
         planets.add(this);
@@ -41,6 +53,6 @@ public class GiantPlanet implements Planet {
 
     @Override
     public PlanetCluster makeCluster(ArrayList<Planet> planets) {
-        return new PlanetCluster();
+        return new PlanetCluster(planets);
     }
 }

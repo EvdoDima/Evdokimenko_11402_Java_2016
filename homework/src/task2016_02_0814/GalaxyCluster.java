@@ -13,6 +13,26 @@ public class GalaxyCluster implements Cluster {
     int period;
     int size;
 
+    public ArrayList<Galaxy> getGalaxies() {
+        return galaxies;
+    }
+
+    public int getMass() {
+        return mass;
+    }
+
+    public int getNumberofGalaxies() {
+        return numberofGalaxies;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
     public GalaxyCluster(ArrayList<Galaxy> galaxies) {
         this.galaxies = galaxies;
         this.numberofGalaxies = galaxies.size();
@@ -22,7 +42,7 @@ public class GalaxyCluster implements Cluster {
     }
 
     @Override
-    public ArrayList dispart() {
+    public ArrayList<Galaxy> dispart() {
         return galaxies;
     }
 

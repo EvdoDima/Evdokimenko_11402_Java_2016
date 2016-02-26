@@ -9,6 +9,18 @@ public class GasCloud implements Cloud {
     int mass;
     String gas;
 
+    public String getGas() {
+        return gas;
+    }
+
+    public int getMass() {
+        return mass;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
     public GasCloud(String gas, int mass, int size) {
         this.gas = gas;
         this.mass = mass;
@@ -28,12 +40,12 @@ public class GasCloud implements Cloud {
     }
 
     @Override
-    public Planet makePlanet() {
+    public GiantPlanet makePlanet() {
         return new GiantPlanet(size/mass,size/10,mass/size*10);
     }
 
     @Override
-    public Star makeStar() {
+    public NeutronStar makeStar() {
         return new NeutronStar(0,mass,size/mass, 6000);
     }
 }

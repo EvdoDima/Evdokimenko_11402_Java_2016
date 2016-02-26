@@ -19,13 +19,29 @@ public class GiantStar implements Star {
         this.period = period;
     }
 
-    @Override
-    public void shine() {
-        int pow = age*temperature;
+    public int getAge() {
+        return age;
+    }
+
+    public int getMass() {
+        return mass;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public int getTemperature() {
+        return temperature;
     }
 
     @Override
-    public Cloud explode() {
+    public int shine() {
+        return  age*temperature;
+    }
+
+    @Override
+    public DustCloud explode() {
         return new DustCloud(age*10,mass,"He,H,C");
     }
 
@@ -41,7 +57,7 @@ public class GiantStar implements Star {
     }
 
     @Override
-    public System makeSystem(ArrayList parts) {
+    public SolarSystem makeSystem(ArrayList parts) {
 
         return new SolarSystem(parts,parts.size()*23,this);
     }

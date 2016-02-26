@@ -13,6 +13,22 @@ public class Quasar implements Galaxy,Cloud {
     ArrayList<System> systems;
     int period;
 
+    public String getGas() {
+        return gas;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public ArrayList<System> getSystems() {
+        return systems;
+    }
+
     public Quasar(String gas, int mass, int period, int size, ArrayList<System> systems) {
         this.gas = gas;
         this.mass = mass;
@@ -36,12 +52,12 @@ public class Quasar implements Galaxy,Cloud {
 
     @Override
     public Planet makePlanet() {
-        return new GiantPlanet((mass/systems.size())/10,size/systems.size(),mass/size );
+        return new GiantPlanet((mass/(systems.size()-4))/10,size/(systems.size()+2),mass/(size+3));
     }
 
     @Override
     public Star makeStar() {
-        return new NeutronStar(0,mass/systems.size(),size/mass,mass/size);
+        return new NeutronStar(0,mass/(systems.size()-4),size/(mass-21),mass/(size+54));
     }
 
     @Override

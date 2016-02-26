@@ -15,8 +15,32 @@ public class PlanetCluster implements Cluster {
     int period;
     int size;
 
+    public int getMass() {
+        return mass;
+    }
+
+    public int getNumberofPlanets() {
+        return numberofPlanets;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public ArrayList<Planet> getPlanets() {
+        return planets;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public PlanetCluster(ArrayList<Planet> planets) {
+        this.planets = planets;
+    }
+
     @Override
-    public ArrayList dispart() {
+    public ArrayList<Planet> dispart() {
         return planets;
     }
 
@@ -28,7 +52,7 @@ public class PlanetCluster implements Cluster {
 
     @Override
     public Cluster merge(Cluster toMerge) {
-        return new PlanetCluster();
+        return new PlanetCluster(planets);
     }
 
     @Override

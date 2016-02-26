@@ -9,6 +9,18 @@ public class DustCloud implements Cloud{
     String consistence;
     int radius;
 
+    public String getConsistence() {
+        return consistence;
+    }
+
+    public int getMass() {
+        return mass;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
     public DustCloud(int radius, int mass, String consistence) {
         this.radius = radius;
         this.mass = mass;
@@ -29,12 +41,12 @@ public class DustCloud implements Cloud{
     }
 
     @Override
-    public Planet makePlanet() {
+    public EarthTypePlanet makePlanet() {
         return new EarthTypePlanet(radius/mass,radius/10,mass/radius*10);
     }
 
     @Override
-    public Star makeStar() {
+    public GiantStar makeStar() {
         return new GiantStar(0,mass,radius/mass, 3000);
     }
 }

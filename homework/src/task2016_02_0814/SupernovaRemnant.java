@@ -10,7 +10,18 @@ public class SupernovaRemnant implements Star,Cloud {
     Star star;
     Cloud cloud;
 
+    public SupernovaRemnant(Cloud cloud, Star star) {
+        this.cloud = cloud;
+        this.star = star;
+    }
 
+    public Cloud getCloud() {
+        return cloud;
+    }
+
+    public Star getStar() {
+        return star;
+    }
 
     @Override
     public void expand(int radius) {
@@ -34,9 +45,9 @@ public class SupernovaRemnant implements Star,Cloud {
     }
 
     @Override
-    public void shine() {
-        star.shine();
+    public int shine() {
 
+        return star.shine();
     }
 
     @Override

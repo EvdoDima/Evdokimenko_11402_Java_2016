@@ -20,15 +20,31 @@ public class NeutronStar implements Star{
         this.temperature = temperature;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public int getMass() {
+        return mass;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public int getTemperature() {
+        return temperature;
+    }
 
     @Override
-    public void shine() {
+    public int shine() {
         int pow = age*mass+temperature*100;
+        return pow;
 
     }
 
     @Override
-    public Cloud explode() {
+    public GasCloud explode() {
         return new GasCloud("H",mass,mass*temperature);
     }
 
@@ -44,7 +60,7 @@ public class NeutronStar implements Star{
     }
 
     @Override
-    public System makeSystem(ArrayList parts) {
+    public SolarSystem makeSystem(ArrayList parts) {
         return new SolarSystem(parts,mass*temperature,this);
     }
 }
