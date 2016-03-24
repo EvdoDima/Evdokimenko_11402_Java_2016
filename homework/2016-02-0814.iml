@@ -5,6 +5,8 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/spring-config.xml</file>
+          <file>file://$MODULE_DIR$/src/task2016_02_0814/Task007config.java</file>
+          <file>file://$MODULE_DIR$/src/task2016_02_0814/Task007config.java</file>
         </fileset>
       </configuration>
     </facet>
@@ -29,5 +31,15 @@
     </orderEntry>
     <orderEntry type="library" name="mockito-all-1.10.19" level="project" />
     <orderEntry type="library" name="Spring" level="project" />
+    <orderEntry type="module-library">
+      <library name="JUnit4">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
