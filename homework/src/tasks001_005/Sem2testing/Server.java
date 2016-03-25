@@ -84,9 +84,7 @@ public class Server {
     public void go() throws IOException {
         ServerSocket s1 = new ServerSocket(PORT);
         while (true) {
-            System.out.println("waiting");
             Socket client = s1.accept();
-            System.out.println("connected" + connections.size());
             connections.add(new Connection(this, client));
             if (connections.size() == 3) {
                 startNewGame();
@@ -94,9 +92,7 @@ public class Server {
             }
         }
         while (true) {
-            System.out.println("waiting");
             Socket client = s1.accept();
-            System.out.println("connected");
             connections.add(new Connection(this, client));
         }
     }
@@ -129,7 +125,6 @@ public class Server {
                 }
             }
         }
-        System.out.println("starting game");
 
         Connection ruler = connections.get(i);
         ruler.writeMessage(new GameMessage(GameMessage.YOURULE));
