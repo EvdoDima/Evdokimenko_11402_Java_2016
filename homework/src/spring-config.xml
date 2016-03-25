@@ -1,61 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">-->
 
 
-    <bean id="earth" class="task2016_02_0814.EarthTypePlanet">
-        <constructor-arg index="0" value="1"/>
-        <constructor-arg index="1" value="1"/>
-        <constructor-arg index="2" value="30"/>
-    </bean>
+    <!--<bean id="earth" class="task2016_02_0814.EarthTypePlanet">-->
+        <!--<constructor-arg index="0" value="1"/>-->
+        <!--<constructor-arg index="1" value="1"/>-->
+        <!--<constructor-arg index="2" value="30"/>-->
+    <!--</bean>-->
 
 
-    <bean id="jupiter" class="task2016_02_0814.GiantPlanet">
-        <constructor-arg index="0" value="80"/>
-        <constructor-arg index="1" value="40"/>
-        <constructor-arg index="2" value="-20"/>
-    </bean>
+    <!--<bean id="jupiter" class="task2016_02_0814.GiantPlanet">-->
+        <!--<constructor-arg index="0" value="80"/>-->
+        <!--<constructor-arg index="1" value="40"/>-->
+        <!--<constructor-arg index="2" value="-20"/>-->
+    <!--</bean>-->
 
 
-    <bean id="mars" class="task2016_02_0814.EarthTypePlanet">
-        <constructor-arg index="0" value="2"/>
-        <constructor-arg index="1" value="1"/>
-        <constructor-arg index="2" value="24"/>
-    </bean>
+    <!--<bean id="mars" class="task2016_02_0814.EarthTypePlanet">-->
+        <!--<constructor-arg index="0" value="2"/>-->
+        <!--<constructor-arg index="1" value="1"/>-->
+        <!--<constructor-arg index="2" value="24"/>-->
+    <!--</bean>-->
 
-    <bean id="sun" class="task2016_02_0814.GiantStar">
-        <constructor-arg index="0" value="5"/>
-        <constructor-arg index="1" value="1"/>
-        <constructor-arg index="2" value="5000"/>
-        <constructor-arg index="3" value="1"/>
-    </bean>
+    <!--<bean id="sun" class="task2016_02_0814.GiantStar">-->
+        <!--<constructor-arg index="0" value="5"/>-->
+        <!--<constructor-arg index="1" value="1"/>-->
+        <!--<constructor-arg index="2" value="5000"/>-->
+        <!--<constructor-arg index="3" value="1"/>-->
+    <!--</bean>-->
 
-    <bean id="ns1" class="task2016_02_0814.NeutronStar">
-        <constructor-arg index="0" value="40"/>
-        <constructor-arg index="1" value="5"/>
-        <constructor-arg index="2" value="100000"/>
-        <constructor-arg index="3" value="1"/>
-    </bean>
-
-
-    <bean id="dustcloud" class="task2016_02_0814.DustCloud">
-        <constructor-arg index="0" value="123"/>
-        <constructor-arg index="1" value="200"/>
-        <constructor-arg index="2" value="C,F,P"/>
-    </bean>
+    <!--<bean id="ns1" class="task2016_02_0814.NeutronStar">-->
+        <!--<constructor-arg index="0" value="40"/>-->
+        <!--<constructor-arg index="1" value="5"/>-->
+        <!--<constructor-arg index="2" value="100000"/>-->
+        <!--<constructor-arg index="3" value="1"/>-->
+    <!--</bean>-->
 
 
-    <bean id="supernovaR" class="task2016_02_0814.SupernovaRemnant">
-        <constructor-arg index="0" ref="dustcloud"/>
-        <constructor-arg index="1" ref="ns1"/>
-    </bean>
+    <!--<bean id="dustcloud" class="task2016_02_0814.DustCloud">-->
+        <!--<constructor-arg index="0" value="123"/>-->
+        <!--<constructor-arg index="1" value="200"/>-->
+        <!--<constructor-arg index="2" value="C,F,P"/>-->
+    <!--</bean>-->
 
 
-
+    <!--<bean id="supernovaR" class="task2016_02_0814.SupernovaRemnant">-->
+        <!--<constructor-arg index="0" ref="dustcloud"/>-->
+        <!--<constructor-arg index="1" ref="ns1"/>-->
+    <!--</bean>-->
 
 
 
 
 
-</beans>
+
+
+
+<!--</beans>-->

@@ -3,7 +3,9 @@ package tasks001_005;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import task2016_02_0814.EarthTypePlanet;
+import task2016_02_0814.Task007config;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
@@ -17,9 +19,15 @@ public class ComplexMatrix2x2Test {
 
     ComplexNumber nullN;
     ComplexMatrix2x2 nullM;
+    AnnotationConfigApplicationContext ac =
+            new AnnotationConfigApplicationContext();
+
 
     @Before
     public void generateNullCompNum() {
+        ac.register(Task009config.class);
+        ac.refresh();
+
         nullN = mock(ComplexNumber.class);
         when(nullN.getIm()).thenReturn(0.0);
         when(nullN.getReal()).thenReturn(0.0);
@@ -45,22 +53,21 @@ public class ComplexMatrix2x2Test {
 
     @Test
     public void equalsShouldWorkCorrectly() {
-        ComplexMatrix2x2 m = new ComplexMatrix2x2();
-
+        ComplexMatrix2x2 m = (ComplexMatrix2x2) ac.getBean("nullTest");
         Assert.assertTrue(m.equals(nullM));
 
     }
 
     @Test
     public void AddShouldWorkCorrectly() {
-        ComplexMatrix2x2 m = new ComplexMatrix2x2();
+        ComplexMatrix2x2 m = (ComplexMatrix2x2) ac.getBean("nullTest");
         m.add(nullM);
         Assert.assertTrue(m.equals(m));
     }
 
     @Test
     public void multShouldWorkCorrectly() {
-        ComplexMatrix2x2 m = new ComplexMatrix2x2();
+        ComplexMatrix2x2 m = (ComplexMatrix2x2) ac.getBean("nullTest");
         m.mult(nullM);
         Assert.assertTrue(m.equals(nullM));
     }
@@ -79,7 +86,7 @@ public class ComplexMatrix2x2Test {
 
 
 
-        ComplexMatrix2x2 m = new ComplexMatrix2x2(n1, nullN, nullN, n1);
+        ComplexMatrix2x2 m = (ComplexMatrix2x2) ac.getBean("detTest");
         Assert.assertEquals(0, m.det().getIm(), Matrix2x2TestCase.EPS);
         Assert.assertEquals(1, m.det().getReal(), Matrix2x2TestCase.EPS);
     }

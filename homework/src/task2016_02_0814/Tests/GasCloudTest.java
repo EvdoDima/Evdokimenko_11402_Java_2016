@@ -16,7 +16,7 @@ public class GasCloudTest {
 
     @Test
     public void testExpand() throws Exception {
-        GasCloud gasCloud = new GasCloud("srgsg",2,50);
+        GasCloud gasCloud = (GasCloud) MainTest.ac.getBean("gc1");
         gasCloud.expand(5);
         Assert.assertEquals(55, gasCloud.getSize(), EPS);
 
@@ -25,7 +25,7 @@ public class GasCloudTest {
 
     @Test
     public void testCollapse() throws Exception {
-        GasCloud gasCloud = new GasCloud("srgsg",1,43);
+        GasCloud gasCloud = (GasCloud) MainTest.ac.getBean("gc2");
         gasCloud.collapse(1);
         Assert.assertEquals(42,gasCloud.getSize(),EPS);
 
@@ -33,7 +33,7 @@ public class GasCloudTest {
 
     @Test
     public void testMakePlanet() throws Exception {
-        GasCloud gasCloud = new GasCloud("srgsg",6,10);
+        GasCloud gasCloud = (GasCloud) MainTest.ac.getBean("gc3");
         GiantPlanet p =  gasCloud.makePlanet();
         Assert.assertEquals(1,p.getRadius(),EPS);
         Assert.assertEquals(1,p.getMass(),EPS);
@@ -42,7 +42,7 @@ public class GasCloudTest {
 
     @Test
     public void testMakeStar() throws Exception {
-        GasCloud gasCloud = new GasCloud("srgsg",2,50);
+        GasCloud gasCloud = (GasCloud) MainTest.ac.getBean("gc4");
         NeutronStar s =  gasCloud.makeStar();
         Assert.assertEquals(0,s.getAge(),EPS);
         Assert.assertEquals(2,s.getMass(),EPS);

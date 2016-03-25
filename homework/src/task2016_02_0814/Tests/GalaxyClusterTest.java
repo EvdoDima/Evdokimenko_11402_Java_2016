@@ -24,7 +24,7 @@ public class GalaxyClusterTest {
 
     @Before
     public void before(){
-         galaxies = mock(ArrayList.class);
+        galaxies = mock(ArrayList.class);
         Galaxy g= mock(Galaxy.class);
         Iterator i = mock(Iterator.class);
         when(galaxies.iterator()).thenReturn(i);

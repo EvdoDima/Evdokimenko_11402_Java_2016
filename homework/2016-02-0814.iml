@@ -7,6 +7,9 @@
           <file>file://$MODULE_DIR$/src/spring-config.xml</file>
           <file>file://$MODULE_DIR$/src/task2016_02_0814/Task007config.java</file>
           <file>file://$MODULE_DIR$/src/task2016_02_0814/Task007config.java</file>
+          <file>file://$MODULE_DIR$/src/tasks001_005/Task009config.java</file>
+          <file>file://$MODULE_DIR$/src/tasks001_005/Task009config.java</file>
+          <file>file://$MODULE_DIR$/src/tasks001_005/Task010config.java</file>
         </fileset>
       </configuration>
     </facet>

@@ -18,7 +18,7 @@ public class EarthTypePlanetTest {
 
     @Test
     public void testRotateAround() throws Exception {
-        EarthTypePlanet p = new EarthTypePlanet(1, 1, 40);
+        EarthTypePlanet p = (EarthTypePlanet) MainTest.ac.getBean("ep1");
         GiantStar s = mock(GiantStar.class);
         SolarSystem sols = p.rotateAround(s);
         Assert.assertTrue(sols.getStar() == s);
@@ -26,14 +26,14 @@ public class EarthTypePlanetTest {
 
     @Test
     public void testHeat() throws Exception {
-        EarthTypePlanet p = new EarthTypePlanet(1, 1, 40);
+        EarthTypePlanet p = (EarthTypePlanet) MainTest.ac.getBean("ep1");
         p.heat(12);
         Assert.assertEquals(52,p.getTemperature());
     }
 
     @Test
     public void testCool() throws Exception {
-        EarthTypePlanet p = new EarthTypePlanet(1, 1, 40);
+        EarthTypePlanet p = (EarthTypePlanet) MainTest.ac.getBean("ep1");
         p.cool(12);
         Assert.assertEquals(28,p.getTemperature());
 
@@ -42,7 +42,7 @@ public class EarthTypePlanetTest {
 
     @Test
     public void testMakeCluster() throws Exception {
-        EarthTypePlanet p = new EarthTypePlanet(1, 1, 40);
+        EarthTypePlanet p = (EarthTypePlanet) MainTest.ac.getBean("ep1");
         ArrayList<Planet> planets = mock(ArrayList.class);
         Iterator i = mock(Iterator.class);
         when(planets.iterator()).thenReturn(i);

@@ -16,9 +16,10 @@ import static org.junit.Assert.*;
 public class DustCloudTest {
  public static final double EPS=10e-6;
 
+
     @Test
     public void testExpand() throws Exception {
-        DustCloud dustCloud = new DustCloud(10,10,"asdsad");
+        DustCloud dustCloud = (DustCloud) MainTest.ac.getBean("dustcloud1");
         dustCloud.expand(5);
         Assert.assertEquals(15,dustCloud.getRadius(),EPS);
 
@@ -27,7 +28,7 @@ public class DustCloudTest {
 
     @Test
     public void testCollapse() throws Exception {
-        DustCloud dustCloud = new DustCloud(3,6,"asdsad");
+        DustCloud dustCloud = (DustCloud) MainTest.ac.getBean("dustcloud2");
         dustCloud.collapse(1);
         Assert.assertEquals(2,dustCloud.getRadius(),EPS);
 
@@ -35,7 +36,7 @@ public class DustCloudTest {
 
     @Test
     public void testMakePlanet() throws Exception {
-        DustCloud dustCloud = new DustCloud(3,6,"asdsad");
+        DustCloud dustCloud = (DustCloud) MainTest.ac.getBean("dustcloud2");
         EarthTypePlanet p =  dustCloud.makePlanet();
         Assert.assertEquals(0,p.getRadius(),EPS);
         Assert.assertEquals(0,p.getMass(),EPS);
@@ -44,7 +45,7 @@ public class DustCloudTest {
 
     @Test
     public void testMakeStar() throws Exception {
-        DustCloud dustCloud = new DustCloud(5,2,"asdsad");
+        DustCloud dustCloud = (DustCloud) MainTest.ac.getBean("dustcloud3");
         GiantStar s =  dustCloud.makeStar();
         Assert.assertEquals(0,s.getAge(),EPS);
         Assert.assertEquals(2,s.getMass(),EPS);

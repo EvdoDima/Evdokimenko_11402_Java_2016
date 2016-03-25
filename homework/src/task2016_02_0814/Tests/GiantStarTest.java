@@ -28,13 +28,13 @@ public class GiantStarTest {
 
     @Test
     public void testExplode() throws Exception {
-        GiantStar ns = new GiantStar(12,100,3,2);
+        GiantStar ns = (GiantStar) MainTest.ac.getBean("gs1");
         Assert.assertEquals("He,H,C",ns.explode().getConsistence());
     }
 
     @Test
     public void testRotate() throws Exception {
-        GiantStar ns = new GiantStar(12,100,3,2);
+        GiantStar ns = (GiantStar) MainTest.ac.getBean("gs1");
         ns.rotate(2);
         Assert.assertEquals(2,ns.getPeriod());
 
@@ -44,7 +44,7 @@ public class GiantStarTest {
     @Test
     public void testChangeType() throws Exception {
         Star star= mock(Star.class);
-        GiantStar ns = new GiantStar(12,100,3,2);
+        GiantStar ns = (GiantStar) MainTest.ac.getBean("gs1");
         Assert.assertEquals(star,ns.changeType(star));
 
 
@@ -53,7 +53,7 @@ public class GiantStarTest {
     @Test
     public void testMakeSystem() throws Exception {
         ArrayList parts = mock(ArrayList.class);
-        GiantStar ns = new GiantStar(12,100,3,2);
+        GiantStar ns = (GiantStar) MainTest.ac.getBean("gs1");
         SolarSystem ss  = ns.makeSystem(parts);
         Assert.assertEquals(ns,ss.getStar());
 

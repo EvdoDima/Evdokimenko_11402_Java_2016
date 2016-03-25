@@ -19,7 +19,7 @@ public class NeutronStarTest {
 
     @Test
     public void testShine() throws Exception {
-        NeutronStar ns = new NeutronStar(12,100,3,2);
+        NeutronStar ns = (NeutronStar) MainTest.ac.getBean("ns1");
         Assert.assertEquals(1400,ns.shine());
 
 
@@ -27,13 +27,13 @@ public class NeutronStarTest {
 
     @Test
     public void testExplode() throws Exception {
-        NeutronStar ns = new NeutronStar(12,100,3,2);
+        NeutronStar ns = (NeutronStar) MainTest.ac.getBean("ns1");
         Assert.assertEquals("H",ns.explode().getGas());
     }
 
     @Test
     public void testRotate() throws Exception {
-        NeutronStar ns = new NeutronStar(12,100,3,2);
+        NeutronStar ns = (NeutronStar) MainTest.ac.getBean("ns1");
         ns.rotate(2);
         Assert.assertEquals(2,ns.getPeriod());
 
@@ -43,7 +43,7 @@ public class NeutronStarTest {
     @Test
     public void testChangeType() throws Exception {
         Star star= mock(Star.class);
-        NeutronStar ns = new NeutronStar(12,100,3,2);
+        NeutronStar ns = (NeutronStar) MainTest.ac.getBean("ns1");
         Assert.assertEquals(star,ns.changeType(star));
 
 
@@ -52,7 +52,7 @@ public class NeutronStarTest {
     @Test
     public void testMakeSystem() throws Exception {
         ArrayList parts = mock(ArrayList.class);
-        NeutronStar ns = new NeutronStar(12,100,3,2);
+        NeutronStar ns = (NeutronStar) MainTest.ac.getBean("ns1");
         SolarSystem ss  = ns.makeSystem(parts);
         Assert.assertEquals(ns,ss.getStar());
 

@@ -19,7 +19,7 @@ public class GiantPlanetTest {
 
     @Test
     public void testRotateAround() throws Exception {
-        GiantPlanet p = new GiantPlanet(1, 1, 40);
+        GiantPlanet p = (GiantPlanet) MainTest.ac.getBean("gp1");
         GiantStar s = mock(GiantStar.class);
         SolarSystem sols = p.rotateAround(s);
         Assert.assertTrue(sols.getStar() == s);
@@ -27,14 +27,14 @@ public class GiantPlanetTest {
 
     @Test
     public void testHeat() throws Exception {
-        GiantPlanet p = new GiantPlanet(1, 1, 40);
+        GiantPlanet p = (GiantPlanet) MainTest.ac.getBean("gp1");
         p.heat(12);
         Assert.assertEquals(52,p.getTemperature());
     }
 
     @Test
     public void testCool() throws Exception {
-        GiantPlanet p = new GiantPlanet(1, 1, 40);
+        GiantPlanet p = (GiantPlanet) MainTest.ac.getBean("gp1");
         p.cool(12);
         Assert.assertEquals(28,p.getTemperature());
 
@@ -43,7 +43,7 @@ public class GiantPlanetTest {
 
     @Test
     public void testMakeCluster() throws Exception {
-        GiantPlanet p = new GiantPlanet(1, 1, 40);
+        GiantPlanet p = (GiantPlanet) MainTest.ac.getBean("gp1");
         ArrayList<Planet> planets = mock(ArrayList.class);
         Iterator i = mock(Iterator.class);
         when(planets.iterator()).thenReturn(i);
