@@ -1,0 +1,7 @@
+ru\kpfu\itis\controller\RegistrationController.class
+ru\kpfu\itis\entity\User.class
+ru\kpfu\itis\entity\enums\Sex.class
+ru\kpfu\itis\controller\IndexPageController.class
+ru\kpfu\itis\controller\AuthController.class
+ru\kpfu\itis\repository\StaffRepository.class
+ru\kpfu\itis\entity\enums\UserRole.class
