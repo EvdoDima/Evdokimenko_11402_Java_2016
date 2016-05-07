@@ -1,0 +1,6867 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600italic,800);
+
+.articles h2, .award-score-legend, .award-trophy-sect .award-trophy-title, .award-wreath-date-day-m, .award-wreath-date-day-y, .award-wreath-date-month, .award-wreath-date-month-b, .box-title, .footer-nav ul li, .h-footer-nav li, .h-j-panel-l h2, .h-sites-title h2, .in-the-dex, .similar-site-heading h3, a.back-to-top, a.link-box {
+    text-transform: uppercase
+}
+
+.award-congrats, .des-about, .des-loc, .h-sect-link a, .info-label, .info-label-home, .right-panel .extra, .right-panel h2, .rp-sponsor, .s-v-a-h-prev-wotd, .site-cat-tag, .site-nav .no-nav-link, .site-nav a, cite {
+    font-style: italic
+}
+
+#contact-form input[type=checkbox], .cd-search {
+    visibility: hidden
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    color: #2c292e;
+    font-weight: 400
+}
+
+a, body {
+    color: #2c292e
+}
+
+a, a:hover {
+    text-decoration: none
+}
+
+.generic-form select, body {
+    font-family: 'Open Sans', sans-serif
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline
+}
+
+body, h2, h3, h4, h5, h6 {
+    font-size: 1em
+}
+
+article, aside, details, figcaption, figure, figure img, footer, header, menu, nav, section {
+    display: block
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    line-height: 1.2em;
+    background: #eeebe4
+}
+
+h1 {
+    font-size: 2em
+}
+
+a {
+    outline: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+a:hover {
+    color: #000
+}
+
+strong {
+    font-weight: 700
+}
+
+embed, img, object, video {
+    width: 100%;
+    height: auto
+}
+
+.logo span {
+    color: transparent !important
+}
+
+.logo {
+    display: inline-block;
+    width: 91px;
+    height: 27px;
+    background: url(../images/404error.jpg) no-repeat;
+    margin-top: 12px;
+    margin-left: 15px;
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+
+.main-panel {
+    float: left;
+    width: 78.5%;
+    background: #eeebe4
+}
+
+.search-box-void {
+    float: left;
+    width: 33.25%;
+    height: 40px
+}
+
+.top {
+    width: 100%;
+    height: 40px
+}
+
+.search-box-wrapper {
+    float: left;
+    width: 66.75%;
+    height: 40px
+}
+
+.search-box {
+    color: #fff;
+    position: relative;
+    height: 18px;
+    margin-right: .9375%
+}
+
+.applause-icon:hover, .article-by-tag ul li a:hover, .filter-by-color ul.gallery-colors li a:hover, .g-site-item-stats a.vote-icon:hover, .social-icon:hover, .vote-link a:hover, .vote-link:hover, a.color-box:hover, a.ext-link:hover, ul.gallery-filters li a:hover {
+    opacity: .75
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1600px;
+    background: url(../images/404error.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.slogan {
+    display: none
+}
+.award-site-det-home {
+    padding-top: 8px;
+    text-align: center
+}
+
+.award-site-det-home h2, .award-site-det-home h3 {
+    font-weight: 800;
+    margin: 5px auto 0;
+    display: block;
+    line-height: 1.5em
+}
+
+.award-site-det-home h2 {
+    font-size: 1.5em;
+    margin-bottom: 8%
+}
+
+.info-label-home {
+    display: block;
+    font-size: .875em
+}
+
+.award-site-det-home h3 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-top: 8%;
+    margin-bottom: 8px
+}
+
+.award-site-det-home figure {
+    width: 149px;
+    margin: 0 auto
+}
+
+.award-site-det-home .collaborator-list {
+    display: block;
+    font-size: .875em;
+    font-style: italic;
+    line-height: 1.75em
+}
+
+.award-site-det-home .des-loc {
+    padding-bottom: 110px
+}
+
+.award-scores-home .award-score {
+    height: 90px
+}
+
+.award-scores-home .award-score-legend {
+    width: 100%;
+    font-size: .675em;
+    line-height: 1.25em
+}
+
+.award-site-det-home-sub {
+    display: none
+}
+
+.s-v-a-h-prev-wotd {
+    background: #eeebe4;
+    color: #d6d1c6;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 35px
+}
+
+.s-v-a-h-prev-wotd a {
+    font-size: .875em;
+    color: #2c292e;
+    width: 15px;
+    height: 10px;
+    padding-left: 26px
+}
+
+.s-v-a-h-applause, .s-v-a-h-view {
+    font-weight: 800;
+    color: #2c292e;
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 1em;
+    height: 90px
+}
+
+.s-v-a-h-prev-wotd a:hover {
+    color: #2c292e;
+    padding-left: 36px
+}
+
+.s-v-a-h-view {
+    background: #d6d1c6;
+    padding: 34px 0 0
+}
+
+.s-v-a-h-applause {
+    padding: 27px 0 0
+}
+
+.wotd-stats-view {
+    display: block;
+    width: 86px;
+    margin: 0 auto
+}
+
+
+
+.wotd-view-count {
+    float: left;
+    display: block;
+    width: 50px;
+    text-align: left;
+    line-height: 1.25em;
+    margin-left: 5px
+}
+
+.wotd-vote-box {
+    display: block;
+    width: 80px;
+    margin: 0 auto
+}
+
+.award-site-det .site-social {
+    margin-top: 15px;
+    margin-bottom: 85px
+}
+
+.award-site-det .site-social .social-icon {
+    display: inline-block;
+    width: 9.398496240601504%;
+    margin-right: 2.255639097744361%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    background-color: #d6d1c9;
+    padding: 2.5% 0 2%
+}
+
+.site-nav .no-nav-link, .site-nav a {
+    float: left;
+    display: block;
+    padding: 7% 0
+}
+
+.award-site-det .site-social .social-icon:hover {
+    background-color: #cac5bd
+}
+
+.award-site-det .site-social img {
+    margin: 0 auto
+}
+
+.award-site-det .site-social .fb-icon img {
+    width: 8px;
+    height: 14px
+}
+
+.award-site-det .site-social .tw img {
+    width: 19px;
+    height: 14px
+}
+
+.award-site-det .site-social .gp-icon img {
+    width: 14px;
+    height: 14px
+}
+
+.award-site-det .site-social .pi img {
+    width: 15px;
+    height: 15px
+}
+
+.award-site-det .site-social .su img {
+    width: 21px;
+    height: 17px
+}
+
+.site-nav {
+    color: #666
+}
+
+.site-nav a {
+    width: 33.270676691729323%;
+    transition: all .3s;
+    background-color: #d6d1c9;
+    cursor: pointer
+}
+
+.site-nav a, a.des-in-the-dex {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s
+}
+
+.site-nav a:hover {
+    background-color: #673ab7;
+    color: #eeebe4
+}
+
+.site-nav .site-nav-all {
+    width: 33.458646616541353%;
+    background: #cac5bd
+}
+
+.site-nav .no-nav-link {
+    width: 33.270676691729323%;
+    background-color: #d6d1c9;
+    color: #999
+}
+
+.site-summary {
+    display: none
+}
+
+.site-nav-extra-sect {
+    margin-top: 60px
+}
+
+.site-nav-extra-sect .site-nav a {
+    font-size: 1.125em;
+    padding: 3% 0
+}
+
+.site-nav-extra-sect .site-nav .no-nav-link {
+    padding: 3% 0
+}
+
+.site-info-box {
+    height: 120px
+}
+
+.site-cat-tag {
+    float: left;
+    display: block;
+    width: 50%;
+    font-size: .875em
+}
+
+.site-cat-tag span.site-info-title {
+    color: #666
+}
+
+.site-features {
+    padding-top: 40px
+}
+
+.site-industry {
+    padding-top: 5px
+}
+
+.site-info-title {
+    font-weight: 800
+}
+
+.site-view-stat {
+    float: left;
+    display: block;
+    width: 12.546816479400749%;
+    background: #ecd903
+}
+
+.site-vote-link {
+    float: left;
+    display: block;
+    width: 24.906367041198502%
+}
+
+.site-visit-link {
+    float: left;
+    display: block;
+    width: 12.546816479400749%
+}
+
+.stats-view-box-b {
+    padding-top: 40px
+}
+
+.vote-link-box {
+    padding-top: 35px
+}
+
+.vote-link {
+    display: block;
+    width: 130px;
+    height: 50px;
+    background: url(../images/2015/vote-btn.svg) no-repeat;
+    margin-left: 18.796992481203008%;
+    cursor: pointer
+}
+
+.vote-link a {
+    display: block;
+    width: 40px;
+    padding-top: 17px;
+    padding-left: 97.692307692307692%;
+    font-size: 1.125em;
+    font-weight: 800
+}
+
+
+a.ext-link span {
+    color: transparent !important
+}
+
+.site-image-sup {
+    border-bottom: 10px solid #ffea00
+}
+
+.site-image-sup-k {
+    border-bottom: 10px solid #fc8d87
+}
+
+.site-image-sup-m {
+    border-bottom: 10px solid #fdc429
+}
+
+.site-image-sup-y {
+    border-bottom: 10px solid #34de88
+}
+
+.des-about {
+    padding: 18.35% 0
+}
+
+.des-image {
+    float: left;
+    width: 66.666666666666667%
+}
+
+.extra-det-void {
+    height: 1em
+}
+
+.extra-det-info {
+    padding: 50px 80px
+}
+
+.extra-det-info strong {
+    display: block;
+    font-size: 1.25em;
+    padding-bottom: 20px
+}
+
+.des-loc {
+    display: block;
+    font-size: .875em;
+    margin-bottom: 15px
+}
+
+.des-loc span {
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 800
+}
+
+.des-in-the-dex-sub {
+    display: none
+}
+
+.similar-site-heading {
+    padding: 87px 0 80px
+}
+
+.similar-site-heading h3 {
+    font-size: 1.0625em;
+    font-weight: 800
+}
+
+.arrow-down-box {
+    width: 100%
+}
+
+
+.similar-site-void {
+    float: left;
+    display: block;
+    width: 57.865168539325843%;
+    height: 1em
+}
+
+.ss-void {
+    height: 1em
+}
+
+a.des-in-the-dex {
+    float: right;
+    display: block;
+    width: 33.333333333333333%;
+    padding: 5.2% 0;
+    background: #fc8d87;
+    font-size: .875em;
+    font-style: italic;
+    line-height: 1em;
+    transition: all .3s;
+    cursor: pointer
+}
+
+a.des-in-the-dex:hover {
+    background-color: #fdd102
+}
+
+.in-the-dex {
+    font-weight: 800;
+    font-size: 1.25em;
+    font-style: normal
+}
+
+.similar-site-sect-bot ul {
+    padding: 84px 0
+}
+
+.similar-site-sect-bot li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 10.125%;
+    margin-right: 13.5%
+}
+
+.similar-site-sect-bot li figure {
+    margin-bottom: 12px
+}
+
+.similar-site-sect-bot li h4 {
+    font-weight: 800;
+    font-size: .8125em;
+    margin-bottom: 2px
+}
+
+.similar-site-sect-bot li .site-by {
+    font-size: .8125em
+}
+
+.similar-site-sect-bot li:nth-child(1) {
+    margin-left: 9.5%
+}
+
+.similar-site-sect-bot li:nth-child(4) {
+    margin-right: 9.5%
+}
+
+a.ss-sponsors {
+    width: 11.25%;
+    padding: 4.75% 0;
+    background: #673ab7;
+    color: #eeebe4
+}
+
+.sponsors {
+    float: left;
+    display: block;
+    width: 88.75%;
+    padding: 47px 0 7px
+}
+
+.sponsors li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 10.563380281690141%;
+    margin-left: 5.211267605633803%;
+    margin-bottom: 40px
+}
+
+.footer-sect-void {
+    float: left;
+    display: block;
+    width: 11.25%;
+    height: 1em
+}
+
+.footer-sect-main {
+    float: left;
+    display: block;
+    width: 88.75%;
+    padding: 50px 0 40px
+}
+
+.footer-sect-main .footer-nav {
+    float: left;
+    width: 89.5%;
+    margin-left: 4%
+}
+
+.footer-sect-main .footer-social-icons {
+    float: left;
+    width: 75px
+}
+
+.footer-sect-main-wide {
+    float: none;
+    display: block;
+    width: 100%
+}
+
+.main-panel-g {
+    float: left;
+    display: block;
+    width: 71.8125%
+}
+
+
+
+a.back-to-top:hover {
+    background-color: #fdd102
+}
+
+.right-panel-g {
+    float: right;
+    display: block;
+    width: 26.875%
+}
+
+.main-panel-g-nav {
+    width: 95.735422106179286%;
+    display: block;
+    height: 60px
+}
+
+.main-panel-g-nav-intro {
+    display: block;
+    padding-top: 10px
+}
+
+.main-panel-g-nav li {
+    list-style: none;
+    display: inline;
+    font-weight: 700;
+    margin: 0 2%
+}
+
+.main-panel-g-nav li a {
+    display: inline-block;
+    padding: 10px
+}
+
+a.gallery-nav-selected {
+    color: #673ab7
+}
+
+.gallery li {
+    list-style: none;
+    float: left;
+    margin-top: 60px;
+    width: 43.516100957354221%;
+    margin-right: 8.554319931565441%
+}
+
+.gallery li.right {
+    margin-right: 0;
+}
+
+.gallery li .g-site-item-stats-box {
+    float: left;
+    display: block;
+    width: 33.333333333333333%;
+    font-size: .75em;
+    font-weight: 800;
+    color: #2c292e
+}
+
+.gallery li .g-site-item-stats-score {
+    background: #e0dad0;
+    height: 36px;
+    padding-top: 10px
+}
+
+.gallery li .g-site-item-stats-view {
+    background: #c1bcb3;
+    height: 36px;
+    padding-top: 10px
+}
+
+.gallery li .g-site-item-stats-applause {
+    height: 36px;
+    padding-top: 10px
+}
+
+
+.g-site-item-stats-view .view-count {
+    float: left;
+    display: block;
+    width: 40px;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-left: 4px
+}
+
+
+
+.g-site-item-info-designer {
+    padding-bottom: 5px
+}
+
+.g-site-item-info-country a {
+    text-decoration: underline
+}
+
+.g-site-item-info-country a:hover {
+    text-decoration: none
+}
+
+.g-site-item-info-country a.site-status {
+    font-weight: 800;
+    text-decoration: none;
+    color: #999
+}
+
+.g-site-item-info-country a.site-status:hover {
+    color: #000
+}
+
+.right-panel-g section {
+    padding: 0 50px 0 70px;
+    font-size: .8125em;
+    background: #25ddcf
+}
+
+.filter-heading, .filter-heading-lb {
+    font-size: 1.25em
+}
+
+.right-panel-g .filter-by-color {
+    padding-top: 58px
+}
+
+.right-panel-g .social-group {
+    height: 60px;
+    padding-top: 23px
+}
+
+.right-panel-g .social-icon {
+    margin-right: 11%
+}
+
+.right-panel-g .fb {
+    margin-left: 16.27906976744186%
+}
+
+.filter-heading {
+    font-style: italic
+}
+
+.filter-type {
+    font-style: normal;
+    font-weight: 800
+}
+
+.a-design-jobs .a-rp-loc, .a-rp-sect .tag-heading, .article-by-tag ul li, .g-article-item-info-type, .heading-link, .page-intro p, a.all-judges-link, ul.gallery-filters li {
+    font-style: italic
+}
+
+.filter-by-color ul.gallery-colors {
+    margin-top: 30px
+}
+
+.filter-by-color ul.gallery-colors li {
+    display: inline-block;
+    margin: 0 20px 20px 0
+}
+
+.filter-by-color ul.gallery-colors li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    -webkit-transition: opacity .35s;
+    transition: opacity .35s;
+    overflow: hidden
+}
+
+a.color-box-red {
+    background: #ed1e24;
+    color: #ed1e24
+}
+
+a.color-box-black {
+    background: #282828;
+    color: #282828
+}
+
+a.color-box-yellow {
+    background: #fee93e;
+    color: #fee93e
+}
+
+a.color-box-blue {
+    background: #00f;
+    color: #00f
+}
+
+a.color-box-purple {
+    background: #8b00cc;
+    color: #8b00cc
+}
+
+a.color-box-orange {
+    background: #e86f28;
+    color: #e86f28
+}
+
+a.color-box-grey {
+    background: #999;
+    color: #999
+}
+
+a.color-box-green {
+    background: #4eac24;
+    color: #4eac24
+}
+
+a.color-box-white {
+    background: #fff;
+    color: #fff
+}
+
+a.color-box-brown {
+    background: #813d10;
+    color: #813d10
+}
+
+a.color-box-pink {
+    background: #fa31fc;
+    color: #fa31fc
+}
+
+a.color-box-beige {
+    background: #f0e1c4;
+    color: #f0e1c4
+}
+
+
+.right-panel-g .filter-by-feature {
+    padding-top: 38px
+}
+
+ul.gallery-filters {
+    margin-top: 28px
+}
+
+ul.gallery-filters li {
+    display: inline-block
+}
+
+ul.gallery-filters li a {
+    -webkit-transition: opacity .35s;
+    transition: opacity .35s;
+    overflow: hidden
+}
+
+.filter-site-num {
+    color: #666
+}
+
+.list-item-selected {
+    font-size: 1.5em
+}
+
+.filter-site-list {
+    padding-top: 32px
+}
+
+.filter-site-list li {
+    list-style: none;
+    padding-bottom: 23px
+}
+
+.filter-site-list li figure {
+    display: block;
+    width: 96.129032258064516%;
+    margin-right: 15px
+}
+
+.filter-site-item-info-name {
+    font-weight: 800;
+    padding-top: 10px
+}
+
+.filter-judge-list li {
+    list-style: none
+}
+
+.filter-judge-list li figure {
+    float: left;
+    display: block;
+    width: 25px;
+    margin-right: 5px;
+    margin-bottom: 15px
+}
+
+a.all-judges-link {
+    display: block;
+    text-align: right;
+    padding-right: 14px
+}
+
+.right-panel-g .right-panel-g-bot {
+    padding-bottom: 40px
+}
+
+.right-panel-g-bot {
+    padding-bottom: 60px
+}
+
+.search-page .page-intro p {
+    padding-bottom: 0
+}
+
+a.top-sub-nav-selected {
+    color: #673ab7
+}
+
+.gallery li.g-article-item {
+    margin-top: 60px
+}
+
+.g-article-item-clear-both, .g-article-item-clear-three {
+    clear: both
+}
+
+.g-article-item-info {
+    display: block;
+    background: #e0dad0; /*height:72px;*/
+    padding: 23px 23px 25px
+}
+
+.right-panel-g section.a-design-jobs, .right-panel-g section.proudly-sponsored-by {
+    padding-top: 50px
+}
+
+.g-article-item-info h2 {
+    font-weight: 800;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin-bottom: 10px
+}
+
+.g-article-item-info-type {
+    font-size: .875em;
+    padding-bottom: 8px
+}
+
+.g-article-item-info-author {
+    font-size: .875em
+}
+
+.right-panel-g section.article-by-tag {
+    padding-top: 50px;
+    text-align: center;
+    font-size: .875em
+}
+
+.tag-heading {
+    font-size: 1.125em;
+    font-weight: 800;
+    padding-bottom: 10px;
+    text-align: center
+}
+
+.article-by-tag ul li {
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+.article-by-tag ul li a {
+    -webkit-transition: opacity .35s;
+    transition: opacity .35s
+}
+
+.right-panel-g section.proudly-sponsored-by .tag-heading {
+    padding-bottom: 30px
+}
+
+.article-sponsor-box {
+    float: left;
+    display: block;
+    width: 48.387096774193548%;
+    margin-bottom: 30px
+}
+
+.article-sponsor-box img {
+    max-width: 100%
+}
+
+.a-rp-sect .tag-heading {
+    padding-bottom: 50px
+}
+
+.a-rp-sect ul {
+    padding-bottom: 20px
+}
+
+.a-rp-sect li {
+    width: 149px;
+    margin: 0 auto;
+    font-size: .9375em;
+    padding-bottom: 40px
+}
+
+.a-rp-sect li figure {
+    margin-bottom: 10px
+}
+
+.a-rp-title {
+    font-weight: 800
+}
+
+.a-design-jobs .a-rp-title {
+    font-weight: 400
+}
+
+.a-rp-company {
+    font-weight: 800
+}
+
+.a-in-the-dex ul {
+    padding-bottom: 50px
+}
+
+.main-panel-g-nav .article-nav li {
+    margin: 0 2%
+}
+
+.article-wrapper {
+    width: 95.735422106179286%;
+    background: #f6f3eb
+}
+
+.article-wrapper figure.a-main-small {
+    background: #dad4cb
+}
+
+.article-related, .sponsor-list li figure {
+    background: #39ded1
+}
+
+.article-wrapper figure.a-main-small img {
+    width: 65.090909090909091%;
+    padding: 116px 17.454545454545455%
+}
+
+.article-content {
+    padding: 60px 200px 90px
+}
+
+.article-content h1 {
+    font-size: 1.625em;
+    font-weight: 800;
+    line-height: 1.25em;
+    margin-bottom: 30px
+}
+
+.article-content h2, .article-content h3 {
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 1.25em
+}
+
+.article-content h2 {
+    margin-top: 50px
+}
+
+.article-content h3 {
+    margin-top: 20px
+}
+
+.article-socials, .pinterest-large-btn {
+    margin-top: 30px
+}
+
+.article-content p {
+    line-height: 1.625em;
+    padding-bottom: 30px
+}
+
+.article-content li {
+    line-height: 1.5em;
+    margin-bottom: 25px
+}
+
+.article-content img {
+    margin-bottom: 20px
+}
+
+.article-author, .article-divider {
+    margin-bottom: 30px
+}
+
+.article-tag-name a {
+    font-weight: 800;
+    color: #673ab7
+}
+
+.article-tag-name a:hover {
+    color: #000
+}
+
+.fb-large-btn, .pinterest-large-btn, .plus-large-btn, .stumble-large-btn, .twitter-large-btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px
+}
+
+.awards-page img, .dpd-wreath .num, .tally-images img, .tally-total {
+    vertical-align: middle
+}
+
+.article-related-wrapper {
+    margin-top: 65px
+}
+
+.article-related-wrapper h2 {
+    font-size: 2em;
+    font-weight: 800;
+    color: #39ded1;
+    line-height: .75em;
+    margin-left: 20px
+}
+
+.article-related {
+    float: left;
+    display: block;
+    width: 88.75%;
+    padding: 60px 0 0
+}
+
+.article-related li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 11.267605633802817%;
+    margin-left: 10.985915492957746%;
+    padding-bottom: 60px
+}
+
+.article-related li figure {
+    margin-bottom: 10px
+}
+
+.article-related li h3 {
+    font-size: .875em
+}
+
+.article-related-wrapper a.back-to-top {
+    width: 11.25%;
+    padding: 4.5% 0
+}
+
+.comments {
+    display: block;
+    width: 81.25%;
+    margin: 85px auto 70px
+}
+
+.main-panel-g-nav h1 {
+    font-size: 1em;
+    font-weight: 800;
+    text-align: center;
+    display: block;
+    padding-top: 3px
+}
+
+.page-intro h1, .page-intro h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2em
+}
+
+.heading-link a {
+    text-decoration: underline
+}
+
+.heading-link a:hover {
+    text-decoration: none
+}
+
+#j-panel-int-content a, .submit-page-intro a, a.thispage {
+    text-decoration: underline
+}
+
+.page-intro h1 {
+    margin: 70px 0 30px
+}
+
+.page-intro h2 {
+    margin: 65px 0 20px;
+    line-height: 1.5em
+}
+
+.page-intro p {
+    font-size: 1em;
+    line-height: 1.625em;
+    text-align: center;
+    padding: 0 20% 60px
+}
+
+.sponsor-list li {
+    list-style: none;
+    float: left;
+    width: 25%;
+    margin-right: 12.5%;
+    margin-bottom: 90px
+}
+
+.sponsor-list li figure img {
+    width: 150px;
+    padding: 70px 0;
+    margin: 0 auto
+}
+
+.sponsor-list li .sponsor-info {
+    background: #fbf6ee;
+    text-align: center;
+    padding: 35px 50px
+}
+
+.sponsor-list li .sponsor-info h3 {
+    font-size: 1.125em;
+    font-weight: 800;
+    margin-bottom: 10px
+}
+
+.sponsor-list li .sponsor-info p {
+    font-size: .875em;
+    font-style: italic
+}
+
+.sponsor-list li.no-margin {
+    margin-right: 0
+}
+
+.sponsors-page .footer-sect-void {
+    display: none
+}
+
+.sponsors-page .footer-sect-main {
+    width: 100%
+}
+
+.sponsors-page .footer-sect-main:after {
+    display: table;
+    clear: both
+}
+
+.contact-box {
+    width: 100%;
+    text-align: center;
+    font-size: 1.125em
+}
+
+.contact-box a {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    font-weight: 800;
+    background: #e0dad0;
+    transition: all .3s ease
+}
+
+.contact-box a, ul.full-job-list li:hover {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease
+}
+
+.contact-box a.bot-nav-link {
+    background: #dad4cb
+}
+
+.contact-box a:hover {
+    background: #2c292e;
+    color: #eeebe4
+}
+
+.logo-wall-page .page-intro p {
+    padding: 0 10% 60px
+}
+
+.logo-w-list li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 24.9%;
+    margin-right: 12.5%;
+    margin-bottom: 90px
+}
+
+.logo-w-list li figure {
+    background: #dad4cb
+}
+
+.logo-w-list li figure img {
+    width: 207px;
+    padding: 70px 0;
+    margin: 0 auto
+}
+
+.logo-w-list li .logo-info-l {
+    float: left;
+    display: block;
+    background: #fbf6ee;
+    width: 83.75%;
+    padding: 25px 0%
+}
+
+.logo-w-list li .logo-info-r {
+    float: left;
+    display: block;
+    width: 16.25%;
+    background: #39ded1;
+    padding: 13px 0 25px
+}
+
+.logo-w-list li .logo-info h3 {
+    font-size: 1em;
+    font-weight: 800;
+    margin-left: 6.25%;
+    margin-bottom: 10px
+}
+
+.logo-w-list li .logo-info .logo-by {
+    display: block;
+    font-size: .875em;
+    margin-left: 6.25%;
+}
+
+.logo-w-list li.no-margin {
+    margin-right: 0
+}
+
+.logo-w-list li .logo-info-r .applause-icon {
+    display: block;
+    width: 30px;
+    height: 30px
+}
+
+.logo-w-list li .logo-info-r .applause-icon a {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center
+}
+
+.d-page-sect {
+    padding-bottom: 60px
+}
+
+.d-page-sect h1 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 60px 0 0;
+    text-align: center
+}
+
+.d-w-list li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 44.75%;
+    margin-right: 10.5%;
+    margin-top: 90px
+}
+
+.d-w-list li figure {
+    background: #dad4cb
+}
+
+.d-w-list li figure img {
+    width: 83.798882681564246%;
+    padding: 58px 0;
+    margin: 0 auto
+}
+
+.d-w-list li .d-info-l {
+    float: left;
+    display: block;
+    width: 83.93854748603352%;
+    background: #fbf6ee;
+    padding: 25px 3.491620111731844%
+}
+
+.d-w-list li .d-info-r {
+    float: left;
+    display: block;
+    width: 9.078212290502793%;
+    background: #39ded1;
+    padding: 13px 0 25px
+}
+
+.d-w-list li .d-info .d-title {
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 10px
+}
+
+.d-w-list li .d-info .d-by {
+    display: block;
+    font-size: .875em;
+    font-weight: 400
+}
+
+.d-w-list li.no-margin {
+    margin-right: 0
+}
+
+.d-w-list li .d-info-r .applause-icon {
+    display: block;
+    width: 30px;
+    height: 30px
+}
+
+.d-w-list li .d-info-r .applause-icon a {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center
+}
+
+.j-panel-list li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 24.9%;
+    margin-right: 12.5%;
+    margin-bottom: 90px
+}
+
+.j-panel-list li .judge-info-box {
+    background: #f8e83c;
+    height: 270px
+}
+
+.tally-images, .tally-wotd-wotm {
+    background: #ffea00
+}
+
+.j-panel-list li .judge-info {
+    padding: 40px 65px
+}
+
+.j-panel-list li .judge-info h2 {
+    font-size: 1.125em;
+    font-weight: 800;
+    margin-bottom: 16px
+}
+
+.j-panel-list li .judge-info p {
+    font-size: .9375em;
+    line-height: 1.5em;
+    padding-bottom: 13px
+}
+
+.j-panel-list li .judge-info p a {
+    font-weight: 800
+}
+
+.j-panel-list li .judge-info .j-country {
+    display: block;
+    font-size: .875em;
+    font-weight: 800
+}
+
+.j-panel-list li.no-margin {
+    margin-right: 0
+}
+
+.judges-page .contact-box {
+    margin-top: 30px
+}
+
+.j-panel-list li .judge-info .j-int-link {
+    display: block;
+    text-align: left;
+    padding-top: 12px
+}
+
+#j-panel-int-r strong, .about-panel section, .awards-page section, .contact-submit, .ds-page-intro, .image-required, .j-panel-int-title, .submit-feat-sites, .submit-options, .submit-quotes, .tally-total, .tally-wotd, .tally-wotm {
+    text-align: center
+}
+
+
+.j-panel-list li .judge-info .j-int-link a:hover {
+    color: #2c292e;
+    padding-right: 35px
+}
+
+#j-panel-int-content h2 {
+    color: #673ab7
+}
+
+#j-panel-int-content h3 {
+    font-size: 1.25em
+}
+
+.j-panel-int-title {
+    display: block;
+    height: 60px;
+    font-size: 1.125em;
+    font-weight: 800;
+    padding-top: 7px
+}
+
+#j-panel-int-content a {
+    font-weight: 800;
+    color: #673ab7
+}
+
+#j-panel-int-content a:hover {
+    text-decoration: none
+}
+
+#j-panel-int-content .article-author {
+    font-size: .875em;
+    font-style: italic
+}
+
+#j-panel-int-r .content {
+    display: block;
+    width: 75%;
+    margin: 0 auto
+}
+
+#j-panel-int-content p.j-panel-about {
+    font-weight: 800;
+    font-style: italic
+}
+
+#j-panel-int-r strong {
+    display: block;
+    font-size: 1.125em;
+    font-style: italic;
+    padding-top: 53px;
+    margin-bottom: 48px
+}
+
+#j-panel-int-r figure {
+    padding-bottom: 75px
+}
+
+.leaderboard li {
+    list-style: none;
+    display: block;
+    width: 38.8125%;
+    margin: 0 auto 90px
+}
+
+.tally-logo {
+    float: left;
+    width: 33.333333333333333%
+}
+
+.tally-profile {
+    float: left;
+    width: 66.666666666666667%
+}
+
+.tally-stats {
+    display: block;
+    width: 100%
+}
+
+.tally-des-info, .tally-wotd, .tally-wotd-wotm, .tally-wotm {
+    float: left;
+    display: block
+}
+
+.tally-wotd-wotm {
+    width: 32.206119162640902%;
+    padding-top: 22px;
+    padding-bottom: 20px
+}
+
+.tally-wotd, .tally-wotm {
+    width: 50%;
+    font-weight: 800;
+    font-size: 1.125em
+}
+
+.tally-des-info {
+    width: 67.793880837359098%;
+    background: #673ab7;
+    color: #fff
+}
+
+.tally-des {
+    padding: 28px 0 27px 30px
+}
+
+
+
+.tally-total {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    font-weight: 800;
+    font-size: 1em
+}
+
+.tally-name {
+    font-size: .875em
+}
+
+.about-panel strong, .tdi-name {
+    display: block;
+    font-size: 1.125em
+}
+
+.tdi-name {
+    font-weight: 800;
+    padding-bottom: 13px
+}
+
+.tdi-name a {
+    color: #fff
+}
+
+.tdi-name a:hover {
+    color: #ffea00
+}
+
+.about-page-intro, .about-page-intro h1 {
+    color: #fff
+}
+
+.tdi-country {
+    display: block
+}
+
+.about-page-top {
+    margin-top: 45px
+}
+
+.about-panel {
+    float: left;
+    width: 50%
+}
+
+.about-panel section {
+    padding: 90px 6.25%
+}
+
+.about-panel strong {
+    padding-bottom: 35px
+}
+
+.about-panel h1, .about-panel h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.5em;
+    margin-bottom: 60px
+}
+
+.about-page p {
+    line-height: 1.75em
+}
+
+.about-page-bot {
+    padding: 110px 0 60px
+}
+
+.about-page-bot-l-panel {
+    float: left;
+    display: block;
+    width: 44.375%;
+    padding-left: 5.625%;
+}
+
+.about-page-bot-r-panel {
+    float: right;
+    display: block;
+    width: 44.375%;
+    padding-right: 5.625%
+}
+
+.about-page-bot-r-panel p {
+    padding-bottom: 32px
+}
+
+.about-page-bot-panel h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.5em;
+    margin-bottom: 5px
+}
+
+.awards-intro h1, .awards-three-sect h2 {
+    margin: 60px 70px 30px
+}
+
+.about-page-bot section {
+    padding-bottom: 20px
+}
+
+.awards-page h1, .awards-page h2 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 800
+}
+
+.awards-intro p, .awards-three-sect p {
+    font-style: italic;
+    line-height: 1.65em
+}
+
+.awards-intro {
+    float: left;
+    width: 33.375%
+}
+
+.awards-intro p {
+    padding: 0 60px
+}
+
+.awards-one-sect figure {
+    float: left;
+    width: 33.3125%
+}
+
+.ats-l-panel {
+    float: left;
+    width: 33.375%
+}
+
+.ats-r-panel {
+    float: left;
+    width: 66.625%
+}
+
+.awards-three-sect .ats-r-panel {
+    background: #ffea00
+}
+
+.awards-three-sect p {
+    padding: 60px 160px 50px
+}
+
+.award-list li {
+    float: left;
+    width: 25%
+}
+
+.award-list li .winner-info {
+    background: #ffea00;
+    padding: 65px 55px;
+    height: 365px;
+    font-weight: 800;
+    line-height: 1.75em
+}
+
+.winner-name {
+    padding-top: 20px
+}
+
+.winner-desc {
+    font-style: italic
+}
+
+.awards-five-sect h2 {
+    margin: 80px 30px 0;
+    text-align: center
+}
+
+.awards-five-sect p {
+    font-size: .9375em;
+    font-style: italic;
+    line-height: 1.65em;
+    padding: 30px 30px 65px;
+    text-align: center
+}
+
+.cert-list li {
+    float: left;
+    width: 50%
+}
+
+.awards-nine-sect figure {
+    float: left;
+    display: block;
+    width: 79.375%
+}
+
+.awards-nine-sect .ans-info {
+    float: left;
+    display: block;
+    width: 20.625%;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    font-weight: 800;
+    margin-top: 130px
+}
+
+.awards-nine-sect .ans-info a {
+    color: #673ab7;
+    text-decoration: underline
+}
+
+.submit-page h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.5em
+}
+
+.submit-page-intro {
+    text-align: center;
+    margin-bottom: 70px
+}
+
+.submit-page-intro h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin: 70px 0 30px
+}
+
+.submit-page-intro p {
+    padding: 0 26.875% 30px;
+    font-size: .9375em;
+    font-style: italic;
+    line-height: 1.5em
+}
+
+.submit-page-intro a:hover {
+    text-decoration: none
+}
+
+.submit-options {
+    margin-bottom: 210px
+}
+
+.submit-option {
+    float: left;
+    width: 22.5%
+}
+
+.submit-option .so-title {
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    font-size: 1.75em;
+    font-weight: 800;
+    line-height: 1.5em
+}
+
+.submit-option .so-link {
+    display: block
+}
+
+.submit-option .so-link a {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 800;
+    background: #ffea00;
+    padding: 50px 0
+}
+
+.submit-option .so-link a:hover {
+    background: #673ab7;
+    color: #eeebe4
+}
+
+.submit-option-or {
+    float: left;
+    width: 23.75%;
+    padding-top: 95px;
+    font-size: 1.75em;
+    font-weight: 800;
+    line-height: 1.5em
+}
+
+.submit-option-one {
+    margin-left: 14.375%
+}
+
+.submit-info {
+    padding: 90px;
+    background: #e1ded7
+}
+
+.submit-info-l-panel {
+    float: left;
+    width: 41.25%;
+    padding-right: 3.125%
+}
+
+.submit-info-r-panel {
+    float: right;
+    width: 41.25%;
+    padding-left: 3.125%
+}
+
+.submit-info h2 {
+    margin-bottom: 5px
+}
+
+.submit-info p {
+    line-height: 1.75em;
+    padding-bottom: 20px
+}
+
+.submit-quotes h2 {
+    margin-bottom: 80px
+}
+
+.submit-quotes ul {
+    display: block;
+    width: 81.875%;
+    margin: 0 auto 160px
+}
+
+.submit-quotes li {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 43.511450381679389%;
+    margin: 0 3.816793893129771% 60px 2.67175572519084%
+}
+
+.submit-quotes li figure {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 15px
+}
+
+.submit-quotes li .quote-txt {
+    font-weight: 800;
+    line-height: 1.5em
+}
+
+.submit-quotes li .quote-by {
+    font-style: italic
+}
+
+.submit-feat-sites {
+    padding-top: 110px;
+    background: #e1ded7
+}
+
+.submit-feat-sites ul {
+    display: block;
+    width: 84.125%;
+    margin: 80px auto 0;
+    padding-bottom: 50px
+}
+
+.submit-feat-sites li {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 33.209509658246657%;
+    margin: 0 8.395245170876672% 80px
+}
+
+.submit-feat-sites li .site-images {
+    margin-bottom: 15px
+}
+
+.submit-feat-sites li figure.site-des-logo {
+    float: left;
+    width: 33.333333333333333%
+}
+
+.submit-feat-sites li figure.site-des-profile {
+    float: left;
+    width: 66.666666666666667%
+}
+
+.submit-feat-sites li .site-designer {
+    font-weight: 800;
+    line-height: 1.5em;
+    margin-bottom: 5px
+}
+
+.submit-feat-sites li .site-des-desc {
+    font-style: italic;
+    font-size: .875em
+}
+
+.ds-page-intro h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin: 68px 0 30px;
+    line-height: 1.5em
+}
+
+.ds-more, .ds-title {
+    font-weight: 800
+}
+
+.ds-page-intro p {
+    padding: 0 10% 15px;
+    font-size: 1em;
+    line-height: 1.5em
+}
+
+.ds-city-country, .ds-company, .ds-title {
+    font-size: .875em
+}
+
+.ds-list {
+    margin-bottom: 60px
+}
+
+.ds-list li {
+    float: left;
+    width: 45.454545454545455%;
+    margin-top: 60px;
+    margin-right: 4.545454545454545%;
+    margin-bottom: 30px
+}
+
+.ds-list .g-article-item-info {
+    height: auto
+}
+
+.ds-info {
+    display: block;
+    padding-bottom: 8px
+}
+
+.ds-city-country {
+    padding-bottom: 15px
+}
+
+.ds-quote {
+    font-size: 1.375em;
+    font-style: italic;
+    line-height: 1.5em
+}
+
+.ds-more, .published-on {
+    font-size: .875em
+}
+
+.published-on {
+    font-style: italic;
+    margin-bottom: 30px
+}
+
+.post-job-cost {
+    font-style: italic
+}
+
+ul.full-job-list {
+    padding-bottom: 70px
+}
+
+ul.full-job-list li {
+    list-style: none;
+    display: block;
+    width: 65.625%;
+    margin-bottom: 32px;
+    background: #dad4cb;
+    margin-left: 17.1875%
+}
+
+ul.full-job-list li:hover {
+    background: #ccc4b9;
+    transition: all .3s ease
+}
+
+ul.full-job-list li:after {
+    display: table;
+    clear: both
+}
+
+ul.full-job-list li figure {
+    float: left;
+    width: 14.19047619047619%
+}
+
+ul.full-job-list li .job-list-item-desc {
+    float: left;
+    width: 85.80952380952381%
+}
+
+ul.full-job-list li .job-list-item-desc-txt {
+    float: left;
+    width: 83.351831298557159%
+}
+
+ul.full-job-list li .job-list-item-desc-txt h3 {
+    font-weight: 800;
+    margin: 2% 3.978779840848806% 0 6.631299734748011%;
+    font-size: 1.125em;
+    line-height: 1.75em
+}
+
+ul.full-job-list li .job-list-item-desc-txt h3 span.job-list-item-by {
+    font-weight: 400
+}
+
+ul.full-job-list li .job-list-item-extra {
+    float: right;
+    width: 16.648168701442841%
+}
+
+ul.full-job-list li .job-list-item-extra-txt {
+    padding: 15% 0 0 26.845637583892617%
+}
+
+ul.full-job-list li .job-list-item-extra-txt .job-list-item-date {
+    display: block;
+    width: 100%;
+    font-weight: 800;
+    color: #673ab7;
+    padding-bottom: 10px
+}
+
+ul.full-job-list li .job-list-item-extra-txt .job-list-item-type {
+    display: block;
+    width: 100%
+}
+
+.job-details {
+    width: 50%;
+    margin: 53px auto 60px;
+    line-height: 1.75em
+}
+
+.job-details h1 {
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1.25em;
+    margin-bottom: 30px
+}
+
+.job-details h2 {
+    font-size: 1.25em;
+    font-weight: 800;
+    margin-bottom: 15px
+}
+
+.job-details p {
+    padding-bottom: 30px
+}
+
+.job-details ol, .job-details ul {
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+.job-loc, .job-share, .job-type {
+    margin-bottom: 30px
+}
+
+.job-details li {
+    list-style: square;
+    padding-left: 10px;
+    padding-bottom: 15px
+}
+
+.job-loc {
+    font-size: 1.5em;
+    font-style: italic
+}
+
+.job-logo-type {
+    margin-bottom: 35px
+}
+
+.job-logo {
+    float: left;
+    width: 22.5%
+}
+
+.job-type {
+    float: left;
+    width: 77.5%;
+    font-size: 1.125em;
+    font-style: italic;
+    padding-top: 22px
+}
+
+.job-type .job-type-legend {
+    font-weight: 800;
+    font-style: normal
+}
+
+.job-details figure {
+    width: 150px
+}
+
+.job-details a {
+    font-weight: 800;
+    color: #673ab7
+}
+
+.job-share {
+    margin-bottom: 30px
+}
+
+.related-jobs {
+    margin-top: 30px
+}
+
+ul.full-event-list {
+    padding-bottom: 70px
+}
+
+ul.full-event-list li {
+    list-style: none;
+    display: block;
+    width: 65.625%;
+    margin-left: 17.1875%;
+    margin-bottom: 70px
+}
+
+ul.full-event-list li:after {
+    display: table;
+    clear: both
+}
+
+ul.full-event-list li figure {
+    float: left;
+    width: 14.19047619047619%
+}
+
+ul.full-event-list li .event-list-item-desc {
+    float: left;
+    width: 85.80952380952381%
+}
+
+ul.full-event-list li .event-list-item-desc-txt {
+    padding: 30px 50px
+}
+
+ul.full-event-list li .event-list-item-desc-txt h3 {
+    font-weight: 800;
+    font-size: 1.125em;
+    margin-bottom: 20px
+}
+
+ul.full-event-list li .event-date {
+    margin-bottom: 15px
+}
+
+ul.full-event-list li .event-loc {
+    font-style: italic;
+    margin-bottom: 15px
+}
+
+ul.full-event-list li p {
+    line-height: 1.75em
+}
+
+ul.full-event-list li p a {
+    display: block;
+    font-size: .875em;
+    font-weight: 800;
+    margin-top: 10px
+}
+
+.contact-form-wrapper {
+    width: 50%;
+    margin: 0 auto 60px
+}
+
+#contact-form label {
+    display: block;
+    font-size: 1.125em;
+    font-weight: 800;
+    margin-bottom: 10px
+}
+
+#contact-form input, #contact-form select, #contact-form textarea {
+    border: 1px solid #673ab7;
+    margin-bottom: 30px
+}
+
+#contact-form label.quiz-label {
+    font-weight: 400;
+    font-size: 1em
+}
+
+#contact-form input.quiz-input {
+    width: 80px
+}
+
+#contact-form input.small-input {
+    width: 160px
+}
+
+.small-input {
+    width: 150px
+}
+
+.contact-submit {
+    width: 180px;
+    height: 70px;
+    background: #673ab7;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    transition: background-color .3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px
+}
+
+.contact-submit:focus, .contact-submit:hover {
+    background: #000
+}
+
+.anti-spam-notice {
+    font-size: 1.125em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding-bottom: 10px
+}
+
+.images-required {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px
+}
+
+.image-required {
+    float: left;
+    display: block;
+    width: 25.555555555555556%;
+    margin-right: 3.333333333333333%;
+    border: 1px solid #bfbbb5;
+    padding: 20px;
+    font-size: 1em
+}
+
+.image-required-last {
+    margin-right: 0
+}
+
+.generic-form input[type=password], .generic-form input[type=email], .generic-form input[type=text], .generic-form textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+    transition: border-color .5s ease;
+    padding-left: 10px
+}
+
+.generic-form textarea {
+    resize: none;
+    height: 7em;
+    line-height: 1.5em;
+    padding-top: 10px
+}
+
+.generic-form select {
+    font-size: 1em;
+    background: 0 0;
+    width: 100%;
+    padding: 5px;
+    line-height: 1.5em;
+    border: none;
+    border-bottom: 1px solid #666;
+    height: 2.5em;
+    outline: 0;
+    -webkit-appearance: none;
+    color: #2c292e
+}
+
+.generic-form input:focus, .generic-form select:focus, .generic-form textarea:focus {
+    border-color: #000
+}
+
+
+.generic-form ::-webkit-input-placeholder {
+    color: #666
+}
+
+.generic-form :-moz-placeholder {
+    color: #444
+}
+
+.generic-form ::-moz-placeholder {
+    color: #444
+}
+
+.generic-form :-ms-input-placeholder {
+    color: #444
+}
+
+.styled-checkbox {
+    float: left;
+    width: 190px;
+    margin-left: 10px;
+    margin-bottom: 20px
+}
+
+.styled-checkbox-label {
+    float: left;
+    width: 130px;
+    font-size: 1em;
+    font-weight: 800;
+    margin-top: 3px
+}
+
+.checkboxFive {
+    float: left;
+    width: 25px;
+    position: relative;
+    margin-right: 10px
+}
+
+.checkboxFive label {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 1px solid #673ab7
+}
+
+.checkboxFive label:after {
+    opacity: .1;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: 0 0;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.checkboxFive label:hover::after {
+    opacity: .5
+}
+
+.checkboxFive input[type=checkbox]:checked + label:after {
+    opacity: 1
+}
+
+.form-section-heading {
+    font-size: .875em;
+    font-style: italic;
+    color: #444;
+    padding: 6px 0 20px 10px
+}
+
+#form-section-screenshots {
+    margin-top: 25px
+}
+
+#form-section-screenshots .form-section-heading {
+    display: block;
+    width: 50%
+}
+
+#form-section-screenshots .form-section-heading-large {
+    float: left;
+    width: 21.25%;
+    margin-left: 10px;
+    color: #75716c
+}
+
+#form-section-screenshots .form-section-section {
+    float: left;
+    width: 32.5%
+}
+
+#screenshot-spec {
+    float: right;
+    width: 50%;
+    display: block;
+    font-size: 1em;
+    font-weight: 800;
+    padding-top: 14px
+}
+
+.styled-checkbox-large {
+    padding-left: 10px
+}
+
+.styled-checkbox-label-large {
+    float: left;
+    width: 87.5%;
+    font-size: 1em;
+    font-weight: 800;
+    color: #2c292e;
+    padding-top: 3px
+}
+
+.styled-checkbox-label-large a {
+    text-decoration: underline
+}
+
+.pagination a, .styled-checkbox-label-large a:hover {
+    text-decoration: none
+}
+
+#file-upload {
+    position: relative
+}
+
+
+#file-field {
+    width: 160px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 5px;
+    font-size: .875em;
+    border: 1px solid #ccc;
+    color: #666
+}
+
+.collaborators, .para-left {
+    padding-left: 10px
+}
+
+#browser-hidden {
+    position: relative;
+    width: 369px;
+    height: 53px;
+    text-align: right;
+    -moz-opacity: 0;
+    filter: alpha(opacity:0);
+    opacity: 0;
+    z-index: 2
+}
+
+#form-section-avatar {
+    margin-top: 30px
+}
+
+.submit-submit {
+    width: 45%;
+    font-size: 1.375em;
+    font-weight: 800;
+    height: 109px;
+    margin: 0 27.5% 30px
+}
+
+.pay-submit {
+    width: 50%;
+    height: 109px;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+    font-size: 1.25em
+}
+
+.submit-submit:focus, .submit-submit:hover {
+    background: #000
+}
+
+#pp-logos {
+    display: block;
+    width: 186px;
+    margin-left: 38.375%
+}
+
+.form-notice {
+    display: block;
+    text-align: center;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    font-weight: 800;
+    color: #673ab7;
+    margin-top: 35px;
+    margin-bottom: 90px
+}
+
+.warning {
+    font-weight: 800;
+    color: #b13802
+}
+
+.collaborators {
+    margin-top: 30px
+}
+
+.collaborators span {
+    display: block
+}
+
+.add-collaborator {
+    display: block;
+    margin-bottom: 5px;
+    font-style: italic
+}
+
+.note-heading {
+    font-size: 1.125em;
+    font-weight: 700;
+    padding-bottom: 5px
+}
+
+.box-title, .not-found-bg a, .one-panel-content h2, .pagination, p.note-purple {
+    font-weight: 800
+}
+
+.note {
+    font-size: .875em;
+    padding-bottom: 10px
+}
+
+#paypal-box {
+    padding-top: 50px
+}
+
+#paypal-box p {
+    font-size: 1.5em;
+    padding-top: 30px
+}
+
+.notice-code {
+    font-size: .75em;
+    font-style: italic
+}
+
+.not-found-bg {
+    width: 50%;
+    height: 727px;
+    background-size: contain;
+    margin: 0px auto 0
+}
+
+.not-found-bg div {
+    padding-top: 680px
+}
+
+.not-found-bg a {
+    display: block;
+    width: 32.5%;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+    padding: 5.2% 0;
+    background: #673ab7;
+    color: #eeebe4;
+    font-size: 1.5em;
+    margin: 0 auto
+}
+
+.not-found-bg a, .social-icon:hover {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s
+}
+
+.not-found-bg a:hover {
+    background-color: #2c292e
+}
+
+.social-group {
+    height: 84px;
+    padding-top: 38px;
+    background: #23d0c3
+}
+
+.social-group .social-icon {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 7%
+}
+
+.no-margin, .rss {
+    margin-right: 0
+}
+
+.social-icon:hover {
+    transition: all .3s
+}
+
+.fb {
+    width: 8px;
+    margin-left: 23.255813953488372%
+}
+
+.twitter {
+    width: 19px;
+}
+
+
+
+.dpd-des-jobs a, .dpd-des-url a {
+    font-weight: 800;
+    color: #fff
+}
+
+.dpd-des-loc {
+    font-size: 1.125em;
+    font-style: italic;
+    padding-bottom: 20px
+}
+
+.dpd-des-best, .dpd-des-url {
+    padding-bottom: 30px
+}
+
+.dpd-des-best, .dpd-des-jobs, .dpd-des-url a {
+    font-size: .875em
+}
+
+.dpd-des-loc-country {
+    font-style: normal;
+    font-weight: 800
+}
+
+.dpd-des-jobs a:hover, .dpd-des-url a:hover {
+    color: #ffea00
+}
+
+.dpd-des-profile img {
+    display: block
+}
+
+.dpd-des-about {
+    background: #2c292e
+}
+
+.dpd-des-about-txt {
+    padding: 50px 13.756613756613757%
+}
+
+.dpd-des-about-txt h2, .dpd-des-about-txt h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 30px
+}
+
+.dpd-des-about-txt h3 {
+    margin-top: 20px;
+    margin-bottom: 40px
+}
+
+.dpd-des-about-txt p {
+    font-size: .875em;
+    line-height: 1.5em;
+    padding-bottom: 20px
+}
+
+.dpd-des-about-txt ul {
+    padding-bottom: 45px
+}
+
+.dpd-des-about-txt li {
+    width: 30px;
+    margin-right: 10px
+}
+
+.dpd-des-about-txt li:last-child {
+    margin-right: 0
+}
+
+.dpd-wreath {
+    margin: 0 12px 25px 0
+}
+
+.dpd-wreath .num {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+    font-size: 1.5em
+}
+
+.dpd-wreath-doty, .dpd-wreath-nominations, .dpd-wreath-sk, .dpd-wreath-wotd, .dpd-wreath-wotm, .dpd-wreath-woty {
+    width: 135px;
+    height: 65px
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box
+}
+
+input[type=search]::-ms-clear {
+    display: none
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
+    display: none
+}
+
+.cd-header-buttons, .cd-header-buttons li {
+    display: inline-block
+}
+
+.cd-main-content, .cd-main-header {
+    transform: translateZ(0);
+    will-change: transform;
+    position: relative;
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: -moz-transform .3s;
+    transition: transform .3s
+}
+
+.cd-main-content, .cd-main-header, .cd-search-trigger::after, .cd-search-trigger::before {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0)
+}
+
+.cd-main-content {
+    top: 50px;
+    background: #eeebe4;
+    min-height: 100vh;
+    z-index: 2
+}
+
+.cd-main-header {
+    height: 50px;
+    background: #673ab7;
+    z-index: 3
+}
+
+.nav-is-fixed .cd-main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.cd-header-buttons {
+    position: absolute;
+    top: 3px;
+    right: 12px
+}
+
+.cd-nav-trigger, .cd-search-trigger {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
+    font-size: 0;
+    z-index: 3
+}
+
+.cd-search-trigger::after, .cd-search-trigger::before {
+    content: '';
+    position: absolute;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.cd-search-trigger::before {
+    top: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid #eeebe4
+}
+
+.cd-search-trigger::after {
+    height: 3px;
+    width: 8px;
+    background: #eeebe4;
+    bottom: 14px;
+    right: 11px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.cd-search-trigger span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.cd-search-trigger span::after, .cd-search-trigger span::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    width: 22px;
+    top: 50%;
+    margin-top: -2px;
+    left: 50%;
+    margin-left: -11px;
+    background: #eeebe4;
+    opacity: 0;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    -moz-transition: opacity .3s, -moz-transform .3s;
+    transition: opacity .3s, transform .3s
+}
+
+.cd-search-trigger span::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.cd-search-trigger span::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.cd-search-trigger.search-is-visible::after, .cd-search-trigger.search-is-visible::before {
+    opacity: 0
+}
+
+.cd-search-trigger.search-is-visible span::after, .cd-search-trigger.search-is-visible span::before {
+    opacity: 1
+}
+
+.cd-search-trigger.search-is-visible span::before {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg)
+}
+
+.cd-search-trigger.search-is-visible span::after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before {
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+    background: #eeebe4
+}
+
+.cd-nav-trigger span {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -2px;
+    -webkit-transition: background .3s .3s;
+    -moz-transition: background .3s .3s;
+    transition: background .3s .3s
+}
+
+.cd-nav-trigger span::after, .cd-nav-trigger span::before {
+    content: '';
+    right: 0;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition: -webkit-transform .3s .3s;
+    -moz-transition: -moz-transform .3s .3s;
+    transition: transform .3s .3s
+}
+
+.cd-nav-trigger span::before {
+    top: -6px
+}
+
+.cd-nav-trigger span::after {
+    top: 6px
+}
+
+.cd-nav-trigger.nav-is-visible span {
+    background: rgba(238, 235, 228, 0)
+}
+
+.cd-nav-trigger.nav-is-visible span::after, .cd-nav-trigger.nav-is-visible span::before {
+    background: #eeebe4
+}
+
+.cd-nav-trigger.nav-is-visible span::before {
+    -webkit-transform: translateX(4px) translateY(-3px) rotate(45deg);
+    -moz-transform: translateX(4px) translateY(-3px) rotate(45deg);
+    -ms-transform: translateX(4px) translateY(-3px) rotate(45deg);
+    -o-transform: translateX(4px) translateY(-3px) rotate(45deg);
+    transform: translateX(4px) translateY(-3px) rotate(45deg)
+}
+
+.cd-nav-trigger.nav-is-visible span::after {
+    -webkit-transform: translateX(4px) translateY(2px) rotate(-45deg);
+    -moz-transform: translateX(4px) translateY(2px) rotate(-45deg);
+    -ms-transform: translateX(4px) translateY(2px) rotate(-45deg);
+    -o-transform: translateX(4px) translateY(2px) rotate(-45deg);
+    transform: translateX(4px) translateY(2px) rotate(-45deg)
+}
+
+.cd-primary-nav, .cd-primary-nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 260px;
+    background: #2e3233;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+    transform: translateZ(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: -moz-transform .3s;
+    transition: transform .3s
+}
+
+.cd-primary-nav, .cd-primary-nav a, .cd-primary-nav ul, .cd-primary-nav ul a {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0)
+}
+
+.cd-primary-nav a, .cd-primary-nav ul a {
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 30px;
+    color: #eeebe4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #3a3f40;
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform, opacity;
+    -webkit-transition: -webkit-transform .3s, opacity .3s;
+    -moz-transition: -moz-transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s
+}
+
+.cd-primary-nav a.submit-link {
+    background: #ffea00;
+    color: #2c292e;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.cd-primary-nav a.login-link {
+    background: #21c7ba;
+    color: #525055;
+    margin-right: -1px;
+    padding-left: 15px;
+    padding-right: 0
+}
+
+.cd-primary-nav a.join-link {
+    background: #21c7ba;
+    color: #525055;
+    padding-right: 15px;
+    margin-right: 5px
+}
+
+.cd-primary-nav a.submit-link:hover {
+    color: #673ab7
+}
+
+.cd-primary-nav a.join-link:hover, .cd-primary-nav a.login-link:hover {
+    color: #2c292e
+}
+
+.l-s-l {
+    display: inline-block;
+    background: #21c7ba;
+    color: #525055;
+    height: 65px;
+    line-height: 65px;
+    font-weight: 800
+}
+
+.cd-primary-nav a.about-link {
+    margin-right: 8px
+}
+
+.cd-primary-nav ul.is-hidden, .cd-primary-nav.is-hidden {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.cd-primary-nav ul.moves-out > li > a, .cd-primary-nav.moves-out > li > a {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0
+}
+
+.cd-search {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s
+}
+
+.cd-overlay, .cd-search form, .cd-search input {
+    width: 100%;
+    height: 100%
+}
+
+.cd-overlay, .nav-is-fixed .cd-search {
+    position: fixed
+}
+
+.cd-search input {
+    border-radius: 0;
+    border: none;
+    background: #eeebe4;
+    opacity: .95;
+    padding: 0 5%;
+    box-shadow: inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, .05);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font-size: 1.5em
+}
+
+.cd-search input::-webkit-input-placeholder {
+    color: #444
+}
+
+.cd-search input::-moz-placeholder {
+    color: #444
+}
+
+.cd-search input:-moz-placeholder {
+    color: #444
+}
+
+.cd-search input:-ms-input-placeholder {
+    color: #444
+}
+
+.cd-search input:focus {
+    outline: 0
+}
+
+.cd-search.is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s
+}
+
+.cd-overlay {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s, -webkit-transform .3s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s, -moz-transform .3s 0s;
+    transition: opacity .3s 0s, visibility 0s .3s, transform .3s 0s
+}
+
+.cd-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s, -webkit-transform .3s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s, -moz-transform .3s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s, transform .3s 0s
+}
+
+.no-js .cd-primary-nav {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: visible;
+    visibility: visible;
+    z-index: 2
+}
+
+.no-js .cd-search {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    visibility: visible
+}
+
+a.purple-bold {
+    text-decoration: underline;
+    font-weight: 800;
+    color: #673ab7
+}
+
+a.purple-bold:hover {
+    text-decoration: none
+}
+
+@media only screen and (max-width: 1135px) {
+    .cd-overlay.is-visible {
+        -webkit-transform: translateX(-260px);
+        -moz-transform: translateX(-260px);
+        -ms-transform: translateX(-260px);
+        -o-transform: translateX(-260px);
+        transform: translateX(-260px)
+    }
+
+    .cd-overlay.is-visible.search-is-visible {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    .cd-main-content.nav-is-visible, .cd-main-header.nav-is-visible {
+        -webkit-transform: translateX(-260px);
+        -moz-transform: translateX(-260px);
+        -ms-transform: translateX(-260px);
+        -o-transform: translateX(-260px);
+        transform: translateX(-260px)
+    }
+
+    .cd-primary-nav {
+        visibility: hidden;
+        -webkit-transition: visibility 0s .3s;
+        -moz-transition: visibility 0s .3s;
+        transition: visibility 0s .3s
+    }
+
+    .cd-primary-nav.nav-is-visible {
+        visibility: visible;
+        -webkit-transition: visibility 0s 0s;
+        -moz-transition: visibility 0s 0s;
+        transition: visibility 0s 0s
+    }
+
+    .l-s-l {
+        display: none
+    }
+
+    .cd-primary-nav a.join-link, .cd-primary-nav a.login-link, .cd-primary-nav a.submit-link {
+        font-weight: 800;
+        padding-left: 30px
+    }
+
+    .cd-primary-nav a.join-link {
+        margin-right: 0
+    }
+
+    .cd-search input {
+        font-size: 1em
+    }
+}
+
+@media only screen and (min-width: 1136px) {
+    .cd-main-header::after, .cd-primary-nav::after {
+        clear: both;
+        content: ""
+    }
+
+    .cd-main-header {
+        height: 65px
+    }
+
+    .cd-primary-nav, .cd-primary-nav ul {
+        width: auto;
+        overflow: visible;
+        position: static;
+        height: auto;
+        background: 0 0
+    }
+
+    .cd-main-header::after {
+        display: table
+    }
+
+    .cd-header-buttons {
+        top: 12px;
+        right: 30px
+    }
+
+    .cd-nav-trigger {
+        display: none
+    }
+
+    .cd-primary-nav {
+        padding: 0 80px 0 0;
+        float: right
+    }
+
+    .cd-primary-nav::after {
+        display: table
+    }
+
+    .cd-primary-nav.moves-out > li > a {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+
+    .cd-primary-nav ul {
+        z-index: 3
+    }
+
+    .cd-primary-nav ul.is-hidden {
+        transform: translateX(0)
+    }
+
+    .cd-primary-nav ul.is-hidden, .cd-primary-nav ul.moves-out > li > a {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0)
+    }
+
+    .cd-primary-nav ul.moves-out > li > a {
+        transform: translateX(0);
+        opacity: 1
+    }
+
+    .cd-primary-nav > li {
+        float: left
+    }
+
+    .cd-primary-nav > li > a {
+        position: relative;
+        float: left;
+        display: block;
+        font-size: 1em;
+        font-weight: 800;
+        padding: 0 14px;
+        color: #eeebe4;
+        overflow: visible;
+        border-bottom: none;
+        -webkit-transition: color .3s, box-shadow .3s;
+        -moz-transition: color .3s, box-shadow .3s;
+        transition: color .3s, box-shadow .3s
+    }
+
+    .cd-primary-nav > li > a:hover {
+        color: #ffea00
+    }
+
+    .cd-primary-nav > li > a.selected {
+        color: #69aa6f;
+        box-shadow: inset 0 -2px 0 #69aa6f
+    }
+
+    .cd-search {
+        height: 120px;
+        top: 65px
+    }
+
+    .cd-search input {
+        padding: 0 2em;
+        font-size: 2em
+    }
+
+    .no-js .cd-primary-nav {
+        position: absolute;
+        z-index: 3;
+        display: inline-block;
+        width: auto;
+        top: 0;
+        right: 80px;
+        padding: 0
+    }
+
+    .no-js .nav-is-fixed .cd-primary-nav {
+        position: fixed
+    }
+
+
+    .logo a {
+        display: block;
+        width: 186px
+    }
+}
+
+@media (max-width: 1560px) {
+    .award-site-det-home .des-loc {
+        padding-bottom: 94px
+    }
+
+    .filter-site-list li:nth-child(5) {
+        display: none
+    }
+
+    .j-panel-list li .judge-info {
+        padding: 40px 50px
+    }
+
+    .awards-intro h1 {
+        margin: 40px 70px 30px
+    }
+}
+
+@media (max-width: 1500px) {
+    .main-panel-g-nav li {
+        margin: 0 3%
+    }
+}
+
+@media (max-width: 1465px) {
+    .award-site-det-home .des-loc {
+        padding-bottom: 69px
+    }
+
+    .right-panel-g section {
+        padding: 0 50px
+    }
+
+    .filter-site-list li:nth-child(4) {
+        display: none
+    }
+
+    .sponsor-list li .sponsor-info {
+        padding: 35px 40px
+    }
+
+    .j-panel-list li .judge-info {
+        padding: 40px 30px 40px 40px
+    }
+
+    .about-panel section.about-page-void {
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+
+    .awards-intro h1 {
+        margin: 30px 70px
+    }
+
+    .ats-l-panel h2 {
+        margin-top: 80px
+    }
+
+    .award-list li .winner-info {
+        padding: 35px 55px 65px
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 80px
+    }
+
+    #screenshot-spec {
+        float: left;
+        width: 100%;
+        padding-top: 0
+    }
+
+    .article-wrapper figure.a-main-small img {
+        width: 71.243781094527363%;
+        padding: 116px 14.378109452736319%
+    }
+
+    .article-related li {
+        width: 12.305917415757343%;
+        margin-left: 10.152381867999808%
+    }
+
+    .job-logo {
+        width: 25%
+    }
+
+    .job-type {
+        width: 75%;
+        padding-top: 20px
+    }
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+    .s-v-a-h-prev-wotd {
+        padding-top: 25px
+    }
+}
+
+@media (max-width: 1339px) {
+    ul.job-list li .job-list-item-desc-txt h4 {
+        margin-top: 1.2%
+    }
+
+    ul.job-list li .job-list-item-extra-txt {
+        padding-top: 11%
+    }
+
+    .search-box {
+        margin-right: 4%
+    }
+
+    .vote-link {
+        margin-left: 14%
+    }
+
+    .des-about {
+        padding: 18% 0
+    }
+
+    .similar-site-sect-bot ul {
+        padding: 54px 0
+    }
+
+    .similar-site-sect-bot li {
+        width: 12%;
+        margin-right: 11%
+    }
+
+    .page-intro h1, .page-intro h2 {
+        font-size: 1.875em;
+        margin: 60px 0 30px
+    }
+
+    .page-intro p {
+        padding: 0 23.125% 60px
+    }
+
+    .sponsor-list li figure img {
+        padding: 50px 0
+    }
+
+    .sponsor-list li .sponsor-info {
+        padding: 25px 30px
+    }
+
+    .j-panel-list li .judge-info-box {
+        height: 230px
+    }
+
+    .j-panel-list li .judge-info {
+        padding: 35px 30px
+    }
+
+    .about-panel section {
+        padding-top: 70px;
+        padding-bottom: 70px
+    }
+
+    .awards-page h1, .awards-page h2 {
+        font-size: 1.125em
+    }
+
+    .awards-page p {
+        font-size: .875em
+    }
+
+    .award-list li .winner-info {
+        line-height: 1.5em
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 75px
+    }
+
+    .awards-nine-sect .ans-info {
+        margin-top: 120px
+    }
+
+    ul.full-job-list li .job-list-item-desc-txt h3 {
+        line-height: 1.375em
+    }
+
+    ul.full-job-list li .job-list-item-extra-txt .job-list-item-date {
+        padding-bottom: 5px
+    }
+
+    .submit-page-intro p {
+        padding: 0 20% 30px
+    }
+
+    .submit-options {
+        margin-bottom: 150px
+    }
+
+    .submit-option .so-title {
+        font-size: 1.5em
+    }
+
+    .pay-submit {
+        width: 70%;
+        height: 89px;
+        margin-left: 15%
+    }
+
+    .judging-panel-words-txt {
+        padding: 25px 5% 0
+    }
+
+    .g-site-item-stats-view .view-icon {
+        margin: 2px 0 0 28%
+    }
+
+    .article-related li {
+        width: 13.463905163618004%;
+        margin-left: 9.228875869105597%
+    }
+
+    .not-found-bg {
+        margin-top: 0
+    }
+
+    .not-found-bg div {
+        padding-top: 630px
+    }
+}
+
+@media (max-width: 1334px) {
+}
+
+@media (max-width: 1308px) {
+    .award-site-det-home .des-loc {
+        padding-bottom: 56px
+    }
+}
+
+@media (max-width: 1284px) {
+    .award-site-det-home .des-loc {
+        padding-bottom: 52px
+    }
+}
+
+@media (max-width: 1280px) {
+    .award-site-det-home h2 {
+        font-size: 1.375em;
+    }
+
+    .award-wreath-b {
+        width: 100%;
+        height: 225px
+    }
+
+    .award-site-det-home .des-loc {
+        padding-bottom: 64px
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        height: 28%;
+    }
+
+    .h-sites-list li {
+        float: left;
+        display: block;
+        width: 50%
+    }
+
+    .h-sites-list li:nth-child(3) {
+        display: none
+    }
+
+    .sponsor-area-home li {
+        width: 10.9375%;
+        margin-left: 4.84375%;
+        margin-bottom: 45px
+    }
+
+    .h-article-item-txt {
+        padding: 68px 20px 0 30px
+    }
+
+    .h-footer-nav {
+        width: 75%
+    }
+
+    .sponsor-sect-top .sst-three {
+        padding-bottom: 2.37%
+    }
+
+    a.feature-label-link {
+        padding: 65.35% 0
+    }
+
+    a.flt-dark-yellow {
+        padding: 59% 0
+    }
+
+    .feature-main-info-txt {
+        padding: 22px 30px 0
+    }
+
+    .judging-panel-words-txt {
+        padding: 24px 10% 0
+    }
+
+    .doty-leaderboard-list li .rank {
+        margin-top: -2px
+    }
+
+    .doty-leaderboard-list li .info {
+        margin-top: 0
+    }
+
+    .doty-leaderboard-list li .info .des-name {
+        pading: 7px 0 5px
+    }
+
+    .sponsor-sect-bot .sst-two li img {
+        padding: 32px 16.517857142857143%
+    }
+
+    .des-about {
+        padding: 17.75% 0
+    }
+
+    .articles-page .article-wrapper, .main-panel-g-nav {
+        width: 94%
+    }
+
+    .main-panel-g-nav li {
+        margin: 0 3%
+    }
+
+    .ds-page .main-panel-g-nav li, .main-panel-g-nav .about-nav li, .main-panel-g-nav .article-nav li {
+        margin: 0 2%
+    }
+
+    .article-content {
+        padding-left: 100px;
+        padding-right: 100px
+    }
+
+    .gallery li {
+        width: 43.872549019607843%;
+        margin-right: 6.127450980392157%
+    }
+
+    .g-article-item-clear-both, .g-article-item-clear-two {
+        clear: both
+    }
+
+    .g-article-item-clear-three {
+        clear: none
+    }
+
+    .right-panel-g section {
+        padding: 0 40px
+    }
+
+    .g-site-item-stats-view .view-icon {
+        margin: 2px 0 0 33%
+    }
+
+    .g-site-item-stats a.vote-icon {
+        margin-left: 37%
+    }
+
+    .j-panel-list li .judge-info {
+        padding: 30px
+    }
+
+    .about-panel h1, .about-panel h2 {
+        margin-bottom: 40px
+    }
+
+    .leaderboard li {
+        width: 45%;
+        margin: 0 auto 60px
+    }
+
+    .awards-intro h1 {
+        margin: 20px 70px 0
+    }
+
+    .award-list li .winner-info {
+        padding-left: 40px;
+        padding-right: 40px
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 40px
+    }
+
+    .awards-nine-sect .ans-info {
+        margin-top: 110px
+    }
+
+    .jobs-page-sect .page-intro p {
+        padding: 0 18% 60px
+    }
+
+    .submit-info {
+        margin-bottom: 60px
+    }
+
+    .submit-quotes ul {
+        margin: 0 auto 30px
+    }
+
+    .submit-feat-sites {
+        padding-top: 60px
+    }
+
+    .submit-feat-sites ul {
+        margin: 60px auto 0;
+        padding-bottom: 30px
+    }
+
+    .job-details {
+        width: 75%
+    }
+
+    .job-logo {
+        width: 19%
+    }
+
+    .job-type {
+        width: 81%;
+        padding-top: 17px
+    }
+
+    .dex-page-det-main-l {
+        width: 47.65625%
+    }
+
+    .dex-page-det-main-r {
+        width: 52.34375%
+    }
+
+    .dpd-similar-sites li {
+        width: 16.826923076923077%;
+        margin-right: 10.865384615384615%
+    }
+}
+
+@media (max-width: 1258px) {
+    .footer-nav {
+        width: 90%
+    }
+
+    .footer-social-icons {
+        width: 7%
+    }
+
+    .main-panel-g-nav li {
+        margin: 0 2%
+    }
+}
+
+@media (max-width: 1242px) {
+    .d-left-panel-home .award-box-sub-b {
+        height: 215px
+    }
+
+    .footer-nav {
+        width: 76%
+    }
+
+    .footer-social-icons {
+        width: 7%
+    }
+
+    .similar-site-heading {
+        padding: 67px 0 60px
+    }
+
+    .vote-link {
+        margin-left: 11%
+    }
+
+    .sponsor-list li .sponsor-info {
+        padding: 25px 20px
+    }
+
+    .awards-three-sect h2 {
+        margin: 70px 50px 30px
+    }
+
+    .judging-panel-words-txt {
+        padding: 25px 2.5% 0
+    }
+
+    .article-related li {
+        width: 14.515433988795899%;
+        margin-left: 8.38765280896328%
+    }
+
+    .ds-page-intro h1 {
+        margin-top: 48px
+    }
+
+    .not-found-bg a {
+        font-size: 1.125em
+    }
+}
+
+@media (max-width: 1239px) {
+    .d-left-panel-home .award-box-sub-b {
+        height: 227px
+    }
+
+    .award-site-det-home {
+        padding-top: 0
+    }
+
+    .award-site-det-home .des-loc {
+        padding-bottom: 60px
+    }
+}
+
+@media (max-width: 1200px) {
+    .d-left-panel-home .award-box-sub-b {
+        height: 218px
+    }
+
+    .site-share-it, .site-social, ul.h-ds-list li:nth-child(3), ul.h-events-list li:nth-child(3) {
+        display: none
+    }
+
+    .article-sponsor-box {
+        float: none;
+        width: 63.829787234042553%;
+        margin: 0 auto
+    }
+
+    .articles-page .main-panel-g-nav li {
+        margin: 0 1.5%
+    }
+
+    .awards-intro h1 {
+        margin: 10px 70px 15px;
+        line-height: 1.25em
+    }
+
+    .awards-three-sect h2 {
+        margin: 70px 70px 0
+    }
+
+    .awards-nine-sect .ans-info {
+        margin-top: 100px
+    }
+
+    .awards-five-sect p {
+        padding: 20px 50px 0
+    }
+
+    ul.full-job-list .job-list-item-by {
+        font-size: .875em
+    }
+
+    ul.full-job-list li .job-list-item-extra-txt {
+        padding: 13% 10% 0
+    }
+
+    .article-wrapper figure.a-main-small img {
+        width: 88.613861386138614%;
+        padding: 40px 5.693069306930693%
+    }
+
+    .ds-page .main-panel-g-nav li {
+        margin: 0 1%
+    }
+
+    .not-found-bg div {
+        padding-top: 600px
+    }
+
+    .awards-five-sect h2 {
+        margin-top: 50px
+    }
+
+    .awards-five-sect p {
+        padding: 20px 30px 50px
+    }
+}
+
+@media (max-width: 1175px) {
+    .d-left-panel-home .award-box-sub-b {
+        height: 211px
+    }
+
+    .footer-nav {
+        width: 90%
+    }
+
+    .footer-social-icons {
+        width: 8%
+    }
+}
+
+@media (max-width: 1154px) {
+    .d-left-panel-home .award-box-sub-b {
+        height: 206px
+    }
+
+    .footer-sect-main .footer-nav {
+        width: 87%
+    }
+}
+
+@media (max-width: 1136px) {
+    .d-left-panel-home .award-box-sub-b {
+        height: 211px
+    }
+
+    .award-site-det-home .des-loc {
+        padding-bottom: 54px
+    }
+
+    ul.job-list li .job-list-item-desc-txt h4 {
+        margin-top: .8%
+    }
+
+    ul.job-list li .job-list-item-extra-txt {
+        padding-top: 9%
+    }
+
+    .doty-leaderboard-list li .rank {
+        margin-top: -5px
+    }
+
+    .doty-leaderboard-list li .info .des-name {
+        padding: 3px 0 5px
+    }
+
+    .award-trophy-sect .award-trophy-winner-des {
+        display: none
+    }
+
+    .similar-site-sect-bot ul {
+        padding: 49px 0 44px
+    }
+
+    .similar-site-sect-bot li {
+        width: 13%;
+        margin-right: 9%
+    }
+
+    .vote-link {
+        margin-left: 8%
+    }
+
+    .filter-site-list li {
+        padding-bottom: 30px
+    }
+
+    .filter-site-list li figure {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px
+    }
+
+    .right-panel-g .social-icon {
+        margin-right: 9%
+    }
+
+    .page-intro p {
+        padding: 0 20% 60px
+    }
+
+    .main-panel-g-nav .article-nav li {
+        margin: 0 1%
+    }
+
+    .j-panel-list li .judge-info {
+        padding: 25px 20px 0 25px
+    }
+
+    .about-panel strong {
+        font-size: 1.0625em;
+        padding-bottom: 35px
+    }
+
+    .about-page-bot-panel h2, .about-panel h1, .about-panel h2, .award-site-det-home h2 {
+        font-size: 1.375em
+    }
+
+    .awards-intro h1 {
+        margin: 0 70px 15px
+    }
+
+    .awards-three-sect p {
+        padding: 60px 100px 50px
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 20px
+    }
+
+    .awards-nine-sect .ans-info {
+        margin-top: 90px
+    }
+
+    .submit-options {
+        margin-bottom: 150px
+    }
+
+    .submit-option {
+        width: 25%
+    }
+
+    .submit-option-one {
+        margin-left: 12.5%
+    }
+
+    #pp-logos {
+        margin-left: 35%
+    }
+
+    .article-wrapper figure.a-main-small img {
+        width: 100%;
+        padding: 0
+    }
+
+    .article-related li {
+        width: 15.869867089863122%;
+        margin-left: 7.304106328109502%
+    }
+
+    .job-logo {
+        width: 21%
+    }
+
+    .job-type {
+        width: 79%
+    }
+
+    .sponsor-area-home li {
+        width: 10.563380281690141%;
+        margin-left: 5.193661971830986%;
+        margin-bottom: 45px
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 16px 20px 0
+    }
+}
+
+@media (max-width: 1080px) {
+    .afs-one-col p, .h-sites-list li .h-site-item .view-icon, .winner-quote {
+        display: none
+    }
+
+    .d-left-panel-home .award-box-sub-b {
+        height: 197px
+    }
+
+    .award-details {
+        padding: 50px 70px 0
+    }
+
+    .sponsor-sect-top .sst-three {
+        padding-bottom: 2.1%
+    }
+
+    a.feature-label-link {
+        padding: 56.5% 0
+    }
+
+    .sponsor-sect-bot .sst-two li img {
+        padding: 29px 16.517857142857143%
+    }
+
+    ul.job-list li .job-list-item-desc-txt {
+        width: 84%
+    }
+
+    ul.job-list li .job-list-item-desc-txt h4 {
+        line-height: 1.5em
+    }
+
+    ul.job-list li .job-list-item-extra {
+        width: 16%
+    }
+
+    ul.job-list li .job-list-item-extra-txt {
+        padding-right: 0
+    }
+
+    ul.job-list li .job-list-item-extra-txt .job-list-item-date {
+        padding-bottom: 5px
+    }
+
+    .doty-leaderboard-heading-title h3 {
+        padding: 50px 0 0
+    }
+
+    .footer-nav {
+        width: 90%
+    }
+
+    .footer-social-icons {
+        width: 10%
+    }
+
+    .footer-sect-main .footer-nav {
+        width: 85%
+    }
+
+    .des-about {
+        padding: 17.5% 0
+    }
+
+    .main-panel-g-nav li {
+        margin: 0 1%
+    }
+
+    .ds-page .main-panel-g-nav li, .main-panel-g-nav .article-nav li {
+        font-size: .875em
+    }
+
+    .article-sponsor-box {
+        width: 78.947368421052632%
+    }
+
+    .article-content {
+        padding-left: 70px;
+        padding-right: 70px
+    }
+
+    .logo-w-list li figure img {
+        padding: 50px 0
+    }
+
+    .logo-w-list li .logo-info-l {
+        padding: 20px 6.25%
+    }
+
+    .j-panel-list li .judge-info p {
+        line-height: 1.375em
+    }
+
+    .award-list li .winner-info {
+        height: 260px
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 100px
+    }
+
+    .awards-nine-sect .ans-info {
+        font-size: 1em;
+        margin-top: 90px
+    }
+
+    .jobs-page-sect .page-intro p {
+        padding: 0 15% 60px
+    }
+
+    ul.full-job-list li .job-list-item-desc-txt h3 {
+        font-size: 1em
+    }
+
+    ul.full-job-list li .job-list-item-extra-txt .job-list-item-date, ul.full-job-list li .job-list-item-extra-txt .job-list-item-type {
+        font-size: .875em
+    }
+
+    ul.full-job-list li .job-list-item-extra-txt .job-list-item-date {
+        line-height: 1.125em
+    }
+
+    ul.full-job-list li {
+        width: 80%;
+        margin-left: 10%
+    }
+
+    .sponsor-area-home li {
+        width: 11.111111111111111%;
+        margin-left: 4.722222222222222%;
+        margin-bottom: 45px
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 14px 20px 0
+    }
+
+    .h-article-item-txt {
+        padding: 68px 20px 0
+    }
+}
+
+@media (max-width: 1024px) {
+    .award-wreath-b, .d-left-panel-home .award-box-sub-b {
+        height: 150px
+    }
+
+    .award-site-det-home, .s-v-a-h-prev-wotd {
+        display: none
+    }
+
+    .award-site-det-home-sub {
+        display: inherit
+    }
+
+    .award-site-det-home-sub h2 {
+        margin-top: 0;
+        padding-top: 35px
+    }
+
+    .award-site-det-des-profile {
+        display: none
+    }
+
+    .h-page .d-left-panel, .h-page .d-main-panel {
+        float: none;
+        width: 100%
+    }
+
+    .award-wreath-date-box-b {
+        padding-top: 0
+    }
+
+    .award-site-det-home h2 {
+        margin-bottom: 30px
+    }
+
+    .award-site-det-home h3 {
+        margin-top: 30px
+    }
+
+    .award-site-det-home .des-loc {
+        padding-bottom: 38px;
+        margin: 0
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 20px 20px 0
+    }
+
+    .des-more-sites-heading, .intro-sub-txt, .judging-panel-name, .similar-site-heading h3, a.back-to-top, a.leaderboard-heading-link, ul.job-list li .job-list-item-desc-txt h4 span.job-list-item-by, ul.job-list li .job-list-item-extra-txt .job-list-item-type {
+        font-size: .875em
+    }
+
+    ul.job-list li .job-list-item-extra-txt .job-list-item-date {
+        padding-bottom: 2px
+    }
+
+    .sponsor-sect-bot .sst-two li img {
+        padding: 27px 16.517857142857143% 28px
+    }
+
+    .footer-home {
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+
+    .footer-nav {
+        width: 91%
+    }
+
+    .footer-social-icons {
+        width: 9%
+    }
+
+    .right-panel .social-icon {
+        margin-right: 4%
+    }
+
+    .right-panel .content {
+        width: 65%
+    }
+
+    .right-panel .rp-sponsor-last {
+        display: none
+    }
+
+    .right-panel .design-humor-sect {
+        padding-bottom: 36px
+    }
+
+    .d-left-panel {
+        float: left;
+        width: 30%
+    }
+
+    .d-main-panel {
+        float: left;
+        width: 70%
+    }
+
+    .vote-link {
+        margin-left: 4%
+    }
+
+    .des-about {
+        padding: 20.375% 0
+    }
+
+    .similar-site-sect-bot li {
+        width: 15%;
+        margin-right: 7%
+    }
+
+    .about-panel section {
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+
+    .about-panel h1, .about-panel h2 {
+        margin-bottom: 20px
+    }
+
+    .about-panel strong {
+        padding-bottom: 15px
+    }
+
+    .leaderboard li {
+        width: 60%
+    }
+
+    .awards-intro h1 {
+        margin: 0 30px 10px
+    }
+
+    .awards-intro p {
+        font-size: .75em
+    }
+
+    .dpd-color-box, .ds-quote {
+        font-size: 1.125em
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 80px
+    }
+
+    .jobs-page-sect .page-intro p {
+        padding: 0 12% 60px
+    }
+
+    .submit-option {
+        width: 28%
+    }
+
+    .submit-option-one {
+        margin-left: 10%
+    }
+
+    .submit-feat-sites li {
+        width: 40%;
+        margin: 0 5% 50px
+    }
+
+    .submit-submit {
+        width: 50%;
+        height: 109px;
+        margin: 0 25% 30px
+    }
+
+    ul.full-event-list li {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 50px
+    }
+
+    .d-w-list li .d-info-l {
+        width: 78.7%
+    }
+
+    .d-w-list li .d-info-r {
+        width: 14.192139737991266%
+    }
+
+    .article-related li {
+        width: 17.605633802816901%;
+        margin-left: 5.915492957746479%
+    }
+
+    .not-found-bg {
+        width: 70%;
+        margin-top: 30px
+    }
+
+    .not-found-bg div {
+        padding-top: 650px
+    }
+
+    .dex-page-intro {
+        width: 77.214170692431562%;
+        margin: 0 auto
+    }
+
+    .job-logo {
+        width: 23%
+    }
+
+    .job-type {
+        width: 77%
+    }
+
+    .dex-page-det-main-l {
+        width: 59.5703125%
+    }
+
+    .dex-page-det-main-r {
+        width: 40.4296875%
+    }
+
+    .dpd-similar {
+        padding: 45px 0 29px
+    }
+
+    a.dpd-back {
+        padding: 45px 0
+    }
+
+    .dex-page-gallery li {
+        width: 29.296875%;
+        margin-right: 6.0546875%
+    }
+
+    .sponsor-area-home li {
+        width: 11.71875%;
+        margin-left: 4.19921875%;
+        margin-bottom: 45px
+    }
+
+    .h-article-item-img-wrapper {
+        float: none;
+        display: block;
+        width: 100%
+    }
+
+    .h-article-title {
+        float: left;
+        display: block;
+        width: 40%
+    }
+
+    .h-article-title-void {
+        float: left;
+        display: block;
+        width: 60%
+    }
+
+    .design-jobs .h-article-item-img-wrapper, .design-jobs .h-article-item-txt-wrapper {
+        width: 100%
+    }
+
+    .h-article-title-b {
+        height: auto
+    }
+
+    .h-article-item-txt-wrapper {
+        float: none;
+        display: block;
+        width: 100%
+    }
+
+    .h-article-item-txt {
+        padding: 28px 40px 70px
+    }
+
+    .articles {
+        padding-bottom: 15px
+    }
+
+    .h-j-panel {
+        padding-top: 60px
+    }
+
+    .design-jobs .h-article-item-img-wrapper img {
+        display: none
+    }
+
+    .copyright, .h-job-info {
+        display: block;
+        font-size: .875em
+    }
+
+    .design-jobs .h-article-title {
+        width: 40%
+    }
+
+    .design-jobs .h-article-title-void {
+        width: 60%
+    }
+
+    .h-job-info {
+        margin-top: 10px
+    }
+
+    .h-logo-wrapper-top .h-article-title {
+        width: 40%
+    }
+
+    .h-logo-wrapper-top .h-article-title-void {
+        width: 60%
+    }
+
+    .h-logo-wrapper-top .h-sect-link {
+        float: none;
+        padding-bottom: 63px
+    }
+
+    .h-footer-nav {
+        float: none;
+        width: 100%
+    }
+
+    .copyright {
+        font-weight: 800;
+        color: #a271ec;
+        margin-top: 20px
+    }
+
+    .h-footer-social {
+        float: none;
+        width: 255px;
+        padding-top: 26px
+    }
+}
+
+@media (max-width: 1023px) {
+    a.back-to-top, a.leaderboard-heading-link {
+        font-size: 1em
+    }
+
+    .main-panel {
+        float: none;
+        width: 100%
+    }
+
+    .right-panel {
+        display: none
+    }
+
+    .award-details {
+        padding: 55px 80px 0
+    }
+
+    ul.job-list li .job-list-item-desc-txt h4 {
+        margin-top: 1.5%
+    }
+
+    ul.job-list li .job-list-item-extra-txt {
+        padding-top: 10%
+    }
+
+    ul.job-list li .job-list-item-extra-txt .job-list-item-date {
+        padding-bottom: 6px
+    }
+
+    .judging-panel-words-txt {
+        padding-top: 38px
+    }
+
+    .awards-page .main-panel-g-nav li {
+        margin: 0
+    }
+
+    #pp-logos {
+        margin-left: 30%
+    }
+
+    .right-panel-g {
+        display: none
+    }
+
+    .gallery li {
+        margin-top: 40px;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+
+    .main-panel-g {
+        width: 100%;
+        float: none
+    }
+
+    .main-panel-g-nav {
+        width: 100%;
+        height: 50px
+    }
+
+    .main-panel-g-nav li {
+        margin: 0 2%
+    }
+}
+
+@media (max-width: 960px) {
+    .about-page-void, .awards-intro p, .filter-judge-list, .h-logo-wrapper-mid figure.f-last, .sponsor-area-home ul {
+        display: none
+    }
+
+    .dex-page-intro h1, .ds-page-intro h1, .page-intro h1, .page-intro h2 {
+        font-size: 1.625em
+    }
+
+    .site-cat-tag {
+        float: none;
+        width: 100%
+    }
+
+    .site-view-stat {
+        width: 24.962852897473997%
+    }
+
+    .site-vote-link {
+        width: 50.074294205052006%
+    }
+
+    .site-visit-link {
+        width: 24.962852897473997%
+    }
+
+    .vote-link {
+        margin-left: 25%
+    }
+
+    .des-about {
+        padding: 20.15% 0
+    }
+
+    .sponsors {
+        padding: 37px 0 0
+    }
+
+    .sponsors li {
+        width: 13%;
+        margin-left: 3%;
+        margin-bottom: 40px
+    }
+
+    .footer-sect-main {
+        padding: 40px 0
+    }
+
+    .footer-sect-main .footer-nav {
+        width: 86%
+    }
+
+    .main-panel-g-nav li {
+        margin: 0 .5%
+    }
+
+    .page-intro p {
+        padding: 0 10% 60px
+    }
+
+    .dex-page-intro h2 {
+        font-size: 1.5em
+    }
+
+    .logo-w-list li {
+        width: 30%;
+        margin-right: 5%
+    }
+
+    .logo-w-list li figure img {
+        width: 150px;
+        padding: 45px 0
+    }
+
+    .main-panel-g-nav .about-nav li, .main-panel-g-nav .article-nav li {
+        margin: 0
+    }
+
+    .article-sponsor-box {
+        width: 83.333333333333333%
+    }
+
+    .j-panel-list li {
+        width: 30%;
+        margin-right: 5%
+    }
+
+    .about-page-top {
+        margin-top: 0
+    }
+
+    .about-panel {
+        float: none;
+        width: 100%
+    }
+
+    .about-page-bot-l-panel {
+        float: none;
+        width: 90%
+    }
+
+    .about-page-bot-r-panel {
+        float: none;
+        width: 90%;
+        padding-left: 5.625%;
+        padding-right: 3.4375%
+    }
+
+    .about-page-bot {
+        padding: 50px 0 20px
+    }
+
+    .awards-intro h1 {
+        margin-top: 45px
+    }
+
+    .awards-three-sect h2 {
+        margin: 70px 30px 0
+    }
+
+    .awards-three-sect p {
+        padding: 60px
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 70px
+    }
+
+    .awards-nine-sect figure {
+        float: none;
+        width: 100%
+    }
+
+    .awards-nine-sect .ans-info {
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+
+    .submit-option .so-title {
+        font-size: 1.375em
+    }
+
+    .pay-submit {
+        width: 90%;
+        margin-left: 5%
+    }
+
+    .article-related-wrapper a.back-to-top {
+        font-size: .875em
+    }
+
+    .ds-page .main-panel-g-nav li {
+        margin: 0 .25%
+    }
+
+    .not-found-bg div {
+        padding-top: 630px
+    }
+
+    .sponsor-area-home {
+        padding-top: 0
+    }
+
+    .h-logo-wrapper-mid figure {
+        width: 46.511627906976744%;
+        margin-right: 3.10077519379845%
+    }
+
+    .h-logo-wrapper-top .h-sect-link {
+        padding-bottom: 36px
+    }
+}
+
+@media (max-width: 934px) {
+    .awards-dt-only {
+        display: none
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding-top: 55px
+    }
+
+    .jobs-page-sect .page-intro p {
+        padding: 0 10% 60px
+    }
+
+    .submit-option .so-title {
+        padding: 0
+    }
+
+    .article-related li {
+        width: 19.30210815212474%;
+        margin-left: 4.558313478300208%
+    }
+
+    .ds-page .main-panel-g-nav li {
+        margin: 0 .1%
+    }
+
+    .job-logo {
+        width: 25%
+    }
+
+    .job-type {
+        width: 75%
+    }
+}
+
+@media (max-width: 885px) {
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 20px 18px 0
+    }
+
+    .h-j-panel {
+        padding-top: 50px
+    }
+}
+
+@media (max-width: 854px) {
+    .footer-sect-void, .sponsors-sect {
+        display: none
+    }
+
+    .footer-sect-main .footer-nav {
+        width: 86%
+    }
+
+    ul.job-list li .job-list-item-desc-txt h4 {
+        line-height: 1.375em
+    }
+
+    .doty-leaderboard-heading-title h3 {
+        padding: 45px 11% 0
+    }
+
+    .doty-leaderboard-list li .rank {
+        margin-top: -8px
+    }
+
+    .doty-leaderboard-list li .info .des-name {
+        padding: 3px 0
+    }
+
+    .des-about {
+        padding: 19.75% 0
+    }
+
+    .similar-site-sect-bot li {
+        width: 15%
+    }
+
+    .articles-page .article-wrapper, .footer-sect-main, .main-panel-g {
+        width: 100%
+    }
+
+    .main-panel-g {
+        float: none
+    }
+
+    .main-panel-g-nav {
+        width: 100%;
+        height: 50px
+    }
+
+    .dex-page-intro h1 {
+        margin-top: 100px
+    }
+
+    .the-dex-page .main-panel-g-nav {
+        height: 90px
+    }
+
+    .main-panel-g-nav .about-nav li, .main-panel-g-nav li {
+        margin: 0 2%
+    }
+
+    .main-panel-g-nav .article-nav li {
+        font-size: 1em
+    }
+
+    .pagination {
+        font-size: 1.25em;
+        margin-top: 80px;
+        padding: 25px
+    }
+
+    .about-panel section {
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+    .about-panel h1, .about-panel h2 {
+        margin-bottom: 20px
+    }
+
+    .about-panel strong {
+        padding-bottom: 15px
+    }
+
+    .awards-intro h1 {
+        margin-top: 30px
+    }
+
+    .awards-three-sect p {
+        padding: 60px 40px
+    }
+
+    .award-list li .winner-info {
+        padding-top: 10px;
+        height: 220px
+    }
+
+    .award-list li .winner-name {
+        padding-bottom: 10px
+    }
+
+    .award-list li .winner-desc {
+        font-size: .875em
+    }
+
+    .awards-five-sect .afs-one-col {
+        padding: 40px 0 0
+    }
+
+    .afs-one-col h2 {
+        font-size: 1em
+    }
+
+    .submit-options {
+        margin-bottom: 100px
+    }
+
+    .submit-info-l-panel, .submit-info-r-panel {
+        float: none;
+        width: 90%;
+        padding: 0 5%
+    }
+
+    .contact-form-wrapper {
+        width: 75%
+    }
+
+    .submit-submit {
+        height: 90px
+    }
+
+    .pay-submit {
+        width: 70%;
+        margin-left: 15%
+    }
+
+    #pp-logos {
+        margin-left: 35%
+    }
+
+    .article-related-wrapper {
+        margin-top: 55px
+    }
+
+    .article-related {
+        float: none;
+        width: 100%;
+        padding: 50px 0 0
+    }
+
+    .article-related li {
+        width: 18.73536299765808%;
+        margin-left: 5.011709601873536%
+    }
+
+    .article-related-wrapper a.back-to-top {
+        float: right;
+        width: 18%;
+        padding: 5% 0
+    }
+
+    .comments {
+        margin: 65px auto 50px
+    }
+
+    .ds-page-intro p {
+        padding-left: 10%;
+        padding-right: 10%
+    }
+
+    .not-found-bg {
+        margin-top: 0
+    }
+
+    .not-found-bg div {
+        padding-top: 600px
+    }
+
+    .job-logo {
+        width: 28%
+    }
+
+    .job-type {
+        width: 72%
+    }
+}
+
+@media (max-width: 800px) {
+    .doty-leaderboard-sect, .misc-sect, .sponsor-list li .sponsor-info, .sponsor-sect-bot, ul.job-list li .job-list-item-extra, ul.job-list li figure {
+        display: none
+    }
+
+    .award-details {
+        padding: 45px 65px 0
+    }
+
+    .sponsor-sect-top .sst-three {
+        padding-bottom: 2.5%
+    }
+
+    a.feature-label-link {
+        padding: 55.25% 0
+    }
+
+    a.flt-teal {
+        padding: 64% 0
+    }
+
+    .job-heading-title, .logo-heading-title {
+        height: 100px;
+        line-height: 100px
+    }
+
+    .job-heading-extra, .logo-heading-extra {
+        height: 100px
+    }
+
+    ul.job-list li .job-list-item-desc-txt {
+        float: none;
+        width: 100%;
+        padding: 4px 0 12px
+    }
+
+    ul.logo-list {
+        list-style: none;
+        padding: 30px 0
+    }
+
+    ul.logo-list li {
+        list-style: none;
+        float: left;
+        width: 18.75%;
+        margin-left: 5%
+    }
+
+    .judging-panel-words-txt {
+        padding-top: 15px
+    }
+
+    .site-social .social-icon {
+        width: 13%
+    }
+
+    .des-about {
+        padding: 19.75% 0
+    }
+
+    .footer-sect-main {
+        padding: 30px 0
+    }
+
+    .footer-sect-main .footer-nav {
+        width: 83%
+    }
+
+    .sponsor-list li {
+        width: 26%;
+        margin-right: 11%
+    }
+
+    .j-panel-list li, .logo-w-list li {
+        width: 35%;
+        margin-left: 10%;
+        margin-right: 0
+    }
+
+    .logo-w-list li {
+        margin-top: 60px
+    }
+
+    .logo-w-list li figure img {
+        padding: 55px 0
+    }
+
+    .leaderboard li {
+        width: 70%
+    }
+
+    .awards-intro {
+        float: none;
+        width: 100%
+    }
+
+    .awards-intro h1 {
+        margin: 30px 70px
+    }
+
+    .dpd-des-name h1, .logo-w-list li {
+        margin-bottom: 60px
+    }
+
+    .awards-one-sect figure {
+        width: 50%
+    }
+
+    .afs-one-col h2 {
+        font-size: 1em;
+        line-height: 1.25em
+    }
+
+    .awards-four-sect .award-list li {
+        float: none;
+        width: 100%;
+        background: #ffea00
+    }
+
+    .awards-four-sect .award-list li:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .dex-nav, .dpd-similar-sites li:last-child {
+        display: none
+    }
+
+    .awards-four-sect .award-list li figure {
+        float: left;
+        width: 33.375%
+    }
+
+    .awards-four-sect .award-list li .winner-info {
+        float: left;
+        width: 66%;
+        height: 130px;
+        padding: 0
+    }
+
+    .awards-four-sect .award-list li .winner-name {
+        padding-top: 50px;
+        text-align: center
+    }
+
+    .awards-four-sect .award-list li .winner-desc {
+        padding: 0 50px;
+        text-align: center
+    }
+
+    ul.full-job-list li {
+        width: 90%;
+        margin-left: 5%
+    }
+
+    .logo-wall-page .page-intro p {
+        padding: 0 10%
+    }
+
+    .dex-page-det-main-l, .dex-page-det-main-r {
+        float: none;
+        width: 100%
+    }
+
+    .dpd-color-box {
+        padding: 55px 20px
+    }
+
+    .dpd-similar {
+        padding: 45px 0 29px;
+        font-size: .675em
+    }
+
+    a.dpd-back {
+        padding: 45px 0;
+        font-size: .675em
+    }
+
+    .dpd-similar-sites li {
+        width: 26.923076923076923%;
+        margin-right: 9.230769230769231%
+    }
+
+    .dpd-similar-sites li:nth-child(3) {
+        margin-right: 0
+    }
+
+    .dpd-des-name h1 {
+        font-size: 1.5em;
+        font-weight: 800;
+        line-height: 1.5em;
+        color: #fff
+    }
+
+    .award-site-det-home h2 {
+        margin-bottom: 20px
+    }
+
+    .award-site-det-home h3 {
+        margin-top: 20px
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 18px 18px 0
+    }
+}
+
+@media (max-width: 768px) {
+    .h-sites-list li {
+        float: none;
+        width: 100%
+    }
+
+    .h-sites-list li:nth-child(2), .h-sites-list li:nth-child(3), .h-sites-list li:nth-child(4) {
+        display: none
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 28px 20px 0;
+        height: 18%
+    }
+
+    .h-sites-list li .h-site-item .view-icon {
+        display: inherit
+    }
+
+    .article-related li:nth-child(4), .h-sites-list li .h-site-item .view-icon, ul.full-event-list li figure {
+        display: none
+    }
+
+    .footer-nav, .footer-social-icons {
+        float: none;
+        width: 100%
+    }
+
+    .sponsor-sect-top .sst-three {
+        padding-bottom: 2.45%
+    }
+
+    .judging-panel-words-txt {
+        padding-top: 7px
+    }
+
+    .footer-home {
+        padding-bottom: 15px
+    }
+
+    .footer-nav {
+        margin-bottom: 20px
+    }
+
+    .footer-social-icons .social-icon {
+        margin-right: 30px
+    }
+
+    .des-about {
+        padding: 19.45% 0
+    }
+
+    .similar-site-heading {
+        padding: 47px 0 40px
+    }
+
+    .similar-site-sect-bot li {
+        width: 18%;
+        margin-right: 3%
+    }
+
+    .footer-sect-main {
+        padding: 30px 0 20px
+    }
+
+    .footer-sect-main .footer-nav {
+        float: none;
+        width: 90%
+    }
+
+    .footer-sect-main .footer-social-icons {
+        float: none;
+        width: 95%;
+        margin-left: 4.557291666666667%
+    }
+
+    ul.full-event-list li .event-list-item-desc {
+        float: none;
+        width: 100%
+    }
+
+    .d-w-list li {
+        margin-top: 60px
+    }
+
+    .article-content h2 {
+        margin-top: 30px
+    }
+
+    .article-related li {
+        width: 20.833333333333333%;
+        margin-left: 10%
+    }
+
+    .not-found-bg {
+        width: 90%;
+        margin-top: 0
+    }
+
+    .not-found-bg div {
+        padding-top: 620px
+    }
+
+    .not-found-bg a {
+        padding: 3% 0
+    }
+
+    .ds-quote {
+        font-size: 1em
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 16px 18px 0
+    }
+
+    .feat-articles .h-article-item {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px
+    }
+
+    .design-jobs .h-article-item {
+        float: none;
+        width: 100%;
+        margin-bottom: 60px
+    }
+
+    .h-logo-wrapper-mid figure {
+        width: 30.351906158357771%;
+        margin-right: 4.398826979472141%
+    }
+
+    .h-logo-wrapper-mid figure.f-last {
+        display: inherit
+    }
+
+    .h-logo-wrapper-top .h-sect-link {
+        padding-bottom: 20px
+    }
+
+    .h-j-panel {
+        padding-top: 0
+    }
+}
+
+@media (max-width: 750px) {
+    .award-box-sub figure, .award-congrats, .award-trophy-sect, .judging-panel-heading-words {
+        display: none
+    }
+
+    .sponsor-sect-top .sst-three {
+        padding-bottom: 2.3%
+    }
+
+    .award-box-main, .award-box-sub {
+        float: none;
+        width: 100%
+    }
+
+    .award-wreath {
+        height: auto
+    }
+
+    .award-wreath-date-box {
+        padding-top: 0
+    }
+
+    .award-wreath-title {
+        padding-bottom: 20px
+    }
+
+    .vote-link {
+        margin-left: 20%
+    }
+
+    a.feature-label-link {
+        padding: 54.5% 0
+    }
+
+    a.flt-teal {
+        padding: 63.2% 0
+    }
+
+    a.judging-panel-heading-link {
+        float: right
+    }
+
+    .award-site-det h2, .award-site-det h3, .award-site-det p {
+        font-size: 1.125em;
+        width: 75%
+    }
+
+    .award-site-det p {
+        font-size: .875em
+    }
+
+    .main-panel-g-nav li {
+        margin: 0 1%
+    }
+
+    .pagination {
+        padding: 20px
+    }
+
+    .pagination a, .pagination span.current, .pagination span.dotdotdot {
+        padding: 10px 14px
+    }
+
+    .jobs-page h2 {
+        font-size: 1.25em
+    }
+
+    .submit-option {
+        width: 30%
+    }
+
+    .submit-option-one {
+        margin-left: 8%
+    }
+
+    .job-logo {
+        width: 32%
+    }
+
+    .job-type {
+        width: 68%
+    }
+}
+
+@media (max-width: 700px) {
+    .sponsor-sect-top .sst-three {
+        padding-bottom: 2.1%
+    }
+
+    a.feature-label-link {
+        padding: 53.5% 0
+    }
+
+    a.flt-teal {
+        padding: 53% 0
+    }
+
+    .dt-only-two-lw {
+        display: none
+    }
+
+    .intro-contact-link {
+        display: block;
+        padding-top: 15px
+    }
+
+    .afs-one-col-dt-only, ul.full-job-list li .job-list-item-extra, ul.full-job-list li figure {
+        display: none
+    }
+
+    .afs-one-col h2 {
+        text-align: center;
+        margin: 60px 20px 0
+    }
+
+    ul.full-job-list li .job-list-item-desc-txt {
+        width: 100%;
+        padding-bottom: 10px
+    }
+
+    .submit-option .so-title {
+        font-size: 1.25em
+    }
+
+    .submit-option .so-link a {
+        font-size: 1.125em
+    }
+
+    .submit-feat-sites li {
+        float: none;
+        width: 90%;
+        margin: 0 5% 50px
+    }
+
+    .not-found-bg {
+        width: 100%
+    }
+
+    .job-logo {
+        width: 35%
+    }
+
+    .job-type {
+        width: 65%
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 10px 10px 0
+    }
+
+    .h-footer-nav li {
+        font-size: .8125em
+    }
+}
+
+@media (max-width: 640px) {
+    .d-left-panel, .d-main-panel, .des-image, .h-j-panel-l, .h-sites-list li, a.des-in-the-dex {
+        float: none;
+        width: 100%
+    }
+
+    .award-details {
+        padding: 40px 55px 0
+    }
+
+    .site-nav-extra-sect {
+        margin-top: 0
+    }
+
+    .site-nav-extra-sect .site-nav a {
+        font-size: .875em
+    }
+
+    .award-wreath-b {
+        width: 100%;
+        height: 170px
+    }
+
+    .award-wreath-date-box-b {
+        padding-top: 15px
+    }
+
+    .d-left-panel-home .award-wreath-date-box-b {
+        padding-top: 0
+    }
+
+    .h-sites-list li:nth-child(2), .h-sites-list li:nth-child(3), .h-sites-list li:nth-child(4) {
+        display: none
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 28px 20px 0;
+        height: 28%
+    }
+
+    .h-sites-list li .h-site-item .view-icon {
+        display: inherit
+    }
+
+    .h-j-panel-l h2 {
+        margin-left: 5.5625%
+    }
+
+    .award-site-det, .h-j-panel-r {
+        display: none
+    }
+
+    .site-summary {
+        display: inherit;
+        padding: 20px
+    }
+
+    .site-info-sup {
+        display: none
+    }
+
+    .site-sum-des, .site-sum-name {
+        font-size: 1.375em;
+        font-style: normal;
+        font-weight: 800;
+        margin: 5px auto 0;
+        display: block;
+        line-height: 1.25em
+    }
+
+    .site-sum-des {
+        font-size: 1.25em
+    }
+
+    .site-summary span {
+        display: block;
+        margin-top: 3px
+    }
+
+    .des-about {
+        padding: 5% 0
+    }
+
+    .extra-det-void, .similar-site-sect-bot, .site-extra-screenshots, .ss-l-panel, .ss-void {
+        display: none
+    }
+
+    a.des-in-the-dex {
+        padding: 5.2% 0
+    }
+
+    .main-panel-g-nav {
+        height: 90px
+    }
+
+    .main-panel-g-nav li {
+        display: inline-block;
+        width: 30%;
+        margin: 0
+    }
+
+    .award-wreath-m, .post-job-cost {
+        display: none
+    }
+
+    .sponsors-page .main-panel-g-nav li {
+        width: 100%
+    }
+
+    .events-page .main-panel-g-nav, .leaderboard-page .main-panel-g-nav, .logo-wall-page .main-panel-g-nav, .sponsors-page .main-panel-g-nav, .the-dex-page .main-panel-g-nav {
+        height: 60px
+    }
+
+    .the-dex-page .main-panel-g-nav {
+        height: 90px
+    }
+
+    .contact-page .main-panel-g-nav {
+        height: 30px
+    }
+
+    .leaderboard-page .main-panel-g-nav li, .main-panel-g-nav .about-nav li, .main-panel-g-nav .job-nav li {
+        width: 40%
+    }
+
+    .page-intro h1, .page-intro h2 {
+        font-size: 1.5em;
+        margin-top: 50px
+    }
+
+    .page-intro p {
+        padding-bottom: 50px
+    }
+
+    .dex-page-intro h1 {
+        font-size: 1.5em
+    }
+
+    .dex-page-intro h2 {
+        font-size: 1.375em
+    }
+
+    .dex-page-intro .coming-soon {
+        font-size: 1.25em
+    }
+
+    .sponsor-list li figure img {
+        padding: 30px 0
+    }
+
+    .j-panel-list li .judge-info p {
+        font-size: .875em
+    }
+
+    .submit-page-intro p {
+        padding: 0 10% 30px
+    }
+
+    .pay-submit {
+        width: 90%;
+        margin-left: 5%
+    }
+
+    #pp-logos {
+        margin-left: 30%
+    }
+
+    .d-w-list li {
+        float: none;
+        width: 80%;
+        margin: 60px 10% 0
+    }
+
+    .ds-page-intro h1 {
+        margin-left: 1%;
+        margin-right: 1%
+    }
+
+    .not-found-bg {
+        margin-top: -30px
+    }
+
+    .not-found-bg div {
+        padding-top: 600px
+    }
+
+    .article-related-wrapper a.back-to-top {
+        padding: 6% 0 5%;
+        font-size: .75em
+    }
+
+    .job-logo {
+        width: 38%
+    }
+
+    .job-type {
+        width: 62%
+    }
+}
+
+@media (max-width: 600px) {
+    .comments, .dpd-similar-sites li:last-child, .dpd-similar-sites li:nth-child(3), .footer-nav, .h-footer-nav, .logo-w-list li .logo-info-r, .sponsor-sect-top {
+        display: none
+    }
+
+    .h-sites {
+        padding-bottom: 60px
+    }
+
+    .s-v-a-h-view {
+        padding: 22px 0 0 10px;
+        height: 60px
+    }
+
+    .s-v-a-h-applause {
+        padding: 15px 0 0 10px;
+        height: 60px
+    }
+
+    .h-footer-wide {
+        background: #673ab7;
+        padding-left: 5.5625%
+    }
+
+    .h-footer-social {
+        padding-top: 0
+    }
+
+    .leaderboard-page .main-panel-g-nav li, .tally-wotd, .tally-wotm, .tdi-name {
+        font-size: 1em
+    }
+
+    .feature-label {
+        width: 32%
+    }
+
+    .feature-main {
+        width: 68%
+    }
+
+    a.feature-label-link {
+        padding: 40% 0
+    }
+
+    .gallery li {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%
+    }
+
+    .g-site-item-stats-view a.view-icon {
+        margin: 2px 0 0 33%
+    }
+
+    .sponsor-list li figure img {
+        max-width: 100%;
+        padding: 20px 0
+    }
+
+    .j-panel-list li, .logo-w-list li {
+        width: 42.5%;
+        margin-left: 5%;
+        margin-right: 0
+    }
+
+    .logo-w-list li .logo-info-l {
+        float: none;
+        width: 87%
+    }
+
+    .logo-w-list li figure img {
+        padding: 40px 0
+    }
+
+    .contact-form-wrapper {
+        width: 75%
+    }
+
+    .tally-des {
+        padding: 18px 0 18px 20px
+    }
+
+    .tally-wotd-wotm {
+        padding-top: 17px;
+        padding-bottom: 12px
+    }
+
+    .tally-wreath {
+        margin: 0 auto 3px
+    }
+
+    .awards-four-sect .award-list li .winner-name {
+        padding-top: 30px
+    }
+
+    .afs-one-col h2 {
+        text-align: center;
+        margin: 50px 20px 0
+    }
+
+    .jobs-page .page-intro h1, .jobs-page .page-intro h2 {
+        font-size: 1.25em;
+        margin-top: 40px
+    }
+
+    .dex-page-intro {
+        width: 90%
+    }
+
+    .dex-page-intro h1 {
+        margin-top: 60px
+    }
+
+    .jobs-page .page-intro p {
+        padding-bottom: 40px
+    }
+
+    .job-details {
+        line-height: 1.5em;
+        margin-top: 35px
+    }
+
+    .job-details h1 {
+        font-size: 1.25em;
+        margin-bottom: 20px
+    }
+
+    .job-loc {
+        font-size: 1.125em
+    }
+
+    .submit-submit {
+        width: 60%;
+        margin: 0 20% 30px;
+        font-size: 1.25em
+    }
+
+    .article-related li {
+        width: 26.666666666666667%;
+        margin-left: 5%
+    }
+
+    .article-related-wrapper a.back-to-top {
+        float: none;
+        width: 100%;
+        padding: 6% 0 5%
+    }
+
+    .dpd-similar-sites li {
+        width: 35.93429158110883%;
+        margin-right: 25.66735112936345%
+    }
+
+    .dpd-similar-sites li:nth-child(2) {
+        margin-right: 0
+    }
+
+    .dex-page-gallery li {
+        float: none;
+        width: 66.666666666666667%;
+        margin-left: 16.666666666666667%;
+        margin-right: 16.666666666666667%
+    }
+}
+
+@media (max-width: 551px) {
+    .leaderboard li {
+        width: 85%
+    }
+
+    .submit-page h2 {
+        font-size: 1.375em
+    }
+
+    .submit-page-intro {
+        margin-bottom: 40px
+    }
+
+    .submit-page-intro h1 {
+        font-size: 1.25em
+    }
+
+    .submit-option .so-title {
+        font-size: 1em
+    }
+
+    .submit-option .so-link a {
+        font-size: 1em;
+        padding: 25px 0
+    }
+
+    .submit-options {
+        margin-bottom: 80px
+    }
+
+    .submit-info {
+        padding: 50px
+    }
+
+    .job-cat, .job-posted {
+        display: block;
+        width: 100%
+    }
+
+    .not-found-bg div {
+        padding-top: 570px
+    }
+
+    .articles-page .main-panel-g-nav {
+        height: 120px
+    }
+
+    .job-logo {
+        width: 40%
+    }
+
+    .job-type {
+        width: 60%
+    }
+
+    .job-logo-type {
+        margin-bottom: 0
+    }
+}
+
+@media (max-width: 540px) {
+    .article-related li:nth-child(3), .dt-only-one-lw, .job-logo {
+        display: none
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 20px 20px 0
+    }
+
+    .pagination a, .pagination span.current, .pagination span.dotdotdot {
+        padding: 5px 10px
+    }
+
+    .intro-sub-txt {
+        font-size: .875em
+    }
+
+    .article-content {
+        padding-left: 50px;
+        padding-right: 50px
+    }
+
+    .awards-four-sect .award-list li .winner-name {
+        padding-top: 15px
+    }
+
+    .afs-one-col h2 {
+        margin: 30px 20px 0
+    }
+
+    .ats-l-panel, .ats-r-panel {
+        float: none;
+        width: 100%
+    }
+
+    .awards-three-sect h2 {
+        font-size: 1em;
+        margin: 30px
+    }
+
+    .awards-three-sect p {
+        padding: 30px
+    }
+
+    .pay-submit {
+        height: 89px;
+        font-size: 1.125em
+    }
+
+    #pp-logos {
+        margin-left: 28%
+    }
+
+    .article-related li {
+        width: 29.62962962962963%;
+        margin-left: 13.580246913580247%
+    }
+
+    .not-found-bg {
+        margin-top: -60px
+    }
+
+    .job-type {
+        float: none;
+        width: 100%;
+        padding-top: 0
+    }
+
+    .awards-four-sect .award-list li figure {
+        float: none;
+        width: 100%
+    }
+
+    .awards-four-sect .award-list li .winner-info {
+        float: none;
+        width: 100%;
+        padding-top: 8px
+    }
+
+    .cert-list li {
+        float: none;
+        width: 100%
+    }
+}
+
+@media (max-width: 480px) {
+    .award-site-det-home h2 {
+        font-size: 1.375em
+    }
+
+    .h-logo-wrapper-mid figure {
+        width: 46.511627906976744%;
+        margin-right: 3.10077519379845%
+    }
+
+    .dt-only, .h-logo-wrapper-mid figure.f-last, .judging-panel-heading-words, .logo-sect, ul.job-list li:nth-child(3) {
+        display: none
+    }
+
+    a.job-heading-link, a.judging-panel-heading-link {
+        float: none;
+        width: 100%
+    }
+
+    .vote-link {
+        margin-left: 15%
+    }
+
+    .page-intro h1, .page-intro h2 {
+        font-size: 1.25em;
+        margin-top: 40px
+    }
+
+    .page-intro p {
+        padding-left: 2em;
+        padding-right: 2em
+    }
+
+    .sponsor-list li {
+        width: 31.25%;
+        margin-left: 12.5%;
+        margin-right: 0;
+        margin-bottom: 30px
+    }
+
+    .intro-contact-link {
+        padding-top: 8px
+    }
+
+    .intro-sub-txt {
+        display: block;
+        width: 100%;
+        padding-top: 10px
+    }
+
+    .article-divider, .awards-eight-sect, .awards-seven-sect, .cert-dt-only, .dpd-similar, .dpd-similar-sites, .dpd-sites-feat, .sponsor-list .clearfix, .submit-feat-sites, .submit-quotes, .the-dex-page .cs-extra, a.dpd-back {
+        display: none
+    }
+
+    .j-panel-list li, .logo-w-list li {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%
+    }
+
+    .logo-w-list li figure img {
+        width: 207px;
+        padding: 70px 0
+    }
+
+    .j-panel-list li .judge-info-box {
+        height: 180px
+    }
+
+    .article-content {
+        padding: 30px
+    }
+
+    .article-content h1 {
+        font-size: 1.25em;
+        margin-bottom: 15px
+    }
+
+    .article-content h2 {
+        font-size: 1em
+    }
+
+    .article-content p {
+        line-height: 1.5em
+    }
+
+    .article-text {
+        margin-bottom: 50px
+    }
+
+    .afs-one-col h2 {
+        margin: 20px 20px 0
+    }
+
+    .awards-five-sect .award-list li, .awards-six-sect .award-list li {
+        width: 33.333333333333333%
+    }
+
+    .awards-five-sect .award-list li.afs-one-col {
+        float: none;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 20px;
+        text-transform: capitalize
+    }
+
+    .jobs-page .page-intro h1, .jobs-page .page-intro h2 {
+        font-size: 1.125em;
+        margin-top: 30px
+    }
+
+    .jobs-page .page-intro p {
+        padding-bottom: 30px
+    }
+
+    .submit-page-intro {
+        margin-bottom: 20px
+    }
+
+    .submit-page-intro p {
+        padding: 0 10% 30px
+    }
+
+    .submit-option {
+        float: none;
+        width: 80%;
+        margin: 0 10%
+    }
+
+    .submit-option .so-title {
+        font-size: 1.25em;
+        margin-bottom: 10px
+    }
+
+    .submit-option .so-link a {
+        font-size: 1.25em;
+        padding: 25px 0
+    }
+
+    .submit-option-or {
+        float: none;
+        width: 90%;
+        font-size: 1.75em;
+        padding: 20px 0
+    }
+
+    .submit-info {
+        margin-bottom: 0
+    }
+
+    .submit-submit {
+        width: 80%;
+        margin: 0 10% 30px;
+        height: 80px
+    }
+
+    .submit-page-intro h1 {
+        line-height: 1.5em;
+        margin-top: 40px
+    }
+
+    .pay-submit {
+        width: 100%;
+        margin-left: 0
+    }
+
+    .job-details {
+        width: 85%
+    }
+
+    ul.full-event-list {
+        padding-bottom: 0
+    }
+
+    .article-related li {
+        width: 37.209302325581395%;
+        margin-left: 8.527131782945736%
+    }
+
+    .ds-page .main-panel-g-nav {
+        height: 110px
+    }
+
+    .not-found-bg {
+        margin-top: -90px
+    }
+
+    .ds-designer-info {
+        font-size: .875em
+    }
+
+    .dpd-color-box {
+        padding: 35px 20px;
+        font-size: 1em
+    }
+
+    .dex-page-det-main-l-top-l, .dex-page-det-main-l-top-r {
+        float: none;
+        width: 100%
+    }
+
+    .dex-page-det-main-l-top-r-top .site-stats {
+        height: 177px
+    }
+
+    .stats-view-box {
+        padding-top: 30px
+    }
+
+    .dex-page-det-main-l-top-r-bot img {
+        display: block;
+        width: 41.666666666666667%;
+        margin: 0 auto
+    }
+
+    .dex-page-gallery li {
+        width: 80%;
+        margin: 60px 10% 0
+    }
+
+    .awards-five-sect .award-list li, .awards-six-sect .award-list li {
+        width: 33.333333333333333%
+    }
+}
+
+@media (max-width: 460px) {
+    .h-sites-title {
+        width: 380px
+    }
+}
+
+@media (max-width: 430px) {
+    .h-sites-title {
+        width: 370px
+    }
+
+    .award-site-det-home h2 {
+        font-size: 1.375em
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 14px 18px 0
+    }
+
+    .award-score-legend-home {
+        padding: 0 30px;
+        margin-top: 2px
+    }
+
+    .award-scores-home .award-score-legend {
+        line-height: 1em
+    }
+
+    .h-sites-list li .h-site-item .view-icon, .site-view-stat, .site-visit-link {
+        display: none
+    }
+
+    .site-vote-link {
+        float: none;
+        width: 100%
+    }
+
+    .main-panel-g-nav .about-nav {
+        height: 130px
+    }
+
+    .leaderboard-page .main-panel-g-nav li, .main-panel-g-nav .about-nav li {
+        width: 40%;
+        font-size: .875em
+    }
+
+    .judges-page .contact-box, .not-found-bg a {
+        font-size: 1em
+    }
+
+    .articles-page .gallery li:first-child {
+        margin-top: 50px
+    }
+
+    .d-page-sect h1 {
+        margin: 50px 0 0
+    }
+
+    .jobs-page .page-intro h1, .jobs-page .page-intro h2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        line-height: 1.5em
+    }
+
+    #browser-hidden, #browser-visible {
+        width: 309px
+    }
+
+    #file-field {
+        width: 100px
+    }
+
+    #pp-logos {
+        margin-left: 25%
+    }
+
+    .tdi-name {
+        padding-bottom: 15px
+    }
+
+    .not-found-bg {
+        margin-top: -110px
+    }
+
+    .not-found-bg div {
+        padding-top: 540px
+    }
+
+    .article-related-wrapper a.back-to-top {
+        padding: 7% 0 5%
+    }
+}
+
+@media (max-width: 400px) {
+    .h-sites-title {
+        width: 350px
+    }
+
+    .award-score-legend-home {
+        padding: 0 20px
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 10px 12px 0
+    }
+
+    .award-details-box, .site-stats {
+        height: 170px
+    }
+
+    .award-details {
+        float: both;
+        width: 100%;
+        padding: 30px 25px 0
+    }
+
+    .award-details-site-des {
+        display: none
+    }
+
+    .award-score-val {
+        font-size: 1em
+    }
+
+    .award-score-legend {
+        font-size: .625em
+    }
+
+    .stats-view-box {
+        padding-top: 29px
+    }
+
+    .stats-applause-box {
+        padding-top: 20px
+    }
+
+    .feature-label {
+        width: 29.5%
+    }
+
+    .feature-main {
+        width: 70.5%
+    }
+
+    .feature-main:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .about-dt-only, .des-short, .job-heading-extra, .tally-images {
+        display: none
+    }
+
+    .feature-main-info-txt {
+        padding: 20px 20px 0
+    }
+
+    .job-heading-title {
+        float: none;
+        width: 100%;
+        height: 50px;
+        line-height: 50px
+    }
+
+    .judging-panel-heading-title {
+        height: 60px;
+        line-height: 60px
+    }
+
+    .feature-label-txt-ddf h2 {
+        position: relative;
+        top: 10px
+    }
+
+    a.feature-label-link {
+        padding: 56% 0
+    }
+
+    a.flt-teal {
+        padding: 65% 0
+    }
+
+    .site-info-box {
+        height: 120px
+    }
+
+    .site-vote-link {
+        height: 95px
+    }
+
+    .vote-link-box {
+        padding-top: 25px
+    }
+
+    .vote-link {
+        margin-left: 25%
+    }
+
+    .extra-det-info {
+        padding: 50px 60px
+    }
+
+    .page-intro h1, .page-intro h2 {
+        font-size: 1.125em;
+        margin: 30px 0 20px
+    }
+
+    .page-intro p {
+        font-size: .8125em
+    }
+
+    .about-page-bot-panel h2, .about-panel h1, .about-panel h2 {
+        font-size: 1.25em
+    }
+
+    .sponsor-list li {
+        width: 35%;
+        margin-left: 10%
+    }
+
+    .j-panel-list li .judge-info {
+        padding: 20px
+    }
+
+    .j-panel-list li .judge-info h2 {
+        margin-bottom: 10px
+    }
+
+    .about-page p {
+        line-height: 1.5em
+    }
+
+    .about-panel strong, .pay-submit {
+        font-size: 1em
+    }
+
+    .leaderboard li {
+        margin-bottom: 20px
+    }
+
+    .tally-des-info, .tally-wotd-wotm {
+        float: none;
+        width: 100%
+    }
+
+    .submit-info {
+        padding: 30px 20px
+    }
+
+    #pp-logos {
+        margin-left: 20%
+    }
+
+    .main-panel-g-nav .job-nav li {
+        width: 40%;
+        font-size: .875em
+    }
+
+    .article-content h2 {
+        margin-top: 20px
+    }
+
+    .awards-four-sect .award-list li .winner-info {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .gallery li.g-article-item {
+        margin-top: 60px
+    }
+
+    .submit-submit {
+        width: 90%;
+        margin: 0 5% 30px
+    }
+
+    .article-related li {
+        width: 40%;
+        margin-left: 6.666666666666667%
+    }
+
+    .not-found-bg {
+        margin-top: -130px
+    }
+
+    .not-found-bg div {
+        padding-top: 520px
+    }
+
+    .not-found-bg a {
+        width: 40%;
+        padding: 5% 0
+    }
+}
+
+@media (max-width: 380px) {
+    .award-site-det-home h3 {
+        font-size: 1.0625em
+    }
+
+    .h-sites-title {
+        width: 320px
+    }
+
+    .articles h2 {
+        font-size: 1em
+    }
+
+    .articles h3 {
+        font-size: 1.125em
+    }
+
+    .h-sites-list li .h-site-item .h-site-item-info {
+        padding: 8px 12px 0
+    }
+
+    .article-related li:nth-child(2), .j-panel-list li .judge-info .j-country {
+        display: none
+    }
+
+    a.feature-label-link {
+        padding: 55% 0
+    }
+
+    a.flt-teal {
+        padding: 65% 0
+    }
+
+    .job-details {
+        width: 80%
+    }
+
+    .article-related li {
+        width: 42.105263157894737%;
+        margin-left: 28.947368421052632%
+    }
+
+    .article-related-wrapper a.back-to-top {
+        padding: 10% 0 6%
+    }
+}
+
+@media (max-width: 340px) {
+    .h-sites-title {
+        width: 300px
+    }
+
+    .articles h3 {
+        font-size: 1em
+    }
+
+    .copyright span {
+        display: none
+    }
+}
+
+@media (max-width: 320px) {
+    #file-field, .heading-link {
+        display: none
+    }
+
+    .award-details {
+        padding: 45px 30px 0
+    }
+
+    a.feature-label-link {
+        padding: 52% 0
+    }
+
+    a.flt-teal {
+        padding: 63% 0
+    }
+
+    .vote-link {
+        margin-left: 20%
+    }
+
+    .extra-det-info {
+        padding: 50px
+    }
+
+    .page-intro h1, .page-intro h2 {
+        font-size: 1em
+    }
+
+    .ds-page-intro h1 {
+        font-size: 1.125em
+    }
+
+    .jobs-page .main-panel-g-nav li {
+        width: 45%;
+        font-size: 1em
+    }
+
+    .articles-page .gallery li {
+        margin-top: 50px
+    }
+
+    .judges-page .main-panel-g-nav {
+        height: 50px
+    }
+
+    .j-panel-list li .judge-info-box {
+        height: 200px
+    }
+
+    .awards-intro h1 {
+        margin: 30px
+    }
+
+    #browser-hidden, #browser-visible {
+        width: 209px
+    }
+
+    #pp-logos {
+        margin-left: 13.5%
+    }
+
+    .events-page .main-panel-g-nav {
+        height: 60px
+    }
+
+    ul.full-event-list li .event-list-item-desc-txt {
+        padding: 30px
+    }
+
+    .article-related li {
+        width: 50%;
+        margin-left: 25%
+    }
+
+    .not-found-bg {
+        margin-top: -160px
+    }
+
+    .not-found-bg div {
+        padding-top: 500px
+    }
+}

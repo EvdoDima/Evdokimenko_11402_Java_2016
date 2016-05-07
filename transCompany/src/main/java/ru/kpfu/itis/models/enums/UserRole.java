@@ -5,6 +5,7 @@ package ru.kpfu.itis.models.enums;
  * 11-402
  */
 public enum UserRole {
+    ROLE_ADMIN,
     ROLE_CUSTOMER,
     ROLE_DRIVER
 }

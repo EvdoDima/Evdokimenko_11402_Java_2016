@@ -10,11 +10,20 @@ import javax.persistence.*;
 @Table(name = "applications", schema = "public", catalog = "transcompany")
 public class ApplicationsEntity {
     private long id;
-    private String name;
-    private String telNumber;
     private int summ;
     private String description;
-    private String status;
+    private String name;
+
+    @Column(name = "name", nullable = false)
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private CustomersEntity customer;
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "applications_id_seq")
@@ -28,22 +37,14 @@ public class ApplicationsEntity {
         this.id = id;
     }
 
-    @Column(name = "name")
-    public String getName() {
-        return name;
+    @ManyToOne
+    @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = false)
+    public CustomersEntity getCustomer(){
+        return customer;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Column(name = "tel_number")
-    public String getTelNumber() {
-        return telNumber;
-    }
-
-    public void setTelNumber(String telNumber) {
-        this.telNumber = telNumber;
+    public void setCustomer(CustomersEntity customer) {
+        this.customer = customer;
     }
 
     @Column(name = "summ")
@@ -64,14 +65,6 @@ public class ApplicationsEntity {
         this.description = description;
     }
 
-    @Column(name = "status")
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -82,22 +75,17 @@ public class ApplicationsEntity {
 
         if (id != that.id) return false;
         if (summ != that.summ) return false;
-        if (name != null ? !name.equals(that.name) : that.name != null) return false;
-        if (telNumber != null ? !telNumber.equals(that.telNumber) : that.telNumber != null) return false;
         if (description != null ? !description.equals(that.description) : that.description != null) return false;
-        if (status != null ? !status.equals(that.status) : that.status != null) return false;
+        return customer != null ? customer.equals(that.customer) : that.customer == null;
 
-        return true;
     }
 
     @Override
     public int hashCode() {
         int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (telNumber != null ? telNumber.hashCode() : 0);
         result = 31 * result + summ;
         result = 31 * result + (description != null ? description.hashCode() : 0);
-        result = 31 * result + (status != null ? status.hashCode() : 0);
+        result = 31 * result + (customer != null ? customer.hashCode() : 0);
         return result;
     }
 }

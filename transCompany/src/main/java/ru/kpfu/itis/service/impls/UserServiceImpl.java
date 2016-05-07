@@ -5,9 +5,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.kpfu.itis.forms.DriverRegister;
 import ru.kpfu.itis.forms.RegistrationForm;
 import ru.kpfu.itis.models.UserRoleEntity;
 import ru.kpfu.itis.models.UsersEntity;
+import ru.kpfu.itis.rep.CustomerRep;
+import ru.kpfu.itis.rep.DriversRep;
 import ru.kpfu.itis.rep.UserRep;
 import ru.kpfu.itis.rep.UserRoleRep;
 import ru.kpfu.itis.service.UserService;
@@ -21,34 +24,61 @@ import ru.kpfu.itis.service.UserService;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserRep userRepository;
+    private UserRep userRep;
 
     @Autowired
     private UserRoleRep userRoleRep;
 
+    @Autowired
+    private CustomerRep customerRep;
+
+    @Autowired
+    private DriversRep driversRep;
+
     @Override
     public Page<UsersEntity> getAllUsers(PageRequest pageRequest) {
-        return userRepository.findAll(pageRequest);
+        return userRep.findAll(pageRequest);
     }
 
     @Override
     public UsersEntity getUserById(long id) {
-        return userRepository.findOneById(id);
+        return userRep.findOneById(id);
     }
 
     @Override
     public UsersEntity getUserByLogin(String login) {
-        return userRepository.findOneByLogin(login);
+        return userRep.findOneByLogin(login);
     }
 
     @Override
     @Transactional
     public long saveNewUser(RegistrationForm form) {
+
         UsersEntity userModel = form.transformToUserModel();
-        userRepository.save(userModel);
+        userRep.save(userModel);
 
         UserRoleEntity userProfileModel = form.transformToUserRoleEntity(userModel);
         userRoleRep.save(userProfileModel);
+
+        customerRep.save(form.transformToCustomerEntity(userModel));
+
+
+        return userModel.getId();
+    }
+
+    @Override
+    @Transactional
+    public long saveNewUser(DriverRegister form){
+
+        UsersEntity userModel = form.transformToUserModel();
+        userRep.save(userModel);
+
+        UserRoleEntity userProfileModel = form.transformToUserRoleEntity(userModel);
+        userRoleRep.save(userProfileModel);
+
+
+        driversRep.save(form.transformToDriversEntity(userModel));
+
 
         return userModel.getId();
     }

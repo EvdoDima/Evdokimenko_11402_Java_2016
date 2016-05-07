@@ -154,7 +154,7 @@
         rowStyle: function (row, index) {return {};},
 
         formatLoadingMessage: function () {
-            return 'Loading, please wait…';
+            return '';
         },
         formatRecordsPerPage: function (pageNumber) {
             return sprintf('%s records per page', pageNumber);
@@ -239,21 +239,7 @@
     };
 
     BootstrapTable.prototype.initContainer = function () {
-        this.$container = $([
-            '<div class="bootstrap-table">',
-                '<div class="fixed-table-toolbar"></div>',
-                '<div class="fixed-table-container">',
-                    '<div class="fixed-table-header"><table></table></div>',
-                    '<div class="fixed-table-body">',
-                        '<div class="fixed-table-loading">',
-                            this.options.formatLoadingMessage(),
-                        '</div>',
-                    '</div>',
-                    '<div class="fixed-table-pagination"></div>',
-                '</div>',
-            '</div>'].join(''));
-
-        this.$container.insertAfter(this.$el);
+        this.$container = this.$el;
         this.$container.find('.fixed-table-body').append(this.$el);
         this.$container.after('<div class="clearfix"></div>');
         this.$loading = this.$container.find('.fixed-table-loading');

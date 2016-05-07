@@ -34,6 +34,11 @@ public class MainController {
         String pagename = "dashboard";
         models.put("currpage", pagename);
         models.put("menuitems", Menu.menuItems);
+        models.put("customerscount",10);
+        models.put("driverscount",10);
+        models.put("orderscount",10);
+
+
         return "pages/index";
     }
 

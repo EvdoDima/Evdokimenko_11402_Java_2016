@@ -5,13 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
 
-    <security:http auto-config="true" use-expressions="true" access-denied-page="/">
+    <security:http auto-config="true" use-expressions="true" access-denied-page="/user/accessdenied/">
         <security:intercept-url pattern="/" access="permitAll()"/>
-        <security:intercept-url pattern="/user/login" access="isAnonymous()"/>
-        <security:intercept-url pattern="/tables" access="hasRole('ROLE_DRIVER')"/>
-        <security:intercept-url pattern="/user/registration" access="isAnonymous()"/>
-        <security:intercept-url pattern="/resources" access="permitAll()"/>
-
+        <security:intercept-url pattern="/user/login/**" access="isAnonymous()"/>
+        <security:intercept-url pattern="/user/register/driver/**" access="hasRole('ROLE_ADMIN')"/>
+        <security:intercept-url pattern="/user/register/customer/**" access="isAnonymous()"/>
+        <security:intercept-url pattern="/resources/**" access="permitAll()"/>
+        <security:intercept-url pattern="/tables/applications/new" access="hasRole('ROLE_CUSTOMER')"/>
 
         <security:form-login
                 login-page="/user/login"

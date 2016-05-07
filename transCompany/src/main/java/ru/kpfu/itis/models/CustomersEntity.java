@@ -14,16 +14,29 @@ import java.util.List;
 public class CustomersEntity {
     private long id;
     private String name;
+    private String lastname;
     private String telNumber;
-    private int coTime;
     private String deals;
     private List<OrdersEntity> orders;
 
+
+
+
+    @Column(name = "lastname" ,nullable = false)
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
     private UsersEntity user;
+    private List<ApplicationsEntity> applications;
 
 
-    @OneToOne
-    @PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
+    @OneToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name = "user_id", referencedColumnName = "id" )
     public UsersEntity getUser() {
         return user;
     }
@@ -71,13 +84,14 @@ public class CustomersEntity {
         this.telNumber = telNumber;
     }
 
-    @Column(name = "co_time")
-    public int getCoTime() {
-        return coTime;
+
+    @OneToMany(mappedBy = "customer")
+    public List<ApplicationsEntity> getApplications(){
+        return applications;
     }
 
-    public void setCoTime(int coTime) {
-        this.coTime = coTime;
+    public void setApplications(List<ApplicationsEntity> applications) {
+        this.applications = applications;
     }
 
     @Column(name = "deals")
@@ -89,6 +103,7 @@ public class CustomersEntity {
         this.deals = deals;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -97,12 +112,13 @@ public class CustomersEntity {
         CustomersEntity that = (CustomersEntity) o;
 
         if (id != that.id) return false;
-        if (coTime != that.coTime) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (telNumber != null ? !telNumber.equals(that.telNumber) : that.telNumber != null) return false;
         if (deals != null ? !deals.equals(that.deals) : that.deals != null) return false;
+        if (orders != null ? !orders.equals(that.orders) : that.orders != null) return false;
+        if (user != null ? !user.equals(that.user) : that.user != null) return false;
+        return applications != null ? applications.equals(that.applications) : that.applications == null;
 
-        return true;
     }
 
     @Override
@@ -110,8 +126,10 @@ public class CustomersEntity {
         int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (telNumber != null ? telNumber.hashCode() : 0);
-        result = 31 * result + coTime;
         result = 31 * result + (deals != null ? deals.hashCode() : 0);
+        result = 31 * result + (orders != null ? orders.hashCode() : 0);
+        result = 31 * result + (user != null ? user.hashCode() : 0);
+        result = 31 * result + (applications != null ? applications.hashCode() : 0);
         return result;
     }
 }

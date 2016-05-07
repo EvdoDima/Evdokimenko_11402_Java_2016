@@ -15,7 +15,6 @@ public class DriversEntity {
     private String lastName;
     private String telNumber;
     private int drivingExp;
-    private int workingExp;
     private double salaryRate;
 
     private UsersEntity user;
@@ -31,7 +30,7 @@ public class DriversEntity {
     }
 
     @OneToOne
-    @PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     public UsersEntity getUser(){return user;}
     public void setUser(UsersEntity user) {
         this.user = user;
@@ -89,14 +88,8 @@ public class DriversEntity {
         this.drivingExp = drivingExp;
     }
 
-    @Column(name = "working_exp")
-    public int getWorkingExp() {
-        return workingExp;
-    }
 
-    public void setWorkingExp(int workingExp) {
-        this.workingExp = workingExp;
-    }
+
 
     @Column(name = "salary_rate")
     public double getSalaryRate() {
@@ -116,15 +109,14 @@ public class DriversEntity {
 
         if (id != that.id) return false;
         if (drivingExp != that.drivingExp) return false;
-        if (workingExp != that.workingExp) return false;
         if (Double.compare(that.salaryRate, salaryRate) != 0) return false;
         if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
         if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
         if (telNumber != null ? !telNumber.equals(that.telNumber) : that.telNumber != null) return false;
+        if (user != null ? !user.equals(that.user) : that.user != null) return false;
+        return orders != null ? orders.equals(that.orders) : that.orders == null;
 
-        return true;
     }
-
 
     @Override
     public int hashCode() {
@@ -135,9 +127,10 @@ public class DriversEntity {
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (telNumber != null ? telNumber.hashCode() : 0);
         result = 31 * result + drivingExp;
-        result = 31 * result + workingExp;
         temp = Double.doubleToLongBits(salaryRate);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (user != null ? user.hashCode() : 0);
+        result = 31 * result + (orders != null ? orders.hashCode() : 0);
         return result;
     }
 }

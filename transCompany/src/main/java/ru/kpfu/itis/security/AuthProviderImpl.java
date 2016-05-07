@@ -43,6 +43,7 @@ public class AuthProviderImpl implements AuthenticationProvider {
         String password = authentication.getCredentials().toString();
 
         if (!encoder.matches(password, user.getPassword())) {
+            System.out.println("password");
             throw new BadCredentialsException("invalid password");
         }
 
