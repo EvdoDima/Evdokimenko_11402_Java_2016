@@ -21,37 +21,36 @@
 <body>
 
 
-<@sf.form class="form-horizontal" action="/tables/applications/new" method="post" modelAttribute="regform">
+<@sf.form class="form-horizontal" action="/tables/cars/new" method="post" modelAttribute="regform">
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
         <div class="login-panel panel panel-default">
-            <div class="panel-danger">Registration</div>
+            <div class="panel-danger"><h3>New car adding</h3></div>
             <div class="panel-body">
                 <form role="form">
                     <fieldset>
-                        <#if error??>
-                            <div class="alert alert-danger text-center">Name is busy</div>
-                        </#if>
+
                         <div class="form-group">
-                            <@sf.input path="name" type="text" class="form-control" name = "name" placeholder="Name"/>
-                            <@sf.errors path="name" class="panel-danger"/>
+                            <@sf.input path="model" type="text" class="form-control" name = "model" placeholder="Model"/>
+                            <@sf.errors path="model" class="panel-danger"/>
                         </div>
 
                         <div class="form-group">
-                            <@sf.textarea path="description" rows = "5" class="form-control"  name = "description" placeholder="Description"/>
-                            <@sf.errors path="description" class="panel-danger"/>
-                        </div>
-
-
-
-                        <div class="form-group">
-                            <@sf.input path="summ" type="number" class="form-control" name = "summ" placeholder="Summ"/>
-                        <@sf.errors path="summ" class="panel-danger"/>
+                            <label>Year of pruduction</label>
+                            <@sf.input path="year" type = "number"  class="form-control" name = "year" placeholder="Year"/>
+                            <@sf.errors path="year" class="panel-danger"/>
                         </div>
 
 
 
-                         <button class="btn btn-primary" type="submit">Register</button>
+                        <div class="form-group">
+                            <label>Run</label>
+                            <@sf.input path="run" type="number" class="form-control" name = "run" placeholder="Run"/>
+                        <@sf.errors path="run" class="panel-danger"/>
+                        </div>
+
+
+                        <button class="btn btn-primary" type="submit">Register</button>
                     </fieldset>
                 </form>
             </div>

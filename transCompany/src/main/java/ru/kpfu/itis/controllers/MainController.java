@@ -1,9 +1,6 @@
 package ru.kpfu.itis.controllers;
 
-import ru.kpfu.itis.Helpers.Menu;
-import ru.kpfu.itis.Helpers.MenuItem;
-import ru.kpfu.itis.Helpers.Page;
-import ru.kpfu.itis.Helpers.ResourceNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,6 +8,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import ru.kpfu.itis.service.ApplicationService;
+import ru.kpfu.itis.service.CustomersService;
+import ru.kpfu.itis.service.DriversService;
 
 import java.util.HashMap;
 
@@ -21,22 +21,27 @@ import java.util.HashMap;
 @Controller
 public class MainController {
 
+    @Autowired
+    CustomersService customersService;
 
-    @ExceptionHandler(ResourceNotFoundException.class)
-    @ResponseStatus(HttpStatus.NOT_FOUND)
-    public String handleResourceNotFoundException() {
-        return "errors/notfound";
-    }
+    @Autowired
+    DriversService driversService;
+
+    @Autowired
+    ApplicationService applicationService;
+
+
 
 
     @RequestMapping("/")
     public String mainpage(ModelMap models)  {
         String pagename = "dashboard";
         models.put("currpage", pagename);
-        models.put("menuitems", Menu.menuItems);
-        models.put("customerscount",10);
-        models.put("driverscount",10);
-        models.put("orderscount",10);
+        models.put("customerscount",customersService.countAll());
+        models.put("driverscount",driversService.countAll());
+        models.put("orderscount", 5);
+        models.put("applicationscount",applicationService.countAll());
+
 
 
         return "pages/index";

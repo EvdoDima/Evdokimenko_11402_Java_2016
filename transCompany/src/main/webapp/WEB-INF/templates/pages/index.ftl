@@ -23,6 +23,8 @@
 <#include "../parts/navbar.ftl">
 
 <#include "../parts/sidebar.ftl">
+
+
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
         <div class="col-lg-12">
@@ -72,6 +74,19 @@
                     <div class="col-sm-9 col-lg-7 widget-right">
                         <div class="large">${orderscount}</div>
                         <div class="text-muted">Orders</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <div class="panel panel-red panel-widget">
+                <div class="row no-padding">
+                    <div class="col-sm-3 col-lg-5 widget-left">
+                        <svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
+                    </div>
+                    <div class="col-sm-9 col-lg-7 widget-right">
+                        <div class="large">${applicationscount}</div>
+                        <div class="text-muted">New Applications</div>
                     </div>
                 </div>
             </div>

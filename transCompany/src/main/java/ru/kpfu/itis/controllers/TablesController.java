@@ -9,11 +9,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 import ru.kpfu.itis.forms.NewApplicationForm;
-import ru.kpfu.itis.models.ApplicationsEntity;
-import ru.kpfu.itis.models.CustomersEntity;
-import ru.kpfu.itis.models.DriversEntity;
-import ru.kpfu.itis.models.UsersEntity;
+import ru.kpfu.itis.forms.NewCarsForm;
+import ru.kpfu.itis.models.*;
 import ru.kpfu.itis.service.ApplicationService;
+import ru.kpfu.itis.service.CarsService;
 import ru.kpfu.itis.service.CustomersService;
 import ru.kpfu.itis.service.DriversService;
 
@@ -37,6 +36,9 @@ public class TablesController {
 
     @Autowired
     CustomersService customersService;
+
+    @Autowired
+    CarsService carsService;
 
 
     @RequestMapping(value = "/applications", method = RequestMethod.GET)
@@ -65,7 +67,7 @@ public class TablesController {
         model.put("error",error);
 
 
-        return "pages/tables";
+        return "tables/newapplication";
     }
 
 
@@ -91,7 +93,7 @@ public class TablesController {
             return "pages/tables";
         }
 
-        return "redirect:pages/tables";
+        return "redirect:/tables/applications";
     }
 
     @RequestMapping(value = "/drivers", method = RequestMethod.GET)
@@ -132,59 +134,53 @@ public class TablesController {
     }
 
 
-//    @RequestMapping(value = "/cars", method = RequestMethod.GET)
-//    public String getCars(ModelMap model) {
-//        String[] tableheader = {"Id","Model","Year", "run", "State"};
-//        model.put("tableheader",tableheader);
-//
-//        List<String[]> tablebody =new ArrayList<>();
-//
-//        for (CustomersEntity app: customersService.getAll()){
-//            tablebody.add(new String[]{String.valueOf(app.getId()),app.getName(),app.getLastname(),String.valueOf(app.getTelNumber())
-//            });
-//        }
-//        model.put("tablebody",tablebody);
-//        model.put("tablename","applications");
-//
-//
-//        return "pages/tables";
-//    }
-//
-//    @RequestMapping(value = "/cars/new", method = RequestMethod.GET)
-//    public String getNewCar(ModelMap model , @RequestParam(value = "error", required = false) String error) {
-//        model.addAttribute("regform", new NewCarsForm());
-//        if("1".equals(error))
-//            model.put("error",error);
-//
-//
-//        return "pages/tables";
-//    }
-//
-//
-//    @RequestMapping(value = "/cars/new", method = RequestMethod.POST)
-//    public String setNewCar(ModelMap models, @ModelAttribute("regform") @Valid NewCarsFrom form, BindingResult result) {
-//
-//        if (applicationsService.getApplicationByName(form.getName()) != null) {
-//            result.addError(new FieldError("regform", "login", "name is already used"));
-//        }
-//
-//        if (result.hasErrors()) {
-//            return "redirect:/tables/applications/new?error=1";
-//        }
-//
-//        UsersEntity user = (UsersEntity) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-//        try {
-//            applicationsService.saveNewApplication(form, user);
-//        }
-//        catch (DataIntegrityViolationException e) {
-//            e.printStackTrace();
-//            //            logger.info("User registration DataIntegrityViolationException", e);
-//            //            result.reject("ru.esmukov.companyinternalsoftwaremanager.controller.UserController.IntegrityViolation.message");
-//            return "pages/tables";
-//        }
-//
-//        return "redirect:pages/tables";
-//    }
+    @RequestMapping(value = "/cars", method = RequestMethod.GET)
+    public String getCars(ModelMap model) {
+        String[] tableheader = {"Id","Model","Year", "run", "State"};
+        model.put("tableheader",tableheader);
+
+        List<String[]> tablebody =new ArrayList<>();
+
+        for (CarsEntity app: carsService.getAll()){
+            tablebody.add(new String[]{String.valueOf(app.getId()),app.getModel(),
+                    String.valueOf(app.getYear()),String.valueOf(app.getRun()),app.getState()
+            });
+        }
+        model.put("tablebody",tablebody);
+        model.put("tablename","cars");
+
+
+        return "pages/tables";
+    }
+
+    @RequestMapping(value = "/cars/new", method = RequestMethod.GET)
+    public String getNewCar(ModelMap model ) {
+        model.addAttribute("regform", new NewCarsForm());
+
+        return "/tables/addcar";
+    }
+
+
+    @RequestMapping(value = "/cars/new", method = RequestMethod.POST)
+    public String setNewCar(ModelMap models, @ModelAttribute("regform") @Valid NewCarsForm form, BindingResult result) {
+
+
+        if (result.hasErrors()) {
+            return "redirect:/tables/cars/new";
+        }
+
+        try {
+            carsService.saveNewCar(form);
+        }
+        catch (DataIntegrityViolationException e) {
+            e.printStackTrace();
+            //            logger.info("User registration DataIntegrityViolationException", e);
+            // ru.rpfu.itis.esmukov
+            return "pages/tables";
+        }
+
+        return "redirect:/tables/cars";
+    }
 
 
 

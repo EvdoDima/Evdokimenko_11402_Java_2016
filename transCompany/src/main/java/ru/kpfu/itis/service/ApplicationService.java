@@ -20,4 +20,6 @@ public interface ApplicationService {
 
 
     long saveNewApplication(NewApplicationForm form, UsersEntity usersEntity);
+
+    long countAll();
 }

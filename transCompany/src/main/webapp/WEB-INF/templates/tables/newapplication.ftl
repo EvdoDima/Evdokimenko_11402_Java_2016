@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="form-group">
-                            <@sf.textarea path="description" rows = "5"  class="form-control" name = "description" placeholder="Description"/>
+                            <@sf.textarea path="description" rows = "5" class="form-control"  name = "description" placeholder="Description"/>
                             <@sf.errors path="description" class="panel-danger"/>
                         </div>
 
@@ -51,7 +51,7 @@
 
 
 
-                        <button class="btn btn-primary" type="submit">Register</button>
+                         <button class="btn btn-primary" type="submit">Register</button>
                     </fieldset>
                 </form>
             </div>

@@ -36,4 +36,9 @@ public class ApplicationServiceImpl implements ApplicationService {
         applicationsRep.save(form.transformToApplicationEntity(usersEntity));
         return 0;
     }
+
+    @Override
+    public long countAll() {
+       return applicationsRep.count();
+    }
 }

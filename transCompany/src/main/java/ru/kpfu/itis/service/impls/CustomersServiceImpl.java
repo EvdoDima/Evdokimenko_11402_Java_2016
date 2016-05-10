@@ -36,4 +36,9 @@ public class CustomersServiceImpl implements CustomersService {
 
         return customersEntity.getId();
     }
+
+    @Override
+    public long countAll() {
+        return customerRep.count();
+    }
 }

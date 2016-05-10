@@ -19,4 +19,6 @@ public interface CustomersService {
 
     @Transactional
     long saveNewCustomer(RegistrationForm form, UsersEntity user);
+
+    long countAll();
 }

@@ -16,4 +16,6 @@ public interface DriversService {
 
     @Transactional
     long saveNewDriver(DriverRegister form, UsersEntity user);
+
+    long countAll();
 }

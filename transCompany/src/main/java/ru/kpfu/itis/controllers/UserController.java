@@ -70,7 +70,6 @@ public class UserController {
         }
         catch (DataIntegrityViolationException e) {
             //            logger.info("User registration DataIntegrityViolationException", e);
-            //            result.reject("ru.esmukov.companyinternalsoftwaremanager.controller.UserController.IntegrityViolation.message");
             return "pages/registration";
         }
 
@@ -102,7 +101,6 @@ public class UserController {
         }
         catch (DataIntegrityViolationException e) {
             //            logger.info("User registration DataIntegrityViolationException", e);
-            //            result.reject("ru.esmukov.companyinternalsoftwaremanager.controller.UserController.IntegrityViolation.message");
             return "pages/registerdriver";
         }
 

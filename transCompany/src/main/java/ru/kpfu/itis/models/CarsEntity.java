@@ -11,21 +11,11 @@ import java.util.List;
 @Table(name = "cars", schema = "public", catalog = "transcompany")
 public class CarsEntity {
     private long id;
-    private String mark;
     private String model;
     private int year;
     private int run;
     private String state;
-    private List<OrdersEntity> orders;
 
-    @OneToMany(targetEntity = OrdersEntity.class, mappedBy = "car")
-    public List<OrdersEntity> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<OrdersEntity> orders) {
-        this.orders = orders;
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cars_id_seq")
@@ -39,14 +29,6 @@ public class CarsEntity {
         this.id = id;
     }
 
-    @Column(name = "mark")
-    public String getMark() {
-        return mark;
-    }
-
-    public void setMark(String mark) {
-        this.mark = mark;
-    }
 
     @Column(name = "model")
     public String getModel() {
@@ -94,17 +76,14 @@ public class CarsEntity {
         if (id != that.id) return false;
         if (year != that.year) return false;
         if (run != that.run) return false;
-        if (mark != null ? !mark.equals(that.mark) : that.mark != null) return false;
         if (model != null ? !model.equals(that.model) : that.model != null) return false;
-        if (state != null ? !state.equals(that.state) : that.state != null) return false;
+        return state != null ? state.equals(that.state) : that.state == null;
 
-        return true;
     }
 
     @Override
     public int hashCode() {
         int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (mark != null ? mark.hashCode() : 0);
         result = 31 * result + (model != null ? model.hashCode() : 0);
         result = 31 * result + year;
         result = 31 * result + run;

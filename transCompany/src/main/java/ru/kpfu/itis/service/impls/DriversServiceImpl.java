@@ -36,4 +36,9 @@ public class DriversServiceImpl implements DriversService {
 
         return driversEntity.getId();
     }
+
+    @Override
+    public long countAll() {
+        return driversRep.count();
+    }
 }

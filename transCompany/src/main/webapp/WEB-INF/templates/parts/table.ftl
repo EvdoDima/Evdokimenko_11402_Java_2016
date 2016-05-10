@@ -1,4 +1,3 @@
-
 <div class="col-lg-12">
     <div class="panel panel-default">
         <div class="panel-heading">${tablename?capitalize}</div>
@@ -7,12 +6,18 @@
                 <thead>
                 <tr>
                 <#list tableheader as th>
-                    <th data-field="${th}" >${th}</th>
+                    <th data-field="${th}">${th}</th>
                 </#list>
-                <#--<th data-field="state" data-checkbox="true">Item ID</th>-->
-                <#--<th data-field="id" data-sortable="true">Item ID</th>-->
-                <#--<th data-field="name" data-sortable="true">Item Name</th>-->
-                <#--<th data-field="price" data-sortable="true">Item Price</th>-->
+
+                <#if tablename == "applications">
+                    <@security.authorize ifAnyGranted="ROLE_DRIVER">
+                        <th>
+                            Car select
+                        </th>
+                    </@security.authorize>
+                </#if>
+
+
                 </tr>
                 </thead>
                 <tbody>
@@ -20,7 +25,31 @@
                 <tr>
                     <#list tb as content>
                         <td>${content}</td>
+
+                        <#if tablename == "applications">
+                            <@security.authorize ifAnyGranted="ROLE_DRIVER">
+                                <#if cars??>
+                                    <form role="form" action="/tables/orders/new" method="post">
+                                        <td>
+                                            <select class="form-control">
+                                                <#list cars as c>
+                                                    <option>${c}</option>
+                                                </#list>
+                                            </select>
+                                        </td>
+
+                                        <td>
+
+
+                                        </td>
+                                    </form>
+                                <#else>
+                                <b>No free cars<b>
+                                </#if>
+                            </@security.authorize>
+                        </#if>
                     </#list>
+
 
                 </tr>
                 </#list>

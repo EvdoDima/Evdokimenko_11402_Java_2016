@@ -40,7 +40,7 @@
                         </div>
                         <button class="button" type="submit">Login</button>
                         <div class="form-group">
-                            <a class="button" href="/user/register">Regisration</a>
+                            <a class="button" href="/user/register/customer">Regisration</a>
                         </div>
                     </fieldset>
                 </form>
