@@ -19,6 +19,8 @@
 </head>
 
 <body>
+<#include "../parts/navbar.ftl">
+<#include "../parts/sidebar.ftl">
 
 
 <@sf.form class="form-horizontal" action="/tables/applications/new" method="post" modelAttribute="regform">

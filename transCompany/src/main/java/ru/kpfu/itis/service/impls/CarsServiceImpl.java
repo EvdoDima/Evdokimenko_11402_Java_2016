@@ -28,4 +28,9 @@ public class CarsServiceImpl implements CarsService {
     public void saveNewCar(NewCarsForm form) {
         carsRep.save(form.transformToCarsEntity());
     }
+
+    @Override
+    public List<CarsEntity> getCarsByState(String state){
+       return carsRep.getAllByState(state);
+    }
 }

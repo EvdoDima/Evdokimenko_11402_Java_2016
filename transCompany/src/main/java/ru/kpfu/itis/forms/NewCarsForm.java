@@ -52,7 +52,7 @@ public class NewCarsForm {
         carsEntity.setModel(getModel());
         carsEntity.setYear(getYear());
         carsEntity.setRun(getRun());
-        carsEntity.setState("Free");
+        carsEntity.setState("free");
 
         return carsEntity;
     }

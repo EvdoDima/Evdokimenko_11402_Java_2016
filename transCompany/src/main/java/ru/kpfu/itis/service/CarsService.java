@@ -11,7 +11,11 @@ import java.util.List;
  */
 public interface CarsService {
 
+
+
     List<CarsEntity> getAll();
 
     void saveNewCar(NewCarsForm form);
+
+    List<CarsEntity> getCarsByState(String state);
 }

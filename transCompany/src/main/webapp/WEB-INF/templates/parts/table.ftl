@@ -25,30 +25,31 @@
                 <tr>
                     <#list tb as content>
                         <td>${content}</td>
-
-                        <#if tablename == "applications">
-                            <@security.authorize ifAnyGranted="ROLE_DRIVER">
-                                <#if cars??>
-                                    <form role="form" action="/tables/orders/new" method="post">
-                                        <td>
-                                            <select class="form-control">
-                                                <#list cars as c>
-                                                    <option>${c}</option>
-                                                </#list>
-                                            </select>
-                                        </td>
-
-                                        <td>
-
-
-                                        </td>
-                                    </form>
-                                <#else>
-                                <b>No free cars<b>
-                                </#if>
-                            </@security.authorize>
-                        </#if>
                     </#list>
+
+
+                    <#if tablename == "applications">
+                        <@security.authorize ifAnyGranted="ROLE_DRIVER">
+                            <#if cars?has_content>
+                                <form role="form" action="/tables/orders/new" method="post">
+                                    <td>
+                                        <select class="form-control" name="carmodel">
+                                            <#list cars as c>
+                                                <option>${c.model}</option>
+                                            </#list>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <button class="btn btn-primary" type="submit">Get the order</button>
+
+                                    </td>
+                                </form>
+                            <#else>
+                            <td><b>No free cars<b><td>
+                            </#if>
+                        </@security.authorize>
+                    </#if>
 
 
                 </tr>

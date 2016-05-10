@@ -45,9 +45,9 @@ public class TablesController {
     public String getApplications(ModelMap model , @RequestParam(value = "error", required = false) String error) {
         String[] tableheader = {"Id","Name", "Description","Summ"};
         model.put("tableheader",tableheader);
+        model.put("cars",carsService.getCarsByState("free"));
 
         List<String[]> tablebody =new ArrayList<>();
-
         for (ApplicationsEntity app: applicationsService.getAll()){
             tablebody.add(new String[]{String.valueOf(app.getId()),app.getName(),app.getDescription(),String.valueOf(app.getSumm())});
         }

@@ -20,6 +20,9 @@
 
 <body>
 
+<#include "../parts/navbar.ftl">
+<#include "../parts/sidebar.ftl">
+
 
 <@sf.form class="form-horizontal" action="/user/register/driver" method="post" modelAttribute="regform">
 <div class="row">
