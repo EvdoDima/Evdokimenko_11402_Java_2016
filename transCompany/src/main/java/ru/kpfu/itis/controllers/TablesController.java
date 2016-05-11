@@ -238,4 +238,11 @@ public class TablesController {
 
     }
 
+
+    @ResponseBody
+    @RequestMapping(value = "/cars/search", method = RequestMethod.GET)
+    public List<CarsEntity> searchProducts(Model model, @RequestParam("q") String query) {
+        return query.isEmpty() ? carsService.getAll() : carsService.getAllCarsWithNameLike(query);
+    }
+
 }

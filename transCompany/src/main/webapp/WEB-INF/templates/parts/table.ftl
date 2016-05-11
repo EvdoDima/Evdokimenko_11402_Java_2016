@@ -1,6 +1,9 @@
 <div class="col-lg-12">
     <div class="panel panel-default">
-        <div class="panel-heading">${tablename?capitalize}</div>
+        <div class="panel-heading">${tablename?capitalize}<#if tablename == "cars">
+                <input class="form-control" id="s" style ="display:inline; width:20%;"  oninput="f()" type="text" placeholder="Search">
+        </#if>
+        </div>
         <div class="panel-body">
             <table data-toggle="table">
                 <thead>
@@ -20,7 +23,7 @@
 
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="res">
                 <#list tablebody as tb>
                 <tr>
                     <#list tb as content>
@@ -73,6 +76,33 @@
         </div>
     </div>
 </div>
+
+<script type="application/javascript">
+    f = function (request, response) {
+        $.ajax({
+            url: "/tables/cars/search",
+            data: {"q": $("#s").val()},
+            dataType: "json",
+            method : "GET",
+            success: function (resp) {
+                $("#res").empty();
+                if (resp.length > 0) {
+                    for (var i = 0; i < resp.length; i++) {
+                        $("#res").append("<tr>" +
+                                "<td>" + resp[i]["id"] + "</td>" +
+                                "<td>" + resp[i]["model"] + "</td>" +
+                                "<td>" + resp[i]["year"] + "</td>" +
+                                "<td>" + resp[i]["run"] + "</td>" +
+                                "<td>" + resp[i]["state"] + "</td>" +
+                                "</tr>");
+                    }
+                } else {
+                    $("#res").append("No results.");
+                }
+            }
+        })
+    }
+</script>
 
 
 <script src="/resources/js/jquery-1.11.1.min.js"></script>

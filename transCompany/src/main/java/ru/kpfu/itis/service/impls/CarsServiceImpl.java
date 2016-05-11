@@ -44,5 +44,10 @@ public class CarsServiceImpl implements CarsService {
         carsRep.save(car);
     }
 
+    @Override
+    public List<CarsEntity> getAllCarsWithNameLike(String query) {
+        return  carsRep.findByModelContainingIgnoreCase(query);
+    }
+
 
 }

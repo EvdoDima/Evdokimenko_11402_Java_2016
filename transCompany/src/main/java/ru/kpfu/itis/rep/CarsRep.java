@@ -15,4 +15,6 @@ public interface CarsRep  extends JpaRepository<CarsEntity, Long> {
     List<CarsEntity> getAllByState(String state);
 
     CarsEntity findObeByModel(String name);
+
+    List<CarsEntity> findByModelContainingIgnoreCase(String query);
 }

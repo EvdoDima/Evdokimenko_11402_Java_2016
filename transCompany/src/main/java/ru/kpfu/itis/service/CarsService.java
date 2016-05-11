@@ -22,4 +22,6 @@ public interface CarsService {
     CarsEntity getCarsByName(String name);
 
     void saveNewCar(CarsEntity car);
+
+    List<CarsEntity> getAllCarsWithNameLike(String query);
 }
