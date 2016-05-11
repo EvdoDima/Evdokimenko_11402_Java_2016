@@ -33,4 +33,16 @@ public class CarsServiceImpl implements CarsService {
     public List<CarsEntity> getCarsByState(String state){
        return carsRep.getAllByState(state);
     }
+
+    @Override
+    public CarsEntity getCarsByName(String name) {
+        return carsRep.findObeByModel(name);
+    }
+
+    @Override
+    public void saveNewCar(CarsEntity car) {
+        carsRep.save(car);
+    }
+
+
 }

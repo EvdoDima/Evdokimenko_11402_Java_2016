@@ -22,4 +22,10 @@ public interface ApplicationService {
     long saveNewApplication(NewApplicationForm form, UsersEntity usersEntity);
 
     long countAll();
+
+    ApplicationsEntity getOneById(Integer id);
+
+    void deleteOneById(Integer id);
+
+    //void deleteOneById(Integer id);
 }

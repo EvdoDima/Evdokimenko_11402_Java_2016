@@ -13,14 +13,13 @@ public class OrdersEntity {
     private long id;
     private String description;
     private int cost;
-    private Date deadline;
     private String status;
     private CustomersEntity customer;
     private DriversEntity driver;
     private CarsEntity car;
 
     @ManyToOne(targetEntity = CarsEntity.class)
-    @JoinColumn(name = "car_id" ,referencedColumnName="id")
+    @JoinColumn(name = "car_id", referencedColumnName = "id")
     public CarsEntity getCar() {
         return car;
     }
@@ -30,7 +29,7 @@ public class OrdersEntity {
     }
 
     @ManyToOne(targetEntity = CustomersEntity.class)
-    @JoinColumn(name = "customer_id" ,referencedColumnName="id")
+    @JoinColumn(name = "customer_id", referencedColumnName = "id")
     public CustomersEntity getCustomer() {
         return customer;
     }
@@ -38,8 +37,9 @@ public class OrdersEntity {
     public void setCustomer(CustomersEntity costomer) {
         this.customer = costomer;
     }
+
     @ManyToOne(targetEntity = DriversEntity.class)
-    @JoinColumn(name = "driver_id" ,referencedColumnName="id")
+    @JoinColumn(name = "driver_id", referencedColumnName = "id")
     public DriversEntity getDriver() {
         return driver;
     }
@@ -81,16 +81,6 @@ public class OrdersEntity {
     }
 
     @Basic
-    @Column(name = "deadline")
-    public Date getDeadline() {
-        return deadline;
-    }
-
-    public void setDeadline(Date deadline) {
-        this.deadline = deadline;
-    }
-
-    @Basic
     @Column(name = "status")
     public String getStatus() {
         return status;
@@ -110,10 +100,11 @@ public class OrdersEntity {
         if (id != that.id) return false;
         if (cost != that.cost) return false;
         if (description != null ? !description.equals(that.description) : that.description != null) return false;
-        if (deadline != null ? !deadline.equals(that.deadline) : that.deadline != null) return false;
         if (status != null ? !status.equals(that.status) : that.status != null) return false;
+        if (customer != null ? !customer.equals(that.customer) : that.customer != null) return false;
+        if (driver != null ? !driver.equals(that.driver) : that.driver != null) return false;
+        return car != null ? car.equals(that.car) : that.car == null;
 
-        return true;
     }
 
     @Override
@@ -121,8 +112,12 @@ public class OrdersEntity {
         int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (description != null ? description.hashCode() : 0);
         result = 31 * result + cost;
-        result = 31 * result + (deadline != null ? deadline.hashCode() : 0);
         result = 31 * result + (status != null ? status.hashCode() : 0);
+        result = 31 * result + (customer != null ? customer.hashCode() : 0);
+        result = 31 * result + (driver != null ? driver.hashCode() : 0);
+        result = 31 * result + (car != null ? car.hashCode() : 0);
         return result;
     }
 }
+
+

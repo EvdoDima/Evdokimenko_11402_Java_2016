@@ -20,7 +20,7 @@
 
 
     <@security.authorize ifAnyGranted="ROLE_DRIVER">
-        <li><a href="/tables/orders/myorders">
+        <li><a href="/tables/orders">
             <svg class="glyph stroked table">
                 <use xlink:href="#stroked-map"></use>
             </svg>

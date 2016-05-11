@@ -18,4 +18,8 @@ public interface CarsService {
     void saveNewCar(NewCarsForm form);
 
     List<CarsEntity> getCarsByState(String state);
+
+    CarsEntity getCarsByName(String name);
+
+    void saveNewCar(CarsEntity car);
 }

@@ -29,8 +29,6 @@ public class ApplicationServiceImpl implements ApplicationService {
         return applicationsRep.findOneByName(name);
     }
 
-
-
     @Override
     public long saveNewApplication(NewApplicationForm form, UsersEntity usersEntity) {
         applicationsRep.save(form.transformToApplicationEntity(usersEntity));
@@ -40,5 +38,15 @@ public class ApplicationServiceImpl implements ApplicationService {
     @Override
     public long countAll() {
        return applicationsRep.count();
+    }
+
+    @Override
+    public ApplicationsEntity getOneById(Integer id) {
+      return   applicationsRep.findOne(Long.valueOf(id));
+    }
+
+    @Override
+    public void deleteOneById(Integer id) {
+        applicationsRep.delete(applicationsRep.getOne(Long.valueOf(id)));
     }
 }

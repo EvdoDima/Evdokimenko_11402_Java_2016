@@ -27,7 +27,6 @@
                         <td>${content}</td>
                     </#list>
 
-
                     <#if tablename == "applications">
                         <@security.authorize ifAnyGranted="ROLE_DRIVER">
                             <#if cars?has_content>
@@ -44,11 +43,25 @@
                                         <button class="btn btn-primary" type="submit">Get the order</button>
 
                                     </td>
+                                    <input type="hidden" name="appid" value="${tb[0]}">
                                 </form>
                             <#else>
-                            <td><b>No free cars<b><td>
+                                <td>
+                                    <b>No free cars</b>
+                                </td>
                             </#if>
                         </@security.authorize>
+                    </#if>
+
+                    <#if tablename == "orders" && tb[1]=="Processing">
+                        <td>
+                            <@security.authorize ifAnyGranted="ROLE_DRIVER">
+                                <form role="form" action="/tables/orders" method="post">
+                                    <input type="hidden" name="orderid" value="${tb[0]}">
+                                    <button type="submit" class="btn btn-primary">Completed</button>
+                                </form>
+                            </@security.authorize>
+                        </td>
                     </#if>
 
 

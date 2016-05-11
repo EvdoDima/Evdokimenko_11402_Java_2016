@@ -13,4 +13,6 @@ import java.util.List;
 public interface CarsRep  extends JpaRepository<CarsEntity, Long> {
 
     List<CarsEntity> getAllByState(String state);
+
+    CarsEntity findObeByModel(String name);
 }
