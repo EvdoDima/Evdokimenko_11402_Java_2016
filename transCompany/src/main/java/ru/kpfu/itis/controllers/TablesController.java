@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -44,6 +45,11 @@ public class TablesController {
 
     @Autowired
     OrdersService ordersService;
+
+    @Autowired
+    UserService userService;
+
+
 
     @RequestMapping(value = "/applications", method = RequestMethod.GET)
     public String getApplications(ModelMap model, @RequestParam(value = "error", required = false) String error) {
@@ -85,7 +91,8 @@ public class TablesController {
             return "redirect:/tables/applications/new?error=1";
         }
 
-        UsersEntity user = (UsersEntity) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UsersEntity user = userService.getUserByLogin(
+                ((UserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
         try {
             applicationsService.saveNewApplication(form, user);
         } catch (DataIntegrityViolationException e) {
@@ -187,8 +194,10 @@ public class TablesController {
     public String setNewOrder(ModelMap modelMap, @RequestParam(value = "carmodel") String name, @RequestParam(value = "appid") Integer id) {
        ApplicationsEntity app = applicationsService.getOneById(id);
         CarsEntity car = carsService.getCarsByName(name);
+        UsersEntity user = userService.getUserByLogin(
+                ((UserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
         ordersService.saveNewOrder(app,car,
-                ((UsersEntity) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getDriver());
+                user.getDriver());
 
         applicationsService.deleteOneById (id);
 
@@ -206,7 +215,8 @@ public class TablesController {
 
         List<String[]> tablebody = new ArrayList<>();
 
-        UsersEntity user = (UsersEntity) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UsersEntity user = userService.getUserByLogin(
+                ((UserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
 
         List<OrdersEntity> orders = user.getRole().getUser_role()== UserRole.ROLE_DRIVER?
                 ordersService.findAllByDriver(user.getDriver()):ordersService.getAll();
