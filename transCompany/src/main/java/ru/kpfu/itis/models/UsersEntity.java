@@ -30,13 +30,15 @@ public class UsersEntity {
 
     private DriversEntity driver;
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToOne( mappedBy = "user", cascade = CascadeType.ALL)
     public CustomersEntity getCustomer() {
         return customer;
     }
 
     public void setCustomer(CustomersEntity customer) {
+
         this.customer = customer;
+
     }
 
 
@@ -72,7 +74,7 @@ public class UsersEntity {
     }
 
 
-    @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     public UserRoleEntity getRole() {
         return role;
     }

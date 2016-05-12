@@ -2,8 +2,14 @@ package ru.kpfu.itis.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,6 +26,8 @@ import ru.kpfu.itis.service.CustomersService;
 import ru.kpfu.itis.service.UserService;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * Created by evdodima on 07/05/16.
@@ -30,7 +38,13 @@ import javax.validation.Valid;
 public class UserController {
 
     @Autowired
+    AuthenticationManager authenticationManager;
+
+    @Autowired
     UserService userService;
+
+    @Autowired
+    UserDetailsService userDetailsService;
 
     @Autowired
     CustomersService customersService;
@@ -62,19 +76,28 @@ public class UserController {
         }
 
         try {
-            UsersEntity userModel = userService.getUserById(userService.saveNewUser(form));
-            //   customersService.saveNewCustomer(form, userModel);
 
-            Authentication auth = authProvider.authenticate(userModel);
-            SecurityContextHolder.getContext().setAuthentication(auth);
-        }
-        catch (DataIntegrityViolationException e) {
+            UsersEntity userModel = userService.getUserById(userService.saveNewUser(form));
+
+            try {
+                UserDetails userDetails = userDetailsService.loadUserByUsername(form.getLogin());
+
+                UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(
+                        userDetails, form.getPassword(), userDetails.getAuthorities());
+                authenticationManager.authenticate(auth);
+
+                // redirect into secured main page if authentication successful
+                if(auth.isAuthenticated()) {
+                    SecurityContextHolder.getContext().setAuthentication(auth);
+                    return "redirect:/";
+                }
+            } catch (Exception e) {
+                //logger.debug("Problem authenticating user" + username, e);
+            }
+        } catch (DataIntegrityViolationException e) {
             //            logger.info("User registration DataIntegrityViolationException", e);
             return "pages/registration";
         }
-
-
-
 
         return "redirect:/";
     }
@@ -98,8 +121,7 @@ public class UserController {
 
         try {
             userService.saveNewUser(form);
-        }
-        catch (DataIntegrityViolationException e) {
+        } catch (DataIntegrityViolationException e) {
             //            logger.info("User registration DataIntegrityViolationException", e);
             return "pages/registerdriver";
         }

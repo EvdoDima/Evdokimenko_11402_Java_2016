@@ -35,7 +35,7 @@
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                <input name="remember-me" type="checkbox" value="true">Remember Me
                             </label>
                         </div>
                         <button class="button" type="submit">Login</button>

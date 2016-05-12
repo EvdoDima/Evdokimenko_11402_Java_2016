@@ -109,7 +109,7 @@ public class TablesController {
                     , String.valueOf(app.getDrivingExp()), String.valueOf(app.getSalaryRate())});
         }
         model.put("tablebody", tablebody);
-        model.put("tablename", "applications");
+        model.put("tablename", "Drivers");
 
 
         return "pages/tables";

@@ -51,7 +51,7 @@ public class AuthProviderImpl implements AuthenticationProvider {
 
     }
 
-    public Authentication authenticate(UsersEntity user) {
+    public static Authentication authenticate(UsersEntity user) {
         List<GrantedAuthority> authorities = new ArrayList<>();
 
         authorities.add(new SimpleGrantedAuthority(user.getRole().getUser_role().toString()));

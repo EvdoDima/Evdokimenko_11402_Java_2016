@@ -16,13 +16,10 @@ public class CustomersEntity {
     private String name;
     private String lastname;
     private String telNumber;
-    private String deals;
     private List<OrdersEntity> orders;
 
 
-
-
-    @Column(name = "lastname" ,nullable = false)
+    @Column(name = "lastname", nullable = false)
     public String getLastname() {
         return lastname;
     }
@@ -35,8 +32,8 @@ public class CustomersEntity {
     private List<ApplicationsEntity> applications;
 
 
-    @OneToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "user_id", referencedColumnName = "id" )
+    @OneToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     public UsersEntity getUser() {
         return user;
     }
@@ -86,21 +83,12 @@ public class CustomersEntity {
 
 
     @OneToMany(mappedBy = "customer")
-    public List<ApplicationsEntity> getApplications(){
+    public List<ApplicationsEntity> getApplications() {
         return applications;
     }
 
     public void setApplications(List<ApplicationsEntity> applications) {
         this.applications = applications;
-    }
-
-    @Column(name = "deals")
-    public String getDeals() {
-        return deals;
-    }
-
-    public void setDeals(String deals) {
-        this.deals = deals;
     }
 
 
@@ -113,8 +101,8 @@ public class CustomersEntity {
 
         if (id != that.id) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
+        if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
         if (telNumber != null ? !telNumber.equals(that.telNumber) : that.telNumber != null) return false;
-        if (deals != null ? !deals.equals(that.deals) : that.deals != null) return false;
         if (orders != null ? !orders.equals(that.orders) : that.orders != null) return false;
         if (user != null ? !user.equals(that.user) : that.user != null) return false;
         return applications != null ? applications.equals(that.applications) : that.applications == null;
@@ -125,8 +113,8 @@ public class CustomersEntity {
     public int hashCode() {
         int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
         result = 31 * result + (telNumber != null ? telNumber.hashCode() : 0);
-        result = 31 * result + (deals != null ? deals.hashCode() : 0);
         result = 31 * result + (orders != null ? orders.hashCode() : 0);
         result = 31 * result + (user != null ? user.hashCode() : 0);
         result = 31 * result + (applications != null ? applications.hashCode() : 0);
