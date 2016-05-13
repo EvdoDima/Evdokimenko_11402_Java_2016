@@ -35,6 +35,7 @@
         <property name="cache" value="false"/>
     </bean>
 
+    <bean id="infoLogger" class="ru.kpfu.itis.logger.InfoLogger"/>
 
 
 </beans>
