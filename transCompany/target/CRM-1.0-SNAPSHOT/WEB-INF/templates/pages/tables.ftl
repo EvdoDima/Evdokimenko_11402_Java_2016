@@ -19,6 +19,7 @@
 
 </head>
 
+
 <body>
 <#include "../parts/navbar.ftl">
 
@@ -46,8 +47,47 @@
 <script src="/resources/js/easypiechart.js"></script>
 <script src="/resources/js/easypiechart-data.js"></script>
 <script src="/resources/js/bootstrap-datepicker.js"></script>
+<script src="/resources/js/bootstrap-table.js"></script>
+<script type="application/javascript">
 
+    f = function (request, response) {
+        $.ajax({
+            url: "/tables/cars/search",
+            data: {"q": $("#s").val()},
+            dataType: "json",
+            method : "GET",
+            success: function (resp) {
+                $("#res").empty();
+                if (resp.length > 0) {
+                    for (var i = 0; i < resp.length; i++) {
+                        $("#res").append("<tr>" +
+                                "<td>" + resp[i]["id"] + "</td>" +
+                                "<td>" + resp[i]["model"] + "</td>" +
+                                "<td>" + resp[i]["year"] + "</td>" +
+                                "<td>" + resp[i]["run"] + "</td>" +
+                                "<td>" + resp[i]["state"] + "</td>" +
+                                "</tr>");
+                    }
+                } else {
+                    $("#res").append("No results.");
+                }
+            }
+        })
+    };
+    !function ($) {
+        $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
+            $(this).find('em:first').toggleClass("glyphicon-minus");
+        });
+        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    }(window.jQuery);
 
+    $(window).on('resize', function () {
+        if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+    });
+    $(window).on('resize', function () {
+        if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+    })
+</script>
 </body>
 
 </html>

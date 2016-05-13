@@ -12,6 +12,10 @@
         <security:intercept-url pattern="/user/register/driver/**" access="hasRole('ROLE_ADMIN')"/>
         <security:intercept-url pattern="/user/register/customer/**" access="isAnonymous()"/>
         <security:intercept-url pattern="/resources/**" access="permitAll()"/>
+        <security:intercept-url pattern="/tables/orders" access="hasRole('ROLE_ADMIN')"/>
+        <!--<security:intercept-url pattern="/tables/**" access="isAuthenticated()"/>-->
+        <security:intercept-url pattern="/tables/messages/new" access="isAnonymous()"/>
+
         <security:intercept-url pattern="/tables/applications/new" access="hasRole('ROLE_CUSTOMER')"/>
 
         <security:form-login

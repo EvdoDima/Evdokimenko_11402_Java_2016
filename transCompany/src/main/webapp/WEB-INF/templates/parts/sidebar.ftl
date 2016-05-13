@@ -86,6 +86,14 @@
             Orders</a></li>
     </@security.authorize>
 
+    <@security.authorize ifAnyGranted="ROLE_ADMIN">
+        <li><a href="/tables/messages">
+            <svg class="glyph stroked table">
+                <use xlink:href="#stroked-table"></use>
+            </svg>
+            Messages</a></li>
+    </@security.authorize>
+
 
 <@security.authorize access="! isAuthenticated()">
         <li role="presentation" class="divider"></li>

@@ -19,7 +19,7 @@ import javax.validation.constraints.Size;
 public class RegistrationForm {
 
     @NotEmpty(message = "Field can not be empty!")
-    @Pattern(message = "^[a-zA-Z0-9_-]{3,16}", regexp = "^[a-zA-Z0-9_-]{3,16}")
+    @Pattern(message = "Wrong login format", regexp = "^[a-zA-Z0-9_-]{3,16}")
     private String login;
 
     public String getLogin() {

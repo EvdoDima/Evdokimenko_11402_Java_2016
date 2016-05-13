@@ -49,6 +49,8 @@ public class TablesController {
     @Autowired
     UserService userService;
 
+    @Autowired
+    MessagesService messagesService;
 
 
     @RequestMapping(value = "/applications", method = RequestMethod.GET)
@@ -92,7 +94,7 @@ public class TablesController {
         }
 
         UsersEntity user = userService.getUserByLogin(
-                ((UserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
+                ((UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
         try {
             applicationsService.saveNewApplication(form, user);
         } catch (DataIntegrityViolationException e) {
@@ -116,7 +118,7 @@ public class TablesController {
                     , String.valueOf(app.getDrivingExp()), String.valueOf(app.getSalaryRate())});
         }
         model.put("tablebody", tablebody);
-        model.put("tablename", "Drivers");
+        model.put("tablename", "drivers");
 
 
         return "pages/tables";
@@ -135,7 +137,7 @@ public class TablesController {
             });
         }
         model.put("tablebody", tablebody);
-        model.put("tablename", "applications");
+        model.put("tablename", "customers");
 
 
         return "pages/tables";
@@ -192,14 +194,14 @@ public class TablesController {
 
     @RequestMapping(value = "orders/new", method = RequestMethod.POST)
     public String setNewOrder(ModelMap modelMap, @RequestParam(value = "carmodel") String name, @RequestParam(value = "appid") Integer id) {
-       ApplicationsEntity app = applicationsService.getOneById(id);
+        ApplicationsEntity app = applicationsService.getOneById(id);
         CarsEntity car = carsService.getCarsByName(name);
         UsersEntity user = userService.getUserByLogin(
-                ((UserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
-        ordersService.saveNewOrder(app,car,
+                ((UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
+        ordersService.saveNewOrder(app, car,
                 user.getDriver());
 
-        applicationsService.deleteOneById (id);
+        applicationsService.deleteOneById(id);
 
         car.setState("Busy");
         carsService.saveNewCar(car);
@@ -207,24 +209,25 @@ public class TablesController {
 
         return "redirect: /tables/orders";
     }
-    @RequestMapping (value = "/orders" ,method = RequestMethod.GET)
-    public String getOrders (ModelMap model) {
 
-        String[] tableheader = {"Id", "Status", "Summ", "Description", "Driver Tel","Customer Tel", "Car model"};
+    @RequestMapping(value = "/orders", method = RequestMethod.GET)
+    public String getOrders(ModelMap model) {
+
+        String[] tableheader = {"Id", "Status", "Summ", "Description", "Driver Tel", "Customer Tel", "Car model"};
         model.put("tableheader", tableheader);
 
         List<String[]> tablebody = new ArrayList<>();
 
         UsersEntity user = userService.getUserByLogin(
-                ((UserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
+                ((UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
 
-        List<OrdersEntity> orders = user.getRole().getUser_role()== UserRole.ROLE_DRIVER?
-                ordersService.findAllByDriver(user.getDriver()):ordersService.getAll();
+        List<OrdersEntity> orders = user.getRole().getUser_role() == UserRole.ROLE_DRIVER ?
+                ordersService.findAllByDriver(user.getDriver()) : ordersService.getAll();
 
         for (OrdersEntity app : orders) {
             tablebody.add(new String[]{String.valueOf(app.getId()), app.getStatus(),
                     String.valueOf(app.getCost()), app.getDescription(), app.getDriver().getTelNumber(),
-                    app.getCustomer().getTelNumber(),app.getCar().getModel()
+                    app.getCustomer().getTelNumber(), app.getCar().getModel()
             });
         }
         model.put("tablebody", tablebody);
@@ -236,8 +239,8 @@ public class TablesController {
 
     }
 
-    @RequestMapping (value = "/orders" ,method = RequestMethod.POST)
-    public String completeOrder(ModelMap modelMap , @RequestParam(value = "orderid") Integer id){
+    @RequestMapping(value = "/orders", method = RequestMethod.POST)
+    public String completeOrder(ModelMap modelMap, @RequestParam(value = "orderid") Integer id) {
         OrdersEntity ordersEntity = ordersService.findOne(id);
         ordersEntity.setStatus("Completed");
         ordersService.saveNewOrder(ordersEntity);
@@ -253,6 +256,37 @@ public class TablesController {
     @RequestMapping(value = "/cars/search", method = RequestMethod.GET)
     public List<CarsEntity> searchProducts(Model model, @RequestParam("q") String query) {
         return query.isEmpty() ? carsService.getAll() : carsService.getAllCarsWithNameLike(query);
+    }
+
+
+    @RequestMapping(value = "/messages/new" ,method = RequestMethod.POST)
+    public String setNewMessage(ModelMap models, @RequestParam("name") String name,
+                                @RequestParam("email") String email, @RequestParam("message") String message) {
+
+        MessagesEntity messagesEntity = new MessagesEntity();
+        messagesEntity.setEmail(email);
+        messagesEntity.setMessage(message);
+        messagesEntity.setName(name);
+        messagesService.saveNewMessage(messagesEntity);
+
+        return "redirect: /";
+    }
+
+    @RequestMapping(value = "/messages", method = RequestMethod.GET)
+    public String getMessages(ModelMap models) {
+
+        models.put("tablename", "messages");
+
+        List<String[]> messages = new ArrayList<>();
+
+        for (MessagesEntity messagesEntity : messagesService.getAll()) {
+            messages.add(new String[]{messagesEntity.getName(),
+                    messagesEntity.getEmail(), messagesEntity.getMessage()});
+        }
+        models.put("tablebody",messages);
+        models.put("tableheader",new String[]{"Name","Email","Message"});
+
+        return "pages/tables";
     }
 
 }

@@ -12,64 +12,98 @@
     <link href="/resources/css/datepicker3.css" rel="stylesheet">
     <link href="/resources/css/styles.css" rel="stylesheet">
 
+    <!--Icons-->
+    <script src="/resources/js/lumino.glyphs.js"></script>
+
     <!--[if lt IE 9]>
+    <script src="/resources/js/html5shiv.min.js"></script>
     <script src="/resources/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
-
 <body>
+<#include "../parts/navbar.ftl">
+
+<#include "../parts/sidebar.ftl">
 
 
 
-<@sf.form class="form-horizontal" action="/user/register/customer" method="post" modelAttribute="regform">
-<div class="row">
+<div class="row" style="margin-top: 50px">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
         <div class="login-panel panel panel-default">
-            <div class="panel-danger">Registration</div>
+            <div class="panel-heading">Registration</div>
             <div class="panel-body">
-                <form role="form">
-                    <fieldset>
-                        <div class="form-group">
-                            <@sf.input path="login" type="text" class="form-control" name = "login" placeholder="Login"/>
-                            <@sf.errors path="login" class="panel-danger"/>
-                        </div>
+                <div class="col-lg-6">
+                <@sf.form class="form-horizontal" action="/user/register/customer" method="post" modelAttribute="regform">
 
-                        <div class="form-group">
-                            <@sf.input path="name" type="text" class="form-control" name = "name" placeholder="Name"/>
-                            <@sf.errors path="name" class="panel-danger"/>
-                        </div>
+                    <form role="form">
+                        <fieldset>
+                            <div class="form-group">
+                                <@sf.input path="login" type="text" class="form-control" name = "login" placeholder="Login"/>
+                            <@sf.errors path="login" style="color :red"/>
 
-                        <div class="form-group">
-                            <@sf.input path="lastname" type="text" class="form-control" name = "lastname" placeholder="Last Name"/>
-                        <@sf.errors path="lastname" class="panel-danger"/>
-                        </div>
+                            </div>
 
-                        <div class="form-group">
-                            <@sf.input path="telnumber" type="number" class="form-control" name = "telnumber" placeholder="tel number"/>
-                        <@sf.errors path="telnumber" class="panel-danger"/>
-                        </div>
+                            <div class="form-group">
+                                <@sf.input path="name" type="text" class="form-control" name = "name" placeholder="Name"/>
+                            <@sf.errors path="name" style="color :red"/>
+                            </div>
 
+                            <div class="form-group">
+                                <@sf.input path="lastname" type="text" class="form-control" name = "lastname" placeholder="Last Name"/>
+                        <@sf.errors path="lastname" style="color :red"/>
+                            </div>
 
-                        <div class="form-group">
-                            <@sf.input path="password" type="password" class="form-control" name = "password" placeholder="Password"/>
-                        <@sf.errors path="password" class="panel-danger"/>
-                        </div>
+                            <div class="form-group">
+                                <@sf.input path="telnumber" type="number" class="form-control" name = "telnumber" placeholder="tel number"/>
+                        <@sf.errors path="telnumber" style="color :red"/>
+                            </div>
 
 
-                        <div class="form-group">
-                            <@sf.input path="repassword" type="password" class="form-control" name = "repassword" placeholder="Repeat the password"/>
-                        <@sf.errors path="repassword" class="panel-danger"/>
-                        </div>
+                            <div class="form-group">
+                                <@sf.input path="password" type="password" class="form-control" name = "password" placeholder="Password"/>
+                        <@sf.errors path="password" style="color :red"/>
+                            </div>
 
-                        <button class="btn btn-primary" type="submit">Register</button>
-                    </fieldset>
-                </form>
+
+                            <div class="form-group">
+                                <@sf.input path="repassword" type="password" class="form-control" name = "repassword" placeholder="Repeat the password"/>
+                        <@sf.errors path="repassword" style="color :red"/>
+                            </div>
+
+                            <button class="btn btn-primary" type="submit">Register</button>
+                        </fieldset>
+                    </form>
+                </@sf.form>
+                </div>
             </div>
         </div>
     </div><!-- /.col-->
 </div><!-- /.row -->
-</@sf.form>
+
+<script src="/resources/js/jquery-1.11.1.min.js"></script>
+<script src="/resources/js/bootstrap.min.js"></script>
+<script src="/resources/js/chart.min.js"></script>
+<script src="/resources/js/chart-data.js"></script>
+<script src="/resources/js/easypiechart.js"></script>
+<script src="/resources/js/easypiechart-data.js"></script>
+<script src="/resources/js/bootstrap-datepicker.js"></script>
+<script>
+
+    !function ($) {
+        $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
+            $(this).find('em:first').toggleClass("glyphicon-minus");
+        });
+        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    }(window.jQuery);
+
+    $(window).on('resize', function () {
+        if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+    });
+    $(window).on('resize', function () {
+        if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+    })
+</script>
 
 </body>
 

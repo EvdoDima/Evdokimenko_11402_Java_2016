@@ -138,10 +138,4 @@ public class UserController {
         return "pages/login";
     }
 
-    @RequestMapping(value = "/profile", method = RequestMethod.GET)
-    public String getProfile(Model model) {
-        return "pages/profile";
-    }
-
-
 }

@@ -16,11 +16,6 @@
                         </svg>
                         User <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">
-                            <svg class="glyph stroked male-user">
-                                <use xlink:href="#stroked-male-user"></use>
-                            </svg>
-                            Profile</a></li>
 
                         <li><a href="/user/logout">
                             <svg class="glyph stroked cancel">
