@@ -207,7 +207,7 @@ public class TablesController {
         carsService.saveNewCar(car);
 
 
-        return "redirect: /tables/orders";
+        return "redirect:/tables/orders";
     }
 
     @RequestMapping(value = "/orders", method = RequestMethod.GET)
@@ -235,8 +235,6 @@ public class TablesController {
 
 
         return "pages/tables";
-
-
     }
 
     @RequestMapping(value = "/orders", method = RequestMethod.POST)

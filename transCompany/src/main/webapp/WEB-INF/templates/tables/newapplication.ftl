@@ -50,6 +50,7 @@
                             </div>
 
                             <div class="form-group">
+                                <label>Summ</label>
                                 <@sf.input path="summ" type="number" class="form-control" name = "summ" placeholder="Summ"/>
                         <@sf.errors path="summ" class="panel-danger"/>
                             </div>

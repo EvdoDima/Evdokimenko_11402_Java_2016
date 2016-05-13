@@ -10,7 +10,7 @@
             Dashboard</a></li>
 
     <@security.authorize ifAnyGranted="ROLE_CUSTOMER">
-        <li><a href="tables/applications/new">
+        <li><a href="/tables/applications/new">
             <svg class="glyph stroked table">
                 <use xlink:href="#stroked-table"></use>
             </svg>
