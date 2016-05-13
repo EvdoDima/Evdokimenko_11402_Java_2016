@@ -82,7 +82,9 @@
             <div class="panel panel-red panel-widget">
                 <div class="row no-padding">
                     <div class="col-sm-3 col-lg-5 widget-left">
-                        <svg class="glyph stroked app-window-with-content"><use xlink:href="#stroked-app-window-with-content"></use></svg>
+                        <svg class="glyph stroked app-window-with-content">
+                            <use xlink:href="#stroked-app-window-with-content"></use>
+                        </svg>
                     </div>
                     <div class="col-sm-9 col-lg-7 widget-right">
                         <div class="large">${applicationscount}</div>
@@ -94,7 +96,12 @@
     </div><!--/.row-->
     <div class="col-md-8">
         <div class="panel panel-default">
-            <div class="panel-heading"><svg class="glyph stroked email"><use xlink:href="#stroked-email"></use></svg> Contact Form</div>
+            <div class="panel-heading">
+                <svg class="glyph stroked email">
+                    <use xlink:href="#stroked-email"></use>
+                </svg>
+                Contact Form
+            </div>
             <div class="panel-body">
                 <form class="form-horizontal" action="/tables/messages/new" method="post">
                     <fieldset>
@@ -110,7 +117,8 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="email">Your E-mail</label>
                             <div class="col-md-9">
-                                <input id="email" name="email" type="email" placeholder="Your email" class="form-control">
+                                <input id="email" name="email" type="email" placeholder="Your email"
+                                       class="form-control">
                             </div>
                         </div>
 
@@ -118,7 +126,8 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="message">Your message</label>
                             <div class="col-md-9">
-                                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                <textarea class="form-control" id="message" name="message"
+                                          placeholder="Please enter your message here..." rows="5"></textarea>
                             </div>
                         </div>
 
@@ -132,32 +141,33 @@
                 </form>
             </div>
 
-</div>
+        </div>
+    </div>
 
 
-<script src="/resources/js/jquery-1.11.1.min.js"></script>
-<script src="/resources/js/bootstrap.min.js"></script>
-<script src="/resources/js/chart.min.js"></script>
-<script src="/resources/js/chart-data.js"></script>
-<script src="/resources/js/easypiechart.js"></script>
-<script src="/resources/js/easypiechart-data.js"></script>
-<script src="/resources/js/bootstrap-datepicker.js"></script>
-<script>
+    <script src="/resources/js/jquery-1.11.1.min.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/chart.min.js"></script>
+    <script src="/resources/js/chart-data.js"></script>
+    <script src="/resources/js/easypiechart.js"></script>
+    <script src="/resources/js/easypiechart-data.js"></script>
+    <script src="/resources/js/bootstrap-datepicker.js"></script>
+    <script>
 
-    !function ($) {
-        $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
-            $(this).find('em:first').toggleClass("glyphicon-minus");
+        !function ($) {
+            $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
+                $(this).find('em:first').toggleClass("glyphicon-minus");
+            });
+            $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+        }(window.jQuery);
+
+        $(window).on('resize', function () {
+            if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
         });
-        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-    }(window.jQuery);
-
-    $(window).on('resize', function () {
-        if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-    });
-    $(window).on('resize', function () {
-        if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-    })
-</script>
+        $(window).on('resize', function () {
+            if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+        })
+    </script>
 </body>
 
 </html>

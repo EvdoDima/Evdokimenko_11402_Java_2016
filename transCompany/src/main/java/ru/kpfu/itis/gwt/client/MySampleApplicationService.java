@@ -6,7 +6,7 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 import java.util.List;
 
-@RemoteServiceRelativePath("springGwtServices/greetingService")
+@RemoteServiceRelativePath("/gwtrequest.rpc")
 public interface MySampleApplicationService extends RemoteService {
     // Sample interface method of remote interface
 

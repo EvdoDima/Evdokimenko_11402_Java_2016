@@ -1,18 +1,19 @@
 package ru.kpfu.itis.gwt.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
-import ru.kpfu.itis.controllers.GWTController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import ru.kpfu.itis.controllers.GwtSpringController;
 import ru.kpfu.itis.gwt.client.MySampleApplicationService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Service("greetingService")
-public class MySampleApplicationServiceImpl extends GWTController implements MySampleApplicationService {
+//@Controller
+//@RequestMapping( value = "/awdsefdrg" )
+public class MySampleApplicationServiceImpl extends GwtSpringController implements MySampleApplicationService {
     // Implementation of sample interface method
-
-
     @Override
     public String greet(String name) {
         return "Hi"+name+"!";

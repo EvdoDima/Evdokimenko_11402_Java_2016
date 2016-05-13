@@ -10,6 +10,9 @@
     <!-- Specify the app entry point class.                   -->
     <entry-point class='ru.kpfu.itis.gwt.client.MySampleApplication'/>
 
+    <servlet path="/quote.rpc"
+             class="ru.kpfu.itis.gwt.server.MySampleApplicationServiceImpl"/>
+
 
     <!-- Specify the app servlets.                   -->
     <!--<servlet path='/MySampleApplicationService' class='ru.kpfu.itis.gwt.server.MySampleApplicationServiceImpl'/>-->
