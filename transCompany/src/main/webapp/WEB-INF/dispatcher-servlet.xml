@@ -36,5 +36,35 @@
     </bean>
 
 
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <!-- CourseServiceClientController to display CourseServiceClient.html -->
+                <prop key="/course.smvc">courseController</prop>
+                <!-- CourseServiceClientServiceController for Servlet RPC invocation -->
+                <!--  -->
+                <!-- IMPORTANT: DO NOT DO THIS: /gwt.smvc -->
+                <!-- IMPORTANT: DO THIS: /com.ibt.intelligrade.CourseServiceClient/gwt.smvc -->
+                <!--  -->
+                <prop key="/ru.kpfu.itis.gwt.client.CourseServiceClient/gwt.smvc">courseServiceController</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="courseController"
+
+          class="ru.kpfu.itis.controllers.">
+        <!--  -->
+        <!-- IMPORTANT: DO NOT DO THIS: /CourseServiceClient -->
+        <!-- IMPORTANT: DO THIS: /com.ibt.intelligrade.CourseServiceClient/CourseServiceClient -->
+        <!--  -->
+        <property name="viewName" value="/com.ibt.intelligrade.CourseServiceClient/CourseServiceClient"/>
+    </bean>
+
+    <bean id="courseServiceController"
+          class="ru.kpfu.itis.gwt.server.MySampleApplicationServiceImpl"/>
+</beans>
+
+
 
 </beans>
