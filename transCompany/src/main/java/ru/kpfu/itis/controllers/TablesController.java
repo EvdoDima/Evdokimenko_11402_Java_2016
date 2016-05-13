@@ -281,10 +281,21 @@ public class TablesController {
             messages.add(new String[]{messagesEntity.getName(),
                     messagesEntity.getEmail(), messagesEntity.getMessage()});
         }
-        models.put("tablebody",messages);
-        models.put("tableheader",new String[]{"Name","Email","Message"});
+        models.put("tablebody", messages);
+        models.put("tableheader", new String[]{"Name", "Email", "Message"});
 
         return "pages/tables";
     }
+
+
+    @ResponseBody
+    @RequestMapping(value = "/orders/save", produces = "application/rtf")
+    public String saveContracts(Model model) {
+
+        return ordersService.findAll().toString();
+    }
+
+
+
 
 }

@@ -56,4 +56,9 @@ public class OrdersServiceImpl implements OrdersService {
     public void saveNewOrder(OrdersEntity ordersEntity) {
         ordersRep.save(ordersEntity);
     }
+
+    @Override
+    public List<OrdersEntity> findAll() {
+        return ordersRep.findAll();
+    }
 }

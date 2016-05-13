@@ -22,4 +22,6 @@ public interface OrdersService {
     OrdersEntity findOne(Integer id);
 
     void saveNewOrder(OrdersEntity ordersEntity);
+
+    List<OrdersEntity> findAll();
 }

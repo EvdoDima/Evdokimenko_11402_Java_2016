@@ -118,6 +118,18 @@ public class OrdersEntity {
         result = 31 * result + (car != null ? car.hashCode() : 0);
         return result;
     }
+
+
+    @Override
+    public String toString() {
+        return "/nOrder" +
+                "id" + id +
+                " : description = " + description +
+                ", cost = " + cost +
+                ", status = " + status  +
+                ", customertel = " + customer.getTelNumber() +
+                ", drivertel = " + driver.getTelNumber() + ", car = "+car.getModel();
+    }
 }
 
 
