@@ -257,7 +257,7 @@ public class TablesController {
     }
 
 
-    @RequestMapping(value = "/messages/new" ,method = RequestMethod.POST)
+    @RequestMapping(value = "/messages/new", method = RequestMethod.POST)
     public String setNewMessage(ModelMap models, @RequestParam("name") String name,
                                 @RequestParam("email") String email, @RequestParam("message") String message) {
 
@@ -289,13 +289,15 @@ public class TablesController {
 
 
     @ResponseBody
-    @RequestMapping(value = "/orders/save", produces = "application/rtf")
-    public String saveContracts(Model model) {
+    @RequestMapping(value = "/orders/orders_file", produces = "application/rtf")
+    public String saveContracts() {
+        UsersEntity usersEntity = userService.getUserByLogin
+                (((UserDetails) SecurityContextHolder.getContext().
+                        getAuthentication().getPrincipal()).getUsername());
 
-        return ordersService.findAll().toString();
+        return usersEntity.getRole().getUser_role() == UserRole.ROLE_ADMIN ?
+                ordersService.findAll().toString() : ordersService.findAllByDriver(usersEntity.getDriver()).toString();
     }
-
-
 
 
 }

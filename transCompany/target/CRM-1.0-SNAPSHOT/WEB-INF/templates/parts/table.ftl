@@ -5,7 +5,7 @@
                 <input class="form-control" id="s" style ="display:inline; width:20%;"  oninput="f()" type="text" placeholder="Search">
         </#if>
         <#if tablename == "orders">
-            <a href="/tables/orders/save" class="button btn btn-round" >Save as file</a>
+            <a href="/tables/orders/orders_file" class="button btn btn-round" >Save as file</a>
         </#if>
         </div>
         <div class="panel-body">
