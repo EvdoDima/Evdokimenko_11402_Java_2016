@@ -6,7 +6,7 @@
                     data-target="#sidebar-collapse">
                 <span class="sr-only">Toggle navigation</span>
             </button>
-            <a class="navbar-brand" href="#"><span>Evdo</span></a>
+            <a class="navbar-brand" href="#"><span>TransCompany</span></a>
             <ul class="user-menu">
                 <@security.authorize access="isAuthenticated()">
                 <li class="dropdown pull-right">
