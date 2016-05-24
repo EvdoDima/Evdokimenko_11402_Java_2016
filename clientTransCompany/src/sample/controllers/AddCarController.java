@@ -1,7 +1,6 @@
 package sample.controllers;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import sample.Main;
 
@@ -25,6 +24,6 @@ public class AddCarController {
     }
 
     public void handleRegisterDriverPage(ActionEvent actionEvent) {
-        app.initRegisterDriverPage();
+        app.changeToRegisterDriverPage();
     }
 }

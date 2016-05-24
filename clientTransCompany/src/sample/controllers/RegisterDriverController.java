@@ -26,7 +26,7 @@ public class RegisterDriverController {
     private Main app;
 
     public void handleAddNewCarPage(ActionEvent actionEvent) {
-        app.initAddCarPage();
+        app.changeToAddCarPage();
 
     }
 

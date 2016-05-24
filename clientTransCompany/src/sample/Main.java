@@ -19,7 +19,7 @@ import java.io.Reader;
 
 public class Main extends Application {
 
-    private Scene mainScene;
+   // private Scene mainScene;
     private Stage currentStage;
 
 
@@ -46,12 +46,13 @@ public class Main extends Application {
         }
         LoginController controller = loader.getController();
         controller.setApp(this);
-        currentStage.setScene(new Scene(root));
-        currentStage.show();
+
+        changeScene(root);
+
     }
 
 
-    public void initAddCarPage()  {
+    public void changeToAddCarPage()  {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/admin/AddCarPage.fxml"));
         Parent root = null;
         try {
@@ -61,11 +62,12 @@ public class Main extends Application {
         }
         AddCarController controller = loader.getController();
         controller.setApp(this);
-        currentStage.setScene(new Scene(root));
-        currentStage.show();
+
+        changeScene(root);
+
     }
 
-    public void initRegisterDriverPage()  {
+    public void changeToRegisterDriverPage()  {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/admin/RegisterDriverPage.fxml"));
         Parent root = null;
         try {
@@ -75,6 +77,13 @@ public class Main extends Application {
         }
         RegisterDriverController controller = loader.getController();
         controller.setApp(this);
+
+        changeScene(root);
+
+    }
+
+
+    public void changeScene(Parent root){
         currentStage.setScene(new Scene(root));
         currentStage.show();
     }

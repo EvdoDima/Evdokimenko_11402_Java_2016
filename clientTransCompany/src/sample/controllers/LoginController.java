@@ -4,7 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 import sample.Main;
 
 /**
@@ -27,6 +26,6 @@ public class LoginController {
 
     public void handleSubmitAction(ActionEvent actionEvent) {
         System.out.println("HUI " + loginTextField.getText() + " " + passwordField.getText());
-        app.initAddCarPage();
+        app.changeToAddCarPage();
     }
 }
