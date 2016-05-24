@@ -295,8 +295,9 @@ public class TablesController {
                 (((UserDetails) SecurityContextHolder.getContext().
                         getAuthentication().getPrincipal()).getUsername());
 
-        return usersEntity.getRole().getUser_role() == UserRole.ROLE_ADMIN ?
-                ordersService.findAll().toString() : ordersService.findAllByDriver(usersEntity.getDriver()).toString();
+        return "{/rtf1 " +"{/table " +(usersEntity.getRole().getUser_role() == UserRole.ROLE_ADMIN ?
+                ordersService.findAll().toString() : ordersService.findAllByDriver(usersEntity.getDriver()).toString())
+                +"}";
     }
 
 

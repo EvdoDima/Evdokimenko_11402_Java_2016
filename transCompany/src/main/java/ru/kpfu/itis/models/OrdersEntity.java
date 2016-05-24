@@ -122,13 +122,13 @@ public class OrdersEntity {
 
     @Override
     public String toString() {
-        return "/nOrder" +
-                "id" + id +
-                " : description = " + description +
-                ", cost = " + cost +
-                ", status = " + status  +
-                ", customertel = " + customer.getTelNumber() +
-                ", drivertel = " + driver.getTelNumber() + ", car = "+car.getModel();
+        return "{/tr " +"/nOrder" +
+                "id" +"{/td " +id+" }" +
+                " : description = " +"{/td "+ description +" }"+
+                ", cost = " +"{/td "+ cost+" }" +
+                ", status = " +"{/td "+ status + " }"+
+                ", customertel = " +"{/td "+ customer.getTelNumber()+" }" +
+                ", drivertel = " +"{/td "+ driver.getTelNumber() +" }"+ ", car = "+"{/td "+car.getModel()+" }"+" }";
     }
 }
 
