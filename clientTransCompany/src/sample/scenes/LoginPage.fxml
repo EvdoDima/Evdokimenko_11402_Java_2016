@@ -9,26 +9,26 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<Pane  fx:controller="sample.controllers.LoginController"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.LoginController">
    <children>
-      <GridPane alignment="TOP_CENTER" layoutX="177.0" layoutY="77.0" prefHeight="247.0" prefWidth="246.0">
+      <GridPane alignment="TOP_CENTER" layoutX="177.0" layoutY="73.0" prefHeight="254.0" prefWidth="246.0" style="-fx-background-color: lightblue;">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="175.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints />
-          <RowConstraints />
-          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="97.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="45.0" minHeight="21.0" prefHeight="45.0" />
+          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="80.0" valignment="CENTER" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-             <Label  text="Login" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+             <Label text="Login" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
              <TextField fx:id="loginTextField" GridPane.rowIndex="2" />
-             <Label text="Password" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+             <Label text="Password" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
              <PasswordField fx:id="passwordField" GridPane.rowIndex="4" />
-             <Button onAction="#handleSubmitAction" alignment="CENTER" mnemonicParsing="false" prefHeight="27.0" prefWidth="190.0" text="Submit" GridPane.rowIndex="5" />
+             <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleSubmitAction" prefHeight="27.0" prefWidth="190.0" text="Submit" textFill="#49769a" GridPane.rowIndex="5" />
          </children>
       </GridPane>
    </children>

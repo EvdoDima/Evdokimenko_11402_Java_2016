@@ -1,28 +1,20 @@
 package sample;
 
 
-import javafx.animation.PathTransition;
 import javafx.application.Application;
 
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
-import javafx.scene.control.Label;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Path;
-import javafx.scene.shape.Rectangle;
-import javafx.stage.Stage;
-import javafx.util.Duration;
-import sample.controllers.LoginController;
 
-import java.awt.*;
+import javafx.stage.Stage;
+import sample.controllers.AddCarController;
+import sample.controllers.LoginController;
+import sample.controllers.RegisterDriverController;
+
 import java.io.IOException;
-import java.util.LinkedList;
+import java.io.Reader;
 
 
 public class Main extends Application {
@@ -53,6 +45,35 @@ public class Main extends Application {
             e.printStackTrace();
         }
         LoginController controller = loader.getController();
+        controller.setApp(this);
+        currentStage.setScene(new Scene(root));
+        currentStage.show();
+    }
+
+
+    public void initAddCarPage()  {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/admin/AddCarPage.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AddCarController controller = loader.getController();
+        controller.setApp(this);
+        currentStage.setScene(new Scene(root));
+        currentStage.show();
+    }
+
+    public void initRegisterDriverPage()  {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/admin/RegisterDriverPage.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        RegisterDriverController controller = loader.getController();
         controller.setApp(this);
         currentStage.setScene(new Scene(root));
         currentStage.show();

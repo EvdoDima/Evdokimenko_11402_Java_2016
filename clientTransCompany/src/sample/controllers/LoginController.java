@@ -27,6 +27,6 @@ public class LoginController {
 
     public void handleSubmitAction(ActionEvent actionEvent) {
         System.out.println("HUI " + loginTextField.getText() + " " + passwordField.getText());
-        app.initLoginPage();
+        app.initAddCarPage();
     }
 }
