@@ -148,10 +148,4 @@ public class Main extends Application {
         root.getChildren().addAll(verticalBorderLeft, verticalBorderRight, horizontalBorder);
         return horizontalBorder;
     }
-
-
-
-
-
-
 }
