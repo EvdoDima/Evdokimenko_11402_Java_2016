@@ -1,8 +1,8 @@
 *.class
 *.idea
 *.DS_Store
-/out/*
-/target/*
+out/
+target/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
