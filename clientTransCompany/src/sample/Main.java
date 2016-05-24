@@ -18,6 +18,7 @@ import javafx.scene.shape.Path;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import sample.controllers.LoginController;
 
 import java.awt.*;
 import java.io.IOException;
@@ -26,9 +27,8 @@ import java.util.LinkedList;
 
 public class Main extends Application {
 
-    Scene mainScene;
-    Stage currentStage;
-
+    private Scene mainScene;
+    private Stage currentStage;
 
 
     public static void main(String[] args) {
@@ -40,20 +40,23 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         currentStage = primaryStage;
         currentStage.setTitle("TransCompany");
+        initLoginPage();
+    }
 
-        Parent root = initLoginPage();
 
+    public void initLoginPage()  {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/LoginPage.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        LoginController controller = loader.getController();
+        controller.setApp(this);
         currentStage.setScene(new Scene(root));
         currentStage.show();
     }
-
-
-    public Parent initLoginPage() throws IOException {
-        return FXMLLoader.load(getClass().getResource("scenes/LoginPage.fxml"));
-    }
-
-
-
 
 
 }

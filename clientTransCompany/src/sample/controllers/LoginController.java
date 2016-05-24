@@ -1,8 +1,11 @@
 package sample.controllers;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import sample.Main;
 
 /**
  * Created by evdodima on 24/05/16.
@@ -10,10 +13,20 @@ import javafx.scene.control.TextField;
  */
 public class LoginController {
 
+    @FXML
     public TextField loginTextField;
+    @FXML
     public PasswordField passwordField;
 
+    public void setApp(Main app) {
+        this.app = app;
+    }
+
+    private Main app;
+
+
     public void handleSubmitAction(ActionEvent actionEvent) {
-        System.out.println("HUI "+loginTextField.getText()+" "+ passwordField.getText());
+        System.out.println("HUI " + loginTextField.getText() + " " + passwordField.getText());
+        app.initLoginPage();
     }
 }
