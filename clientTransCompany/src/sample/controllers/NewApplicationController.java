@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
  * Created by evdodima on 24/05/16.
  * 11-402
  */
-public class NewApplicationController {
+public class NewApplicationController  extends AbstractController{
     public TextField name;
     public TextField summ;
     public TextArea description;

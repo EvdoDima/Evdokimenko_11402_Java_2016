@@ -8,22 +8,18 @@ import sample.Main;
  * Created by evdodima on 24/05/16.
  * 11-402
  */
-public class AddCarController {
+public class AddCarController extends AbstractController{
     public TextField carModel;
     public TextField year;
     public TextField run;
 
-    public void setApp(Main app) {
-        this.app = app;
-    }
 
-    private Main app;
 
     public void handleCarAddAction(ActionEvent actionEvent) {
 
     }
 
     public void handleRegisterDriverPage(ActionEvent actionEvent) {
-        app.changeToRegisterDriverPage();
+        app.changeScene("admin/RegisterDriverPage");
     }
 }

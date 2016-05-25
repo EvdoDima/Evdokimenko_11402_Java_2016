@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 
 
 import javafx.stage.Stage;
+import sample.controllers.AbstractController;
 import sample.controllers.AddCarController;
 import sample.controllers.LoginController;
 import sample.controllers.RegisterDriverController;
@@ -32,61 +33,24 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         currentStage = primaryStage;
         currentStage.setTitle("TransCompany");
-        initLoginPage();
+        changeScene("SampleTable");
     }
 
 
-    public void initLoginPage()  {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/LoginPage.fxml"));
+
+
+    public void changeScene(String sceneName){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/"+sceneName+".fxml"));
         Parent root = null;
         try {
             root = loader.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        LoginController controller = loader.getController();
+        AbstractController controller = loader.getController();
         controller.setApp(this);
 
-        changeScene(root);
-
-    }
-
-
-    public void changeToAddCarPage()  {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/admin/AddCarPage.fxml"));
-        Parent root = null;
-        try {
-            root = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        AddCarController controller = loader.getController();
-        controller.setApp(this);
-
-        changeScene(root);
-
-    }
-
-    public void changeToRegisterDriverPage()  {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("scenes/admin/RegisterDriverPage.fxml"));
-        Parent root = null;
-        try {
-            root = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        RegisterDriverController controller = loader.getController();
-        controller.setApp(this);
-
-        changeScene(root);
-
-    }
-
-
-    public void changeScene(Parent root){
         currentStage.setScene(new Scene(root));
         currentStage.show();
     }
-
-
 }

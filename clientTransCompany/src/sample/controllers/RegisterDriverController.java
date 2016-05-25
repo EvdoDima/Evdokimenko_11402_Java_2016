@@ -2,6 +2,7 @@ package sample.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import sample.Main;
 
@@ -9,7 +10,7 @@ import sample.Main;
  * Created by evdodima on 24/05/16.
  * 11-402
  */
-public class RegisterDriverController {
+public class RegisterDriverController extends AbstractController {
 
 
     public PasswordField password;
@@ -26,11 +27,12 @@ public class RegisterDriverController {
     private Main app;
 
     public void handleAddNewCarPage(ActionEvent actionEvent) {
-        app.changeToAddCarPage();
+        app.changeScene("admin/AddCarPage");
 
     }
 
     public void handleDriverRegister(ActionEvent actionEvent) {
+
 
     }
 }
