@@ -17,18 +17,20 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints />
+          <RowConstraints />
           <RowConstraints maxHeight="45.0" minHeight="21.0" prefHeight="45.0" />
-          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="80.0" valignment="CENTER" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-             <Label text="Login" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-             <TextField fx:id="loginTextField" GridPane.rowIndex="2" />
-             <Label text="Password" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-             <PasswordField fx:id="passwordField" GridPane.rowIndex="4" />
-             <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleSubmitAction" prefHeight="27.0" prefWidth="190.0" text="Submit" textFill="#49769a" GridPane.rowIndex="5" />
+             <Label text="Login" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+             <TextField fx:id="loginTextField" GridPane.rowIndex="3" />
+             <Label text="Password" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+             <PasswordField fx:id="passwordField" GridPane.rowIndex="5" />
+             <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleSubmitAction" prefHeight="27.0" prefWidth="190.0" text="Submit" textFill="#49769a" GridPane.rowIndex="6" />
+            <Label fx:id="errorField" prefHeight="33.0" prefWidth="188.0" textFill="#b93232" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>

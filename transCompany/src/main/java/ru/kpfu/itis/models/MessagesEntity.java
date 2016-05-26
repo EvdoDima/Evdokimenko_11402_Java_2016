@@ -1,7 +1,5 @@
 package ru.kpfu.itis.models;
 
-import org.springframework.data.repository.cdi.Eager;
-
 import javax.persistence.*;
 
 /**

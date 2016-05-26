@@ -1,6 +1,6 @@
 package ru.kpfu.itis.models;
 
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.List;
@@ -32,6 +32,7 @@ public class CustomersEntity {
     private List<ApplicationsEntity> applications;
 
 
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     public UsersEntity getUser() {
@@ -42,6 +43,7 @@ public class CustomersEntity {
         this.user = user;
     }
 
+    @JsonIgnore
     @OneToMany(targetEntity = OrdersEntity.class, mappedBy = "customer")
     public List<OrdersEntity> getOrders() {
         return orders;

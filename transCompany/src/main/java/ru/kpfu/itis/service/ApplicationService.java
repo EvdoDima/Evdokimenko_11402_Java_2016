@@ -27,5 +27,7 @@ public interface ApplicationService {
 
     void deleteOneById(Integer id);
 
+    void saveNewApplication(ApplicationsEntity applicationsEntity);
+
     //void deleteOneById(Integer id);
 }

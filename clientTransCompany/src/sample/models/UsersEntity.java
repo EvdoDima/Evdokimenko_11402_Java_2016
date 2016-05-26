@@ -1,4 +1,4 @@
-package ru.kpfu.itis.models;
+package sample.models;
 
 import javax.persistence.*;
 

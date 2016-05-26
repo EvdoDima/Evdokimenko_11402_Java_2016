@@ -10,12 +10,8 @@ import javafx.scene.Scene;
 
 import javafx.stage.Stage;
 import sample.controllers.AbstractController;
-import sample.controllers.AddCarController;
-import sample.controllers.LoginController;
-import sample.controllers.RegisterDriverController;
 
 import java.io.IOException;
-import java.io.Reader;
 
 
 public class Main extends Application {
@@ -33,7 +29,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         currentStage = primaryStage;
         currentStage.setTitle("TransCompany");
-        changeScene("SampleTable");
+        changeScene("LoginPage");
     }
 
 
@@ -53,4 +49,5 @@ public class Main extends Application {
         currentStage.setScene(new Scene(root));
         currentStage.show();
     }
+
 }

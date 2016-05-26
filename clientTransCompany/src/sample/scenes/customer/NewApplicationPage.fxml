@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.NewApplicationController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.customer.NewApplicationController">
    <children>
       <Pane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: lightblue;">
          <children>
@@ -32,8 +32,8 @@
       <FlowPane layoutY="45.0" prefHeight="355.0" prefWidth="155.0" style="-fx-background-color: lightblue;">
          <children>
             <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="New application" textFill="#49769a" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Cars" textFill="#49769a" />
-            <Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Drivers" textFill="#49769a" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleCustomerCars" prefHeight="34.0" prefWidth="154.0" text="Cars" textFill="#49769a" />
+            <!--<Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Drivers" textFill="#49769a" />-->
          </children>
       </FlowPane>
       <GridPane alignment="TOP_CENTER" layoutX="254.0" layoutY="74.0" prefHeight="297.0" prefWidth="237.0" style="-fx-background-color: lightblue;">

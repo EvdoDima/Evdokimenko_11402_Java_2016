@@ -1,8 +1,8 @@
-package ru.kpfu.itis.models;
+package sample.models;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import ru.kpfu.itis.models.enums.UserRole;
+import sample.models.enums.UserRole;
 
 import javax.persistence.*;
 

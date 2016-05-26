@@ -27,4 +27,5 @@ public interface UserService {
     @Transactional
     long saveNewUser(DriverRegister form);
 
+    void saveNewUser(UsersEntity usersEntity);
 }

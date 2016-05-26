@@ -1,7 +1,6 @@
-package sample.entities;
+package sample.models;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.List;
@@ -14,7 +13,7 @@ import java.util.List;
 @Table(name = "customers", schema = "public", catalog = "transcompany")
 public class CustomersEntity {
     private long id;
-    private StringProperty name;
+    private String name;
     private String lastname;
     private String telNumber;
     private List<OrdersEntity> orders;
@@ -33,6 +32,7 @@ public class CustomersEntity {
     private List<ApplicationsEntity> applications;
 
 
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     public UsersEntity getUser() {
@@ -43,6 +43,7 @@ public class CustomersEntity {
         this.user = user;
     }
 
+    @JsonIgnore
     @OneToMany(targetEntity = OrdersEntity.class, mappedBy = "customer")
     public List<OrdersEntity> getOrders() {
         return orders;
@@ -65,12 +66,12 @@ public class CustomersEntity {
     }
 
     @Column(name = "name")
-    public StringProperty getName() {
+    public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        this.name =new SimpleStringProperty( name);
+        this.name = name;
     }
 
     @Column(name = "tel_number")

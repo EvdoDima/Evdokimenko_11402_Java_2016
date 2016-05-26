@@ -49,4 +49,9 @@ public class ApplicationServiceImpl implements ApplicationService {
     public void deleteOneById(Integer id) {
         applicationsRep.delete(applicationsRep.getOne(Long.valueOf(id)));
     }
+
+    @Override
+    public void saveNewApplication(ApplicationsEntity applicationsEntity) {
+        applicationsRep.save(applicationsEntity);
+    }
 }

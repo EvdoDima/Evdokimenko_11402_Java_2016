@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" fx:controller="sample.controllers.RegisterDriverController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.admin.RegisterDriverController">
    <children>
       <Pane prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: lightblue;">
          <children>
@@ -33,9 +33,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#handleAddNewCarPage" prefHeight="34.0" prefWidth="154.0" text="Add new Car" textFill="#49769a" />
             <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Register driver" textFill="#49769a" />
-            <Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Menu item3" textFill="#49769a" />
-            <Button layoutX="10.0" layoutY="78.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Menu item4" textFill="#49769a" />
-            <Button layoutX="10.0" layoutY="112.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Menu item5" textFill="#49769a" />
+            <Button mnemonicParsing="false" onAction="#handleOrdersPage" prefHeight="34.0" prefWidth="154.0" text="Orders" textFill="#49769a" />
          </children>
       </FlowPane>
       <GridPane alignment="TOP_CENTER" layoutX="254.0" layoutY="74.0" prefHeight="303.0" prefWidth="237.0" style="-fx-background-color: lightblue;">
@@ -48,18 +46,20 @@
             <RowConstraints maxHeight="137.0" minHeight="4.0" prefHeight="50.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="198.0" minHeight="10.0" prefHeight="48.0" valignment="CENTER" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
             <PasswordField fx:id="password" promptText="Password" GridPane.rowIndex="2" />
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleDriverRegister" prefHeight="27.0" prefWidth="190.0" text="Register new Driver" textFill="#49769a" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleDriverRegister" prefHeight="27.0" prefWidth="190.0" text="Register new Driver" textFill="#49769a" GridPane.rowIndex="8" />
             <TextField fx:id="firstname" prefHeight="0.0" prefWidth="190.0" promptText="First name" GridPane.rowIndex="3" />
             <TextField fx:id="lastname" layoutX="34.0" layoutY="155.0" promptText="Last name" GridPane.rowIndex="4" />
-            <TextField fx:id="drivingexp" layoutX="34.0" layoutY="23.0" promptText="Driving expirience" GridPane.rowIndex="5" />
-            <TextField fx:id="salaryrate" layoutX="34.0" layoutY="19.0" prefHeight="11.0" prefWidth="190.0" promptText="Salary rate" GridPane.rowIndex="6" />
+            <TextField fx:id="drivingexp" layoutX="34.0" layoutY="23.0" promptText="Driving expirience" GridPane.rowIndex="6" />
+            <TextField fx:id="salaryrate" layoutX="34.0" layoutY="19.0" prefHeight="11.0" prefWidth="190.0" promptText="Salary rate" GridPane.rowIndex="7" />
             <TextField fx:id="login" layoutX="34.0" layoutY="62.0" promptText="Login" GridPane.rowIndex="1" />
+            <TextField fx:id="telnumber" layoutX="34.0" layoutY="107.0" prefHeight="0.0" prefWidth="190.0" promptText="tel number" GridPane.rowIndex="5" />
          </children>
       </GridPane>
    </children>

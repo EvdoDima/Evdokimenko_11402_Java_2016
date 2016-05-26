@@ -1,7 +1,6 @@
 package ru.kpfu.itis.models;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 /**
  * Created by evdodima on 16/04/16.

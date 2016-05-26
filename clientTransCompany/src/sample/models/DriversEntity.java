@@ -1,4 +1,6 @@
-package sample.entities;
+package sample.models;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.List;
@@ -24,11 +26,13 @@ public class DriversEntity {
 
     private List<OrdersEntity> orders;
 
+    @JsonIgnore
     @OneToMany(targetEntity = OrdersEntity.class, mappedBy = "driver")
     public List<OrdersEntity> getOrders() {
         return orders;
     }
 
+    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     public UsersEntity getUser(){return user;}

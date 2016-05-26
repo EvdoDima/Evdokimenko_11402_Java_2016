@@ -1,4 +1,4 @@
-package sample.entities.enums;
+package sample.models.enums;
 
 /**
  * Created by evdodima on 05/05/16.
