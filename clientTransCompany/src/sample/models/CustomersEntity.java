@@ -9,8 +9,7 @@ import java.util.List;
  * Created by evdodima on 16/04/16.
  * 11-402
  */
-@Entity
-@Table(name = "customers", schema = "public", catalog = "transcompany")
+
 public class CustomersEntity {
     private long id;
     private String name;
@@ -19,7 +18,6 @@ public class CustomersEntity {
     private List<OrdersEntity> orders;
 
 
-    @Column(name = "lastname", nullable = false)
     public String getLastname() {
         return lastname;
     }
@@ -33,8 +31,7 @@ public class CustomersEntity {
 
 
     @JsonIgnore
-    @OneToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
+
     public UsersEntity getUser() {
         return user;
     }
@@ -44,7 +41,6 @@ public class CustomersEntity {
     }
 
     @JsonIgnore
-    @OneToMany(targetEntity = OrdersEntity.class, mappedBy = "customer")
     public List<OrdersEntity> getOrders() {
         return orders;
     }
@@ -53,10 +49,7 @@ public class CustomersEntity {
         this.orders = orders;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customers_id_seq")
-    @SequenceGenerator(name = "customers_id_seq", sequenceName = "customers_id_seq", allocationSize = 1)
-    @Column(name = "id")
+
     public long getId() {
         return id;
     }
@@ -65,7 +58,6 @@ public class CustomersEntity {
         this.id = id;
     }
 
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -74,7 +66,6 @@ public class CustomersEntity {
         this.name = name;
     }
 
-    @Column(name = "tel_number")
     public String getTelNumber() {
         return telNumber;
     }
@@ -85,7 +76,6 @@ public class CustomersEntity {
 
 
     @JsonIgnore
-    @OneToMany(mappedBy = "customer")
     public List<ApplicationsEntity> getApplications() {
         return applications;
     }

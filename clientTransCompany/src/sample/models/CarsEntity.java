@@ -6,8 +6,7 @@ import javax.persistence.*;
  * Created by evdodima on 16/04/16.
  * 11-402
  */
-@Entity
-@Table(name = "cars", schema = "public", catalog = "transcompany")
+
 public class CarsEntity {
     private long id;
     private String model;
@@ -16,10 +15,7 @@ public class CarsEntity {
     private String state;
 
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cars_id_seq")
-    @SequenceGenerator(name = "cars_id_seq", sequenceName = "cars_id_seq", allocationSize = 1)
-    @Column(name = "id")
+
     public long getId() {
         return id;
     }
@@ -29,7 +25,6 @@ public class CarsEntity {
     }
 
 
-    @Column(name = "model")
     public String getModel() {
         return model;
     }
@@ -38,7 +33,6 @@ public class CarsEntity {
         this.model = model;
     }
 
-    @Column(name = "year")
     public int getYear() {
         return year;
     }
@@ -47,7 +41,6 @@ public class CarsEntity {
         this.year = year;
     }
 
-    @Column(name = "run")
     public int getRun() {
         return run;
     }
@@ -56,7 +49,6 @@ public class CarsEntity {
         this.run = run;
     }
 
-    @Column(name = "state")
     public String getState() {
         return state;
     }

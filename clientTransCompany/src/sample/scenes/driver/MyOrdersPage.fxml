@@ -35,8 +35,8 @@
         </FlowPane>
         <TableView fx:id="ordersTable" layoutX="157.0" layoutY="67.0" prefHeight="295.0" prefWidth="443.0">
             <columns>
-                <TableColumn fx:id="idColumn" prefWidth="20.0" sortType="DESCENDING" text="ID" />
-                <TableColumn fx:id="statusColumn" prefWidth="93.0" resizable="false" text="Status" />
+                <TableColumn fx:id="idColumn" minWidth="31.0" prefWidth="31.0" sortType="DESCENDING" text="ID" />
+                <TableColumn fx:id="statusColumn" prefWidth="82.0" resizable="false" text="Status" />
                 <TableColumn fx:id="summColumn" prefWidth="60.0" text="Summ" />
                 <TableColumn fx:id="driverTelColumn" prefWidth="94.0" text="Driver tel" />
                 <TableColumn fx:id="customerTelColumn" prefWidth="88.0" text="Cust tel" />

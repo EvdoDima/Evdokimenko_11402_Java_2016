@@ -6,15 +6,12 @@ import javax.persistence.*;
  * Created by evdodima on 16/04/16.
  * 11-402
  */
-@Entity
-@Table(name = "applications", schema = "public", catalog = "transcompany")
 public class ApplicationsEntity {
     private long id;
     private int summ;
     private String description;
     private String name;
 
-    @Column(name = "name", nullable = false)
     public String getName() {
         return name;
     }
@@ -25,10 +22,7 @@ public class ApplicationsEntity {
 
     private CustomersEntity customer;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "applications_id_seq")
-    @SequenceGenerator(name="applications_id_seq", sequenceName="applications_id_seq", allocationSize = 1)
-    @Column(name = "id")
+
     public long getId() {
         return id;
     }
@@ -37,8 +31,7 @@ public class ApplicationsEntity {
         this.id = id;
     }
 
-    @ManyToOne
-    @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = false)
+
     public CustomersEntity getCustomer(){
         return customer;
     }
@@ -47,7 +40,6 @@ public class ApplicationsEntity {
         this.customer = customer;
     }
 
-    @Column(name = "summ")
     public int getSumm() {
         return summ;
     }
@@ -56,7 +48,6 @@ public class ApplicationsEntity {
         this.summ = summ;
     }
 
-    @Column(name = "description")
     public String getDescription() {
         return description;
     }

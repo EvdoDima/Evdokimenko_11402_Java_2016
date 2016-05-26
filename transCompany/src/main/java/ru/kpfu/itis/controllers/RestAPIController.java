@@ -18,11 +18,9 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * @author Rinat Khanov
- *         11-402
- *         000
+ * Created by evdodima on 11/04/16.
+ * 11-402
  */
-
 
 @RestController
 @RequestMapping("/rest/api")

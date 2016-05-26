@@ -9,11 +9,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-
 /**
  * Created by evdodima on 24/05/16.
  * 11-402
  */
+
 public class CustomResponseErrorHandler implements ResponseErrorHandler {
 
     private ResponseErrorHandler errorHandler = new DefaultResponseErrorHandler();

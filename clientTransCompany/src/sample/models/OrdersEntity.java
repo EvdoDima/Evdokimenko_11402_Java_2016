@@ -6,8 +6,7 @@ import javax.persistence.*;
  * Created by evdodima on 16/04/16.
  * 11-402
  */
-@Entity
-@Table(name = "orders", schema = "public", catalog = "transcompany")
+
 public class OrdersEntity {
     private long id;
     private String description;
@@ -17,8 +16,7 @@ public class OrdersEntity {
     private DriversEntity driver;
     private CarsEntity car;
 
-    @ManyToOne(targetEntity = CarsEntity.class)
-    @JoinColumn(name = "car_id", referencedColumnName = "id")
+
     public CarsEntity getCar() {
         return car;
     }
@@ -28,8 +26,6 @@ public class OrdersEntity {
     }
 
 
-    @ManyToOne(targetEntity = CustomersEntity.class)
-    @JoinColumn(name = "customer_id", referencedColumnName = "id")
     public CustomersEntity getCustomer() {
         return customer;
     }
@@ -38,8 +34,7 @@ public class OrdersEntity {
         this.customer = costomer;
     }
 
-    @ManyToOne(targetEntity = DriversEntity.class)
-    @JoinColumn(name = "driver_id", referencedColumnName = "id")
+
     public DriversEntity getDriver() {
         return driver;
     }
@@ -48,10 +43,7 @@ public class OrdersEntity {
         this.driver = driver;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "orders_id_seq")
-    @SequenceGenerator(name = "orders_id_seq", sequenceName = "orders_id_seq", allocationSize = 1)
-    @Column(name = "id")
+
     public long getId() {
         return id;
     }
@@ -60,8 +52,7 @@ public class OrdersEntity {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "description")
+
     public String getDescription() {
         return description;
     }
@@ -70,8 +61,7 @@ public class OrdersEntity {
         this.description = description;
     }
 
-    @Basic
-    @Column(name = "cost")
+
     public int getCost() {
         return cost;
     }
@@ -80,8 +70,7 @@ public class OrdersEntity {
         this.cost = cost;
     }
 
-    @Basic
-    @Column(name = "status")
+
     public String getStatus() {
         return status;
     }

@@ -9,8 +9,8 @@ import java.util.List;
  * Created by evdodima on 16/04/16.
  * 11-402
  */
-@Entity
-@Table(name = "drivers", schema = "public", catalog = "transcompany")
+
+
 public class DriversEntity {
     private long id;
     private String firstName;
@@ -27,14 +27,12 @@ public class DriversEntity {
     private List<OrdersEntity> orders;
 
     @JsonIgnore
-    @OneToMany(targetEntity = OrdersEntity.class, mappedBy = "driver")
     public List<OrdersEntity> getOrders() {
         return orders;
     }
 
     @JsonIgnore
-    @OneToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
+
     public UsersEntity getUser(){return user;}
     public void setUser(UsersEntity user) {
         this.user = user;
@@ -44,10 +42,7 @@ public class DriversEntity {
         this.orders = orders;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "drivers_id_seq")
-    @SequenceGenerator(name = "drivers_id_seq", sequenceName = "drivers_id_seq", allocationSize = 1)
-    @Column(name = "id")
+
     public long getId() {
         return id;
     }
@@ -56,7 +51,6 @@ public class DriversEntity {
         this.id = id;
     }
 
-    @Column(name = "first_name")
     public String getFirstName() {
         return firstName;
     }
@@ -65,7 +59,6 @@ public class DriversEntity {
         this.firstName = firstName;
     }
 
-    @Column(name = "last_name")
     public String getLastName() {
         return lastName;
     }
@@ -74,7 +67,6 @@ public class DriversEntity {
         this.lastName = lastName;
     }
 
-    @Column(name = "tel_number")
     public String getTelNumber() {
         return telNumber;
     }
@@ -83,7 +75,6 @@ public class DriversEntity {
         this.telNumber = telNumber;
     }
 
-    @Column(name = "driving_exp")
     public int getDrivingExp() {
         return drivingExp;
     }
@@ -95,7 +86,6 @@ public class DriversEntity {
 
 
 
-    @Column(name = "salary_rate")
     public double getSalaryRate() {
         return salaryRate;
     }
