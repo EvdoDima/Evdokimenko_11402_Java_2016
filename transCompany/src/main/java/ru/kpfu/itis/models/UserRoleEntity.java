@@ -17,7 +17,6 @@ public class UserRoleEntity {
     private UsersEntity user;
     private UserRole role;
 
-    @JsonIgnore
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
     public UsersEntity getUser() {

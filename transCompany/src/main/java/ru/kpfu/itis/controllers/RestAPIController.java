@@ -3,6 +3,7 @@ package ru.kpfu.itis.controllers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
@@ -47,8 +48,10 @@ public class RestAPIController {
         UsersEntity user = userService.getUserByLogin(
                 ((UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername());
 
-        return user.getRole().getUser_role() == UserRole.ROLE_DRIVER ?
-                ordersService.findAllByDriver(user.getDriver()) : ordersService.getAll();
+        System.out.println(user.getRole().getUser_role());
+
+        return  user.getRole().getUser_role()==UserRole.ROLE_DRIVER?
+                ordersService.findAllByDriver(user.getDriver()) :ordersService.getAll();
     }
 
     @RequestMapping("/applications")
@@ -94,6 +97,25 @@ public class RestAPIController {
         carsService.saveNewCar(car);
     }
 
+    @RequestMapping(value = "/orders" , method = RequestMethod.POST)
+    public void postOrders(@RequestBody String appIdJson){
+        Integer id=0;
+        try {
+            id = new ObjectMapper().readValue(appIdJson,Integer.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(id);
+
+        OrdersEntity ordersEntity = ordersService.findOne(id);
+        ordersEntity.setStatus("Completed");
+        CarsEntity carsEntity = ordersEntity.getCar();
+        carsEntity.setState("free");
+        carsService.saveNewCar(carsEntity);
+        ordersService.saveNewOrder(ordersEntity);
+    }
+
 
     @RequestMapping("/role")
     public UserRole getRole() {
@@ -133,6 +155,7 @@ public class RestAPIController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
         userService.saveNewUser(usersEntity);
     }

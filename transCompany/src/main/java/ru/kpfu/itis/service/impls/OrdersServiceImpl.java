@@ -2,6 +2,7 @@ package ru.kpfu.itis.service.impls;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.kpfu.itis.models.ApplicationsEntity;
 import ru.kpfu.itis.models.CarsEntity;
 import ru.kpfu.itis.models.DriversEntity;
@@ -38,22 +39,26 @@ public class OrdersServiceImpl implements OrdersService {
     }
 
     @Override
+    @Transactional
     public List<OrdersEntity> getAll() {
         return ordersRep.findAll();
     }
 
     @Override
+    @Transactional
     public List<OrdersEntity> findAllByDriver(DriversEntity driver) {
         return ordersRep.findAllByDriverId(driver.getId());
     }
 
     @Override
     public OrdersEntity findOne(Integer id) {
+        System.out.println(Long.valueOf(id));
         return ordersRep.findOne(Long.valueOf(id));
     }
 
     @Override
     public void saveNewOrder(OrdersEntity ordersEntity) {
+
         ordersRep.save(ordersEntity);
     }
 

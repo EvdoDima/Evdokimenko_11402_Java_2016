@@ -41,22 +41,25 @@
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
-            <RowConstraints maxHeight="45.0" minHeight="21.0" prefHeight="34.0" />
-            <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="94.0" minHeight="9.0" prefHeight="29.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="137.0" minHeight="4.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="17.0" minHeight="0.0" prefHeight="17.0" />
+            <RowConstraints maxHeight="45.0" minHeight="17.0" prefHeight="24.0" />
+            <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="94.0" minHeight="9.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="137.0" minHeight="4.0" prefHeight="40.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="137.0" minHeight="5.0" prefHeight="28.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="198.0" minHeight="10.0" prefHeight="69.0" valignment="CENTER" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label text="Car model" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <TextField fx:id="carModel" GridPane.rowIndex="2" />
-            <Label text="Year of pruduction" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-            <TextField fx:id="year" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleCarAddAction" prefHeight="27.0" prefWidth="190.0" text="Add car" textFill="#49769a" GridPane.rowIndex="7" />
-            <Label layoutX="151.0" layoutY="64.0" text="Run" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-            <TextField fx:id="run" GridPane.rowIndex="6" />
+            <Label text="Car model" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="carModel" GridPane.rowIndex="4" />
+            <Label text="Year of pruduction" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <TextField fx:id="year" GridPane.rowIndex="6" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleCarAddAction" prefHeight="27.0" prefWidth="190.0" text="Add car" textFill="#49769a" GridPane.rowIndex="9" />
+            <Label layoutX="151.0" layoutY="64.0" text="Run" textFill="#49769a" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <TextField fx:id="run" GridPane.rowIndex="8" />
+            <Label fx:id="errorField" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="186.0" textFill="#b93232" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>

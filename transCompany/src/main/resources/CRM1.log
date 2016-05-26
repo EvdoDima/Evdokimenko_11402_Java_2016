@@ -3521,3 +3521,1192 @@ org.postgresql.util.PSQLException: FATAL: database "transcompany" does not exist
 2016-05-26 01:11:19 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 22001
 2016-05-26 01:11:19 ERROR SqlExceptionHelper:146 - ERROR: value too long for type character varying(20)
 2016-05-26 01:11:19 INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+2016-05-26 11:20:57 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 11:20:57 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 11:20:57 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 11:20:57 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 11:20:57 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 11:20:57 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 11:20:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 11:20:57 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sk06k9g1tiuwjn1ckw9d4|20419188, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sk06k9g1tiuwjn1ckw9d4|20419188, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 11:20:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 11:20:58 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 11:20:58 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 11:20:58 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 11:20:59 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 11:20:59 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 11:20:59 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 11:21:00 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 11:21:00 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 11:21:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 11:21:00 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 11:21:00 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 11:24:33 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 11:24:33 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 11:24:34 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 11:24:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 11:24:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 11:24:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 11:24:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 11:24:34 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sk06k9g1tizjvr1lzqpa3|3795d87, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sk06k9g1tizjvr1lzqpa3|3795d87, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 11:24:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 11:24:35 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 11:24:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 11:24:35 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 11:24:36 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 11:24:36 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 11:24:36 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 11:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 11:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 11:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 11:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 11:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 11:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 11:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 11:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 11:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 11:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 11:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 11:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 11:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 11:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 11:24:37 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 11:24:37 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 11:24:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:24:37 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 11:24:37 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 11:24:37 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 11:24:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 11:24:37 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 11:24:37 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 11:24:37 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 11:24:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:24:37 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 11:24:37 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 11:24:37 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 11:24:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 11:24:37 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 11:24:37 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 11:24:37 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 11:24:37 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 11:24:37 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 11:24:37 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 11:33:49 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 11:33:49 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 11:33:50 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 11:33:50 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 11:33:50 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 11:33:50 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 11:33:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 11:33:50 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sk06k9g1tjbgw0urrsna|2691156d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sk06k9g1tjbgw0urrsna|2691156d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 11:33:51 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 11:33:51 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 11:33:51 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 11:33:51 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 11:33:52 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 11:33:52 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 11:33:52 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 11:33:52 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 11:33:52 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 11:33:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:33:52 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 11:33:52 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 11:33:52 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 11:33:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 11:33:52 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 11:33:52 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 11:33:52 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 11:33:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:33:52 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 11:33:52 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 11:33:52 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 11:33:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 11:33:52 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 11:33:52 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 11:33:52 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 11:33:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:33:52 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 11:33:52 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 11:33:52 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 11:33:52 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 11:33:52 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 11:33:53 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 11:33:53 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 11:33:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:33:53 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 11:33:53 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 11:33:53 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 11:33:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 11:33:53 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 11:33:53 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 11:33:53 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 11:33:53 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 11:33:53 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 11:33:53 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 11:40:12 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 11:40:12 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 11:40:12 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 11:40:12 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 11:40:12 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 11:40:12 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 11:40:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 11:40:12 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sk06k9g1tjjnriz162ou|63914447, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sk06k9g1tjjnriz162ou|63914447, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 11:40:13 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 11:40:13 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 11:40:13 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 11:40:13 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 11:40:14 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 11:40:14 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 11:40:14 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 11:40:14 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 11:40:14 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 11:40:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:40:14 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 11:40:14 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 11:40:14 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 11:40:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 11:40:14 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 11:40:14 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 11:40:14 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 11:40:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:40:14 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 11:40:14 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 11:40:14 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 11:40:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 11:40:14 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 11:40:14 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 11:40:14 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 11:40:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:40:14 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 11:40:14 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 11:40:14 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 11:40:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 11:40:14 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 11:40:14 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 11:40:14 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 11:40:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 11:40:14 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 11:40:15 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 11:40:15 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 11:40:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 11:40:15 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 11:40:15 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 11:40:15 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 11:40:15 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 11:40:15 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 11:40:15 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:10:30 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:10:30 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:10:31 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:10:31 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:10:31 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:10:31 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:10:31 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:10:31 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tkmn5l1uxs77o|24884140, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tkmn5l1uxs77o|24884140, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:10:32 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:10:32 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:10:32 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:10:32 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:10:33 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:10:33 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:10:33 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:10:33 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:10:33 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:10:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:10:33 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:10:33 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:10:33 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:10:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:10:33 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:10:33 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:10:33 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:10:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:10:33 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:10:33 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:10:33 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:10:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:10:33 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:10:33 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:10:33 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:10:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:10:33 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:10:33 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:10:33 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:10:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:10:33 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:10:34 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:10:34 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:10:34 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:10:34 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:10:34 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:10:34 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:10:34 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:10:34 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:10:34 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:10:34 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:10:34 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:10:34 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:10:34 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:14:08 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:14:08 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:14:08 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:14:08 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:14:08 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:14:08 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:14:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:14:08 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tkrar21s9yoi9|544634fd, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tkrar21s9yoi9|544634fd, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:14:09 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:14:09 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:14:09 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:14:10 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:14:10 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:14:10 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:14:10 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:14:11 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:14:11 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:14:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:14:11 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:14:11 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:15:41 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:15:41 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:15:41 WARN  ActiveManagementCoordinator:68 - A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2016-05-26 12:15:42 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:15:42 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:15:42 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:15:42 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:15:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:15:43 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tktb4u1vxpss5|385173f6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tktb4u1vxpss5|385173f6, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:15:43 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:15:43 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:15:43 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:15:43 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:15:44 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:15:44 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:15:44 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:15:44 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:15:44 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:15:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:15:44 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:15:44 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:15:44 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:15:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:15:44 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:15:44 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:15:44 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:15:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:15:44 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:15:44 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:15:44 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:15:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:15:44 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:15:44 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:15:44 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:15:44 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:15:44 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:15:45 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:15:45 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:15:45 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:15:45 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:15:45 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:15:45 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:15:45 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:15:45 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:15:45 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:15:45 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:15:45 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:15:45 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:15:45 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:15:45 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:15:45 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:15:45 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:15:45 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:22:27 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:22:27 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:22:27 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:22:27 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:22:27 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:22:27 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:22:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:22:28 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tl1zxfbf41eg|1e886520, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tl1zxfbf41eg|1e886520, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:22:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:22:28 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:22:28 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:22:28 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:22:29 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:22:29 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:22:29 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:22:29 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:22:29 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:22:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:22:29 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:22:29 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:22:29 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:22:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:22:29 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:22:29 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:22:29 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:22:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:22:29 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:22:29 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:22:29 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:22:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:22:29 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:22:30 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:22:30 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:22:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:22:30 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:22:30 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:22:30 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:22:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:22:30 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:22:30 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:22:30 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:22:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:22:30 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:22:30 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:22:30 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:22:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:22:30 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:22:30 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:22:30 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:22:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:22:30 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:22:30 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:24:08 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:24:08 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:24:08 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:24:09 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:24:09 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:24:09 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:24:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:24:09 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tl468d1w11ka6|4821e953, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tl468d1w11ka6|4821e953, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:24:10 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:24:10 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:24:10 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:24:10 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:24:11 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:24:11 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:24:11 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:24:11 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:24:11 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:24:11 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:24:11 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:24:12 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:24:12 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:24:12 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:24:12 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:24:12 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:24:33 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:24:33 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:24:33 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:24:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:24:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:24:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:24:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:24:34 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tl4plichfjk5|6264abdc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tl4plichfjk5|6264abdc, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:24:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:24:35 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:24:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:24:35 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:24:36 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:24:36 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:24:36 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:24:36 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:24:36 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:24:36 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:24:36 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:24:36 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:26:03 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:26:03 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:26:03 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:26:03 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:26:03 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:26:03 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:26:04 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:26:04 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tl6mn91hg6n2s|262c8fc4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tl6mn91hg6n2s|262c8fc4, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:26:04 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:26:04 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:26:05 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:26:05 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:26:05 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:26:05 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:26:05 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:26:06 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:26:06 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:26:06 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:26:06 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:26:06 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:34:22 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:34:22 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:34:22 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:34:22 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:34:22 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:34:22 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:34:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:34:23 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tlhbvuzphqg9|194c3b52, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tlhbvuzphqg9|194c3b52, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:34:23 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:34:23 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:34:24 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:34:24 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:34:25 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:34:25 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:34:25 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:34:25 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:34:25 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:34:25 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:34:25 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:34:25 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:41:59 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:41:59 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:41:59 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:41:59 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:41:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:41:59 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:42:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:42:00 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tlr4ie1cwl2id|21842624, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tlr4ie1cwl2id|21842624, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:42:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:42:01 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:42:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:42:01 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:42:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:42:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:42:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:42:02 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:42:02 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:43:43 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:43:43 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:43:44 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:43:44 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:43:44 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:43:44 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:43:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:43:44 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tltcw3u0w4xz|2a6aa765, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tltcw3u0w4xz|2a6aa765, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:43:45 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:43:45 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:43:45 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:43:45 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:43:46 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:43:46 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:43:46 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:43:46 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:43:46 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:43:46 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:43:46 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:43:46 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:43:46 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:43:46 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:43:46 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:43:47 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:43:47 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:43:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:43:47 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:43:47 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:43:47 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:43:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:43:47 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:43:47 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:43:47 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:43:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:43:47 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:43:47 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:43:47 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:43:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:43:47 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:43:47 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:43:47 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:43:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:43:47 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:43:47 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:43:47 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:43:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:43:47 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:43:47 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:43:47 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:43:47 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:43:47 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:43:47 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:49:25 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:49:25 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:49:26 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:49:26 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:49:26 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:49:26 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:49:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:49:26 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tm0oto1u392cn|3bc2efa2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tm0oto1u392cn|3bc2efa2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:49:27 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:49:27 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:49:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:49:27 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:49:28 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:49:28 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:49:28 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:49:28 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:49:28 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:49:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:49:28 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:49:28 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:53:24 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:53:24 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:53:24 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:53:24 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:53:24 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:53:24 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:53:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:53:25 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tm5sr71qwxmgn|5f59cce5, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tm5sr71qwxmgn|5f59cce5, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:53:25 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:53:25 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:53:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:53:26 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:53:26 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:53:26 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:53:26 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:53:26 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:53:26 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:53:26 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:53:26 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:53:27 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:53:27 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:53:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:53:27 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:53:27 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 12:59:24 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 12:59:24 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 12:59:25 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 12:59:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 12:59:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 12:59:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 12:59:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 12:59:25 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tmdj351utwykf|215f5fa4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tmdj351utwykf|215f5fa4, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 12:59:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 12:59:26 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 12:59:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 12:59:26 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 12:59:27 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 12:59:27 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 12:59:27 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 12:59:27 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 12:59:27 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 12:59:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:59:27 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 12:59:27 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 12:59:27 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 12:59:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 12:59:27 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 12:59:27 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 12:59:27 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 12:59:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:59:27 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 12:59:27 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 12:59:27 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 12:59:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 12:59:27 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 12:59:27 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 12:59:27 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 12:59:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:59:27 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 12:59:27 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 12:59:27 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 12:59:27 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 12:59:27 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 12:59:28 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 12:59:28 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 12:59:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 12:59:28 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 12:59:28 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 12:59:28 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 12:59:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 12:59:28 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 12:59:28 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 12:59:28 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 12:59:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 12:59:28 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 12:59:28 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 13:01:11 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 13:01:11 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 13:01:11 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 13:01:12 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 13:01:12 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 13:01:12 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 13:01:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 13:01:12 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tmftglj1f5nh|6c549cb3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tmftglj1f5nh|6c549cb3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 13:01:13 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 13:01:13 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 13:01:13 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 13:01:13 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 13:01:14 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 13:01:14 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 13:01:14 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 13:01:14 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 13:01:14 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 13:01:14 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 13:01:14 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 13:01:14 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 13:03:27 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 13:03:27 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 13:03:27 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 13:03:27 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 13:03:27 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 13:03:27 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 13:03:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 13:03:27 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1ym4nwg07z4pof1ynb58h9g1tmipxuov4dov|2ffc9c27, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1ym4nwg07z4pof1ynb58h9g1tmipxuov4dov|2ffc9c27, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 13:03:28 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 13:03:28 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 13:03:28 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 13:03:28 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 13:03:29 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 13:03:29 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 13:03:29 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 13:03:29 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 13:03:29 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 13:03:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:03:29 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 13:03:29 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 13:03:29 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 13:03:29 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 13:03:29 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 13:03:30 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 13:03:30 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 13:03:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:03:30 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 13:03:30 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 13:03:30 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 13:03:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 13:03:30 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 13:03:30 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 13:03:30 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 13:03:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:03:30 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 13:03:30 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 13:03:30 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 13:03:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 13:03:30 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 13:03:30 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 13:03:30 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 13:03:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 13:03:30 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 13:03:30 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 13:03:30 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 13:03:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 13:03:30 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 13:03:30 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 13:03:30 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 13:03:30 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 13:03:30 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 13:03:30 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 15:25:25 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 15:25:26 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 15:25:27 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 15:25:28 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 15:25:28 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 15:25:28 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 15:25:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 15:25:33 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sk05m9g1trlbaa19m6bl3|51dc5406, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sk05m9g1trlbaa19m6bl3|51dc5406, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 15:25:36 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 15:25:36 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 15:25:37 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 15:25:37 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 15:25:40 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 15:25:40 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 15:25:40 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 15:25:40 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 15:25:40 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 15:25:40 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:25:40 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 15:25:41 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 15:25:41 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 15:25:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 15:25:41 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 15:25:41 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 15:25:41 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 15:25:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:25:41 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 15:25:41 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 15:25:41 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 15:25:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 15:25:41 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 15:25:41 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 15:25:41 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 15:25:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:25:41 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 15:25:41 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 15:25:41 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 15:25:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 15:25:41 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 15:25:42 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 15:25:42 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 15:25:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:25:42 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 15:25:42 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 15:25:42 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 15:25:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 15:25:42 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 15:25:42 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 15:25:42 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 15:25:42 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 15:25:42 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 15:25:42 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 15:40:06 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 15:40:06 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 15:40:06 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 15:40:06 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 15:40:06 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 15:40:06 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 15:40:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 15:40:07 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sk05m9g1ts46i31hv98uq|7e40518d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sk05m9g1ts46i31hv98uq|7e40518d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 15:40:07 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 15:40:07 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 15:40:08 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 15:40:08 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 15:40:09 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 15:40:09 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 15:40:09 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 15:40:09 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 15:40:09 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 15:40:09 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 15:40:09 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 15:40:09 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2016-05-26 15:45:00 INFO  MLog:92 - MLog clients using log4j logging.
+2016-05-26 15:45:00 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-26 15:45:00 INFO  LogHelper:46 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-26 15:45:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.0.Final}
+2016-05-26 15:45:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-05-26 15:45:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-05-26 15:45:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-05-26 15:45:01 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sk05m9g1tsahgr1yyatxu|1868784d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sk05m9g1tsahgr1yyatxu|1868784d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/transcompany, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-05-26 15:45:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2016-05-26 15:45:01 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-26 15:45:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-26 15:45:02 INFO  Version:17 - HV000001: Hibernate Validator 5.2.2.Final
+2016-05-26 15:45:03 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2016-05-26 15:45:03 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2016-05-26 15:45:03 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.users
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [password, id, login]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [users_login_uindex, users_pkey]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.applications
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [summ, name, description, id, customer_id]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_l47tsj38rr2nge18ujo4mt3b3]
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [applications_pkey]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.cars
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [year, model, run, id, state]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [cars_pkey]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.customers
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, user_id, deals, name, id, lastname]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: [customers_users_fk]
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [customers_pkey]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.docs
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [name, link, id]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [docs_pkey]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.drivers
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [tel_number, driving_exp, salary_rate, user_id, last_name, id, first_name]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers_users_fk]
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [drivers_pkey, drivers_user_id_uindex]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.messages
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [name, id, message, email]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [messages_pkey]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.orders
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [driver_id, cost, description, id, customer_id, car_id, status]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: [drivers___fk, cars___fk, customers___fk]
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [orders_pkey]
+2016-05-26 15:45:03 INFO  TableMetadata:66 - HHH000261: Table found: public.user_role
+2016-05-26 15:45:03 INFO  TableMetadata:67 - HHH000037: Columns: [role, user_id, id]
+2016-05-26 15:45:03 INFO  TableMetadata:69 - HHH000108: Foreign keys: [user_role_user_fk]
+2016-05-26 15:45:03 INFO  TableMetadata:70 - HHH000126: Indexes: [user_role_pkey]
+2016-05-26 15:45:03 INFO  SchemaUpdate:242 - HHH000232: Schema update complete

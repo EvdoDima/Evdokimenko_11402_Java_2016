@@ -91,8 +91,7 @@ public class ServerConnection {
     }
 
     public void updateOrderStatus(long id) {
-
-
+        doPost("/orders", id);
     }
 
     public List<CarsEntity> getAvailableCars() {

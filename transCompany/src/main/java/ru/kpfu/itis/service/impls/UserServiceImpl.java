@@ -7,15 +7,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.kpfu.itis.forms.DriverRegister;
 import ru.kpfu.itis.forms.RegistrationForm;
-import ru.kpfu.itis.models.DriversEntity;
 import ru.kpfu.itis.models.UserRoleEntity;
 import ru.kpfu.itis.models.UsersEntity;
-import ru.kpfu.itis.models.enums.UserRole;
 import ru.kpfu.itis.rep.CustomerRep;
 import ru.kpfu.itis.rep.DriversRep;
 import ru.kpfu.itis.rep.UserRep;
 import ru.kpfu.itis.rep.UserRoleRep;
-import ru.kpfu.itis.security.AuthProviderImpl;
 import ru.kpfu.itis.service.UserService;
 
 /**

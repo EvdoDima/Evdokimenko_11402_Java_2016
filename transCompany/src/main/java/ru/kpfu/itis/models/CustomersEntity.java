@@ -84,6 +84,7 @@ public class CustomersEntity {
     }
 
 
+    @JsonIgnore
     @OneToMany(mappedBy = "customer")
     public List<ApplicationsEntity> getApplications() {
         return applications;

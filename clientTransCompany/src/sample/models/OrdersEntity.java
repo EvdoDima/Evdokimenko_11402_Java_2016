@@ -27,6 +27,7 @@ public class OrdersEntity {
         this.car = car;
     }
 
+
     @ManyToOne(targetEntity = CustomersEntity.class)
     @JoinColumn(name = "customer_id", referencedColumnName = "id")
     public CustomersEntity getCustomer() {
