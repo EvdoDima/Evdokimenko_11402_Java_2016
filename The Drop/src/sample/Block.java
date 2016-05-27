@@ -179,7 +179,7 @@ public class Block extends Rectangle {
                         public void handle(ActionEvent event) {
                             node.relocate(node.getLayoutX(),windowHeight+blockHeight);
 
-                            Label label = new Label("Your score : " + blockscount);
+                            Label label = new Label("Your score : " + (blockscount-1));
                             label.setStyle("-fx-font-size: 20px;");
                             label.setLayoutY(windowHeight / 3);
                             label.setLayoutX(windowWidth/2-60);
@@ -194,7 +194,7 @@ public class Block extends Rectangle {
 
                             try {
                                  infoLabel= (Label)((Pane)new FXMLLoader(getClass().
-                                        getResource("StartPAge.fxml")).load()).getChildren().get(4);
+                                        getResource("StartPage.fxml")).load()).getChildren().get(4);
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
