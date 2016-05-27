@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity"  maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="11.0" layoutY="147.0" prefHeight="46.0" prefWidth="379.0" text="To drop the block press Space button">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="14.0" prefHeight="60.0" prefWidth="143.0" text="The Drop" textFill="#3326c6">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Separator layoutX="5.0" layoutY="67.0" prefHeight="15.0" prefWidth="392.0" />
+      <Label layoutX="38.0" layoutY="254.0" prefHeight="46.0" prefWidth="325.0" text="Drop as many blocks as you can">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" fx:id="infoLabel" layoutX="53.0" layoutY="385.0" prefHeight="46.0" prefWidth="295.0" style="-fx-background-color: lightblue;" text="Press Space to start" textFill="#4618dd">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

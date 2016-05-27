@@ -5,17 +5,21 @@ import javafx.animation.PathTransition;
 import javafx.application.Application;
 
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 
 import javafx.scene.control.Label;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Path;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.io.IOException;
 import java.util.LinkedList;
 
 import static sample.Block.blockHeight;
@@ -49,9 +53,39 @@ public class Main extends Application {
 
 
     public Scene createScene() {
-        activeBlocks = new LinkedList<Block>();
-        final Group root = new Group();
 
+       Pane root =new Pane();
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("StartPage.fxml"));
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        final Main app = this;
+
+        final Scene scene = new Scene(root, windowWidth, windowHeight);
+        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if (event.getCode()==KeyCode.SPACE){
+                    changeSceneToGame();
+                }
+            }
+        });
+
+
+
+
+
+        return scene;
+    }
+
+
+    public void changeSceneToGame(){
+        final Group root = new Group();
+        activeBlocks = new LinkedList<Block>();
         final Rectangle horizontalBorder = setBorders(root);
 
         final Label score = new Label("Score : 0");
@@ -62,18 +96,14 @@ public class Main extends Application {
         root.getChildren().add(score);
 
         activeBlocks.add(new Block(root));
-
         final Main app = this;
 
-
-
         final Scene scene = new Scene(root, windowWidth, windowHeight);
-
 
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
-                if (event.isAltDown()) {
+                if (event.getCode()== KeyCode.SPACE) {
                     if (!dropping) {
                         dropping = true;
                         activeBlocks.getLast().drop(app,root, activeBlocks,score);
@@ -82,9 +112,7 @@ public class Main extends Application {
                 }
             }
         });
-
-
-        return scene;
+        primary.setScene(scene);
     }
 
     private void changeScope(Group root, Rectangle horizontalBorder) {

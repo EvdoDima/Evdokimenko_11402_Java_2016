@@ -4,16 +4,21 @@ import javafx.animation.PathTransition;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.*;
 import javafx.util.Duration;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -173,38 +178,47 @@ public class Block extends Rectangle {
                         @Override
                         public void handle(ActionEvent event) {
                             node.relocate(node.getLayoutX(),windowHeight+blockHeight);
+
                             Label label = new Label("Your score : " + blockscount);
                             label.setStyle("-fx-font-size: 20px;");
-                            label.setLayoutY(windowHeight / 2 - 10);
-                            label.setLayoutX(15);
+                            label.setLayoutY(windowHeight / 3);
+                            label.setLayoutX(windowWidth/2-60);
 
                             Label lostlabel = new Label("You lost");
                             lostlabel.setStyle("-fx-font-size: 20px; ");
-                            lostlabel.setLayoutY(windowHeight / 2 - 35);
-                            lostlabel.setLayoutX(15);
 
-                            Button newGame = new Button("New game");
+                            lostlabel.setLayoutY(windowHeight /4);
+                            lostlabel.setLayoutX(windowWidth/2 - 40);
 
-                            newGame.setMinHeight(45);
-                            newGame.setLayoutY(windowHeight / 2 - 30);
-                            newGame.setLayoutX(windowWidth - 150);
+                            Label infoLabel = new Label();
+
+                            try {
+                                 infoLabel= (Label)((Pane)new FXMLLoader(getClass().
+                                        getResource("StartPAge.fxml")).load()).getChildren().get(4);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+
 
                             Main.dropping = false;
                             blockscount = 0;
                             currentHeight = borderWidth;
 
-                            app.primary.getScene().setOnKeyPressed(null);
-
-                            newGame.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                            app.primary.getScene().setOnKeyPressed(new EventHandler<KeyEvent>() {
                                 @Override
-                                public void handle(MouseEvent event) {
-                                    app.primary.setScene(app.createScene());
+                                public void handle(KeyEvent event) {
+                                    if (event.getCode()== KeyCode.SPACE){
+                                        app.changeSceneToGame();
+                                    }
                                 }
                             });
 
+
                             root.getChildren().add(label);
                             root.getChildren().add(lostlabel);
-                            root.getChildren().add(newGame);
+                            root.getChildren().add(infoLabel);
+                           // root.getChildren().add(newGame);
+
                         }
                     });
                     i++;
