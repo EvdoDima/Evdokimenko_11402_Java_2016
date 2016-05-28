@@ -30,7 +30,7 @@
             <children>
                 <Button mnemonicParsing="false" onAction="#handleMyOrders" prefHeight="34.0" prefWidth="154.0" text="My orders" textFill="#49769a" />
                 <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleApplications" prefHeight="34.0" prefWidth="154.0" text="Applications" textFill="#49769a" />
-                <Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Cars" textFill="#49769a" />
+                <Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" defaultButton="true" prefHeight="34.0" prefWidth="154.0" text="Cars" textFill="#49769a" />
             </children>
         </FlowPane>
         <TableView fx:id="carsTable" layoutX="164.0" layoutY="53.0" prefHeight="319.0" prefWidth="420.0">

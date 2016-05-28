@@ -31,7 +31,7 @@
       </Pane>
       <FlowPane layoutY="45.0" prefHeight="355.0" prefWidth="155.0" style="-fx-background-color: lightblue;">
          <children>
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="New application" textFill="#49769a" />
+            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="New application" defaultButton="true" textFill="#49769a" />
             <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleCustomerCars" prefHeight="34.0" prefWidth="154.0" text="Cars" textFill="#49769a" />
             <!--<Button layoutX="10.0" layoutY="44.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Drivers" textFill="#49769a" />-->
          </children>

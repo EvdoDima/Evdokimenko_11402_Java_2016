@@ -30,7 +30,7 @@
       </Pane>
       <FlowPane layoutY="45.0" prefHeight="355.0" prefWidth="155.0" style="-fx-background-color: lightblue;">
          <children>
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Add new Car" textFill="#49769a" />
+            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" defaultButton="true" text="Add new Car" textFill="#49769a" />
             <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleRegisterDriverPage" prefHeight="34.0" prefWidth="154.0" text="Register driver" textFill="#49769a" />
             <Button mnemonicParsing="false" onAction="#handleOrdersPage" prefHeight="34.0" prefWidth="154.0" text="Orders" textFill="#49769a" />
          </children>
